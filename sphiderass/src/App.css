@@ -1083,6 +1083,12 @@
     .client-name{
         font-size: 10px;
     }
+    .learn{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        font-size: 11px;
+    }
     .faqcontainer{
         padding: 0;
     }

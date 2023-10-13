@@ -62,7 +62,7 @@ const Servicestwo = () =>{
         <section
         >
             <div className="page-width">
-                <div>
+                <div className="learn">
                     <p>
                         LEARN WITH SPHIDERASS
                     </p>
