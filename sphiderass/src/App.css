@@ -896,6 +896,8 @@
     }
     .af-logos ul{
         width: 100%;
+        padding: 0;
+        margin: 0;
     }
     .af-logos ul li{
         padding: 15px;
@@ -914,11 +916,12 @@
         height: 23vh;
     }
     .intro-comp div{
-        padding: 10px;
+        padding: 0;
     }
     .intro-comp div p{
-        font-size: 15px;
+        font-size: 12px;
     }
+
     .intro-comp div img{
         width: 15rem;
         height: 10rem;
@@ -928,31 +931,39 @@
         height: 30vh;
     }
     .sd-text h2{
-        font-size: 12px;
+        font-size: 11px;
     }
     .sd-text p{
-        font-size: 11px;
+        font-size: 9px;
         line-height: 20px;
     }
     .sb-base{
-        width: 8rem;
-        height: 10rem;
+        width: 7rem;
+        height: 8.5rem;
     }
     .sb-base-left{
+        width: 7rem;
+        height: 8.5rem;
+    }
+    .sb-image{
         width: 8rem;
         height: 10rem;
     }
     .sb-image-active{
-        width: 10rem;
-        height: 13rem;
+        width: 8rem;
+        height: 10rem;
+    }
+    .sb-image-left{
+        width: 8rem;
+        height: 10rem;
     }
     .sb-image-left-active{
-        width: 10rem;
-        height: 13rem;
+        width: 8rem;
+        height: 10rem;
     }
     .sd-button-active button{
-        padding: 10px 15px;
-        font-size: 10px;
+        padding: 9px 14px;
+        font-size: 9px;
     }
     .sd-button{
         transform: translateX(180px);
