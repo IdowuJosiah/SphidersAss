@@ -975,10 +975,10 @@
     }
 
     .svf-section{
-        height: 30vh ;
+        height: 25vh ;
     }
     .svf-text{
-        font-size: 10px;
+        font-size: 9px;
     }
     .svf{
         width: 50%;
@@ -986,11 +986,17 @@
     .see-more{
         height: 8vh;
     }
+    .see-more p{
+        font-size: 15px;
+    }
     .portfolio-cover-section{
         height: 40vh;
     }
     .pc-head{
         padding: 1px;
+    }
+    .pc-head{
+        font-size: 15px;
     }
     .pc-content{
         height: 30vh;
@@ -999,26 +1005,31 @@
         width: 50%;
     }
     .pct-head{
+        font-size: 9px;
+    }
+    .pc-link{
         font-size: 14px;
     }
     .pc-images{
         width: 50%;
     }
     .pc-images p:nth-child(1){
-        left: 0px;
+        left: 0;
         width: 55%;
-        height: 12rem;
+        height: 9rem;
     }
     .pc-images p:nth-child(2){
-        left: 50px;
+        left: 20px;
         width: 55%;
-        height: 12rem;
+        top: -120px;
+        height: 9rem;
 
     }
     .pc-images p:nth-child(3){
-        left: 100px;
+        left: 70px;
         width: 55%;
-        height: 12rem;
+        top: -240px;
+        height: 9rem;
     }
     .white-ball{
         width: 8rem;
@@ -1041,18 +1052,25 @@
     }
     .client-review-container{
         padding: 1rem;
-        margin-bottom: 2rem;
-        height: 25vh;
+        margin-bottom: 4rem;
+        height: 20vh;
     }
     .slider-container{
-        border-bottom-left-radius: 8rem;
-        border-top-right-radius: 8rem;
+        border-bottom-left-radius: 7rem;
+        border-top-right-radius: 7rem;
     }
     .slider-container p{
         margin-bottom: 0;
     }
+    .container-dots{
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+    .client-review-text{
+        padding-top: 1.5rem;
+    }
     .client-review-text p{
-        font-size: 8px;
+        font-size: 7px;
         line-height: 10px;
         margin-bottom: 0;
     }
