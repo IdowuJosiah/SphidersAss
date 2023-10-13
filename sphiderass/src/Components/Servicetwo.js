@@ -2,7 +2,7 @@ import React, {useRef, useEffect, useState} from "react";
 import {motion, useInView, useAnimation, useIsPresent} from "framer-motion"
 
 
-const Services = () =>{
+const Servicestwo = () =>{
     const ref = useRef(null)
     const [sect_one, setSect_one]  = useState(false)
     const [sect_two,setSect_two] = useState(false)
@@ -58,26 +58,31 @@ const Services = () =>{
             setSect_four(false)
         }
     },[isInView4]);
-     return(
-         <section
-                >
+    return(
+        <section
+        >
             <div className="page-width">
+                <div>
+                    <p>
+                        LEARN WITH SPHIDERASS
+                    </p>
+                </div>
                 <section
                     ref={ref}
                     className="services">
                     <div className="service-description">
                         <p className="sd-text">
                             <h2>
-                                BLOCKCHAIN DEVELOPMENT
+                                UI/UX DESIGN
                             </h2>
                             <p>
-                                in the rapidly evolving landscape of blockchain
-                                technology,sphiderass stands as a beacon of
-                                expertise and innovation.
+                                In the realm of e-learning, where the digital experience
+                                is paramount, SphiderAss excels in crafting exceptional
+                                UI/UX solutions tailored specifically for educational platforms.
                             </p>
                         </p>
                         <p className={sect_one ? "sd-button-active" : "sd-button"}>
-                                <button>Learn More</button>
+                            <button>Learn More</button>
                         </p>
                     </div>
                     <div className="service-banner">
@@ -85,7 +90,7 @@ const Services = () =>{
 
                         </div>
                         <div className={sect_one ? "sb-image-active" : "sb-image"}>
-                            <img src="img1.webp"/>
+                            <img src="img7.webp"/>
                         </div>
                     </div>
                 </section>
@@ -98,18 +103,18 @@ const Services = () =>{
 
                         </div>
                         <div className={sect_two ? "sb-image-left-active" : "sb-image-left"}>
-                            <img src="img2.webp"/>
+                            <img src="img8.webp"/>
                         </div>
                     </div>
                     <div className="service-description">
                         <p className="sd-text">
                             <h2>
-                                DASHBOARD ANALYTICS
+                                FRONT END DEV
                             </h2>
                             <p>
-                                in the rapidly evolving landscape of blockchain
-                                technology,sphiderass stands as a beacon of
-                                expertise and innovation.
+                                We are dedicated to presenting your educational ideas
+                                to the world in the most captivating and appealing fashion
+                                possible through our front-end development expertise.
                             </p>
                         </p>
                         <p className={sect_two ? "sd-button-left-active" : "sd-button-left"}>
@@ -123,12 +128,12 @@ const Services = () =>{
                     <div className="service-description">
                         <p className="sd-text">
                             <h2>
-                                E-LEARNING & INTERNSHIP
+                                BACK END DEV
                             </h2>
                             <p>
-                                in the realm of education and professional
-                                development, sphiderass offers a comprehensive
-                                i suite of e-learning solutions.
+                                In our pursuit of leveraging technology to help clients breathe
+                                life into their dreams, we recognize the critical role of back-end
+                                development in shaping the success of e-learning platforms.
                             </p>
                         </p>
                         <p className={sect_three ? "sd-button-active" : "sd-button"}>
@@ -140,7 +145,7 @@ const Services = () =>{
 
                         </div>
                         <div className={sect_three ? "sb-image-active" : "sb-image"}>
-                            <img src="img3.webp"/>
+                            <img src="img9.webp"/>
                         </div>
                     </div>
                 </section>
@@ -152,18 +157,19 @@ const Services = () =>{
 
                         </div>
                         <div className={sect_four ? "sb-image-left-active" : "sb-image-left"}>
-                            <img src="img4.webp"/>
+                            <img src="img10.webp"/>
                         </div>
                     </div>
                     <div className="service-description">
                         <p className="sd-text">
                             <h2>
-                                AR & VR SOLUTIONS
+                                HUMAN CENTERED DESIGN
                             </h2>
                             <p>
-                                at sphiderass, we believe in understanding organisations and their visions
-                                . our ar/vr solutions are tailor made to help our clients breath lives into
-                                their dreams and present their ideas to the world
+                                we are committed to harnessing the potential of technology
+                                to breathe life into your dreams and present your ideas to
+                                the world in a manner that is not only captivating but also
+                                deeply rooted in human-centered design principles.
                             </p>
                         </p>
                         <p className={sect_four ? "sd-button-left-active" : "sd-button-left"}>
@@ -171,35 +177,8 @@ const Services = () =>{
                         </p>
                     </div>
                 </section>
-                <section className="services-footer">
-                    <div className="svf-section">
-                        <div className="svf" >
-                            <p className="svf-image">
-                                <img src="img5.webp"/>
-                            </p>
-                            <p className="svf-text">
-                                Increase you online visibility and reach your target with our expert
-                                digital marketing services
-                            </p>
-                        </div>
-                        <div className="svf">
-                            <p className="svf-image">
-                                <img src="img6.webp"/>
-                            </p>
-                            <p className="svf-text">
-                                Create virtually stunning designs that captivate your audience,
-                                reach your target audience with unique design
-                            </p>
-                        </div>
-                    </div>
-                    <div className="see-more">
-                        <p>
-                            See More
-                        </p>
-                    </div>
-                </section>
             </div>
-         </section>
-     )
+        </section>
+    )
 }
-export default Services
+export default Servicestwo

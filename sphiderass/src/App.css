@@ -305,6 +305,7 @@
     display: flex;
     justify-content: space-between;
     height: 60vh;
+    overflow: hidden;
 }
 .service-description{
     width: 45%;
@@ -382,8 +383,8 @@
     height: 100%;
 }
 .sb-base-left{
-    width: 13rem;
-    height: 15rem;
+    width: 45%;
+    height: 65%;
     top: 10px;
     left: 0;
     background: #f4bd50;
@@ -399,8 +400,8 @@
     transition-duration: 500ms;
 }
 .sb-image-left-active{
-    width: 15rem;
-    height: 20rem;
+    width: 50%;
+    height: 80%;
     position: absolute;
     top: 40px;
     left: 60px;
@@ -618,6 +619,7 @@
     left: 45%;
     bottom:2rem;
     margin-top: 5rem;
+    gap: 10px;
 }
 .dot{
     width: 1.3rem;
@@ -688,7 +690,8 @@
     font-size: 10px;
     text-align: center;
     width: 80%;
-}.faq-slide:nth-child(1){
+}
+.faq-slide:nth-child(1){
     right: 6rem;
  }
 .faq-slide:nth-child(2){
@@ -818,26 +821,31 @@
     color: #030303;
     transform: scaleX(1);
 }
-@media screen and (min-width :380px) and (max-width : 500px) {
+@media screen and (min-width :380px) and (max-width : 600px) {
     .page-width{
         width: calc(100% - 1rem);
         padding: 10px 10px;
         margin: 0 auto;
     }
     .banner-section{
-        height: 40vh;
+        height: 30vh;
     }
     .nav-placement{
-        padding: 5px;
+        padding: 10px 15px ;
     }
     .navbar{
-        height: 50px;
+        height: 35px;
     }
     .nav-con{
         width: 100%;
     }
     .logo img{
         height: 1rem;
+    }
+    .nav-list-con{
+        height: 1rem;
+        display: flex;
+        align-items: center;
     }
     .nav-list-con ul{
         padding: 2px;
@@ -847,7 +855,7 @@
         font-size: 10px;
     }
     .nav-buttons p button{
-        padding: 7px 10px;
+        padding: 5px 7px;
         font-size: 10px;
         color: white;
     }
@@ -855,7 +863,245 @@
         font-size: 12px ;
     }
     .banner-text p button{
-        
+        width: 100px;
+        font-size: 10px;
+        height: 30px;
+    }
+    .banner-text p button p{
+        height: 1px;
+        width: 1px;
+    }
+    .banner-head-text{
+        font-size: 15px;
+    }
+    .banner-subhead-text{
+        font-size: 10px;
+        text-align: center;
+    }
+    .nav-buttons{
+        height: 35px;
+    }
+    .affiliate-section{
+        height: 20vh;
+    }
+    .af-header{
+        padding: 10px;
+    }
+    .af-header p{
+        font-size: 10px;
+    }
+    .af-logos ul{
+        width: 100%;
+    }
+    .af-logos ul li{
+        padding: 15px;
+    }
+    .af-logos ul li span svg{
+        font-size: 20px;
+    }
+    .af-logos ul li span img{
+        height: 20px;
+        width: 20px;
+    }
+    .af-name{
+        font-size: 10px;
+    }
+    .intro-comp-section{
+        height: 23vh;
+    }
+    .intro-comp div{
+        padding: 10px;
+    }
+    .intro-comp div p{
+        font-size: 15px;
+    }
+    .intro-comp div img{
+        width: 15rem;
+        height: 10rem;
+        margin-bottom: -20px;
+    }
+    .services{
+        height: 30vh;
+    }
+    .sd-text h2{
+        font-size: 12px;
+    }
+    .sd-text p{
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .sb-base{
+        width: 8rem;
+        height: 10rem;
+    }
+    .sb-base-left{
+        width: 8rem;
+        height: 10rem;
+    }
+    .sb-image-active{
+        width: 10rem;
+        height: 13rem;
+    }
+    .sb-image-left-active{
+        width: 10rem;
+        height: 13rem;
+    }
+    .sd-button-active button{
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    .sd-button{
+        transform: translateX(180px);
+    }
+    .sd-button-left-active button{
+        padding: 10px 15px;
+        font-size: 10px;
+        transform: translateX(0);
+    }
+
+    .svf-section{
+        height: 30vh ;
+    }
+    .svf-text{
+        font-size: 10px;
+    }
+    .svf{
+        width: 50%;
+    }
+    .see-more{
+        height: 8vh;
+    }
+    .portfolio-cover-section{
+        height: 40vh;
+    }
+    .pc-head{
+        padding: 1px;
+    }
+    .pc-content{
+        height: 30vh;
+    }
+    .pc-text{
+        width: 50%;
+    }
+    .pct-head{
+        font-size: 14px;
+    }
+    .pc-images{
+        width: 50%;
+    }
+    .pc-images p:nth-child(1){
+        left: 0px;
+        width: 55%;
+        height: 12rem;
+    }
+    .pc-images p:nth-child(2){
+        left: 50px;
+        width: 55%;
+        height: 12rem;
+
+    }
+    .pc-images p:nth-child(3){
+        left: 100px;
+        width: 55%;
+        height: 12rem;
+    }
+    .white-ball{
+        width: 8rem;
+        height: 8rem;
+    }
+    .black-ball-outline{
+        width: 8rem;
+        height: 8rem;
+    }
+    .white-ball-bottom{
+        width: 8rem;
+        height: 8rem;
+    }
+    .client-review-header h2{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .client-review-header p{
+        font-size: 10px;
+    }
+    .client-review-container{
+        padding: 1rem;
+        margin-bottom: 2rem;
+        height: 25vh;
+    }
+    .slider-container{
+        border-bottom-left-radius: 8rem;
+        border-top-right-radius: 8rem;
+    }
+    .slider-container p{
+        margin-bottom: 0;
+    }
+    .client-review-text p{
+        font-size: 8px;
+        line-height: 10px;
+        margin-bottom: 0;
+    }
+    .client-image{
+        height: 17px;
+        width: 17px;
+        margin-left: auto;
+        padding-right: 20px;
+    }
+    .client-name{
+        font-size: 10px;
+    }
+    .faqcontainer{
+        padding: 0;
+    }
+    .faq-slide{
+        height: 20vh;
+    }
+    .faq-active {
+        align-items: center;
+        transition-duration: 300ms;
+        z-index: 5;
+        width: 60%;
+        border-radius: 5px;
+        height: 20vh;
+    }
+    .question h4{
+        font-size: 12px;
+    }
+    .answer p{
+        font-size: 9px;
+    }
+    .faq-slide:nth-child(1){
+        right: 1rem;
+    }
+    .faq-slide:nth-child(2){
+        right: 3rem;
+    }
+    .faq-slide:nth-child(3){
+        right: 4rem;
+    }
+    .cf-form{
+        padding: 10px;
+    }
+    .cf-form form input {
+        height: 20px;
+    }
+    #message{
+        height: 50px;
+    }
+    .footer-links-sect h2{
+        font-size: 14px;
+    }
+    .footer-link-list ul{
+        margin: 2px;
+    }
+    .footer-link-list li{
+        font-size: 10px;
+    }
+    .footer-address div h2{
+        font-size: 14px;
+    }
+    .footer-address div p{
+        font-size: 10px;
     }
 }
 @media screen and (min-width :550px) and (max-width : 750px) {

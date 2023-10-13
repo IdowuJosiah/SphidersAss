@@ -84,7 +84,7 @@ const FeedbackComponent = () => {
                         key={index}>
 
                         <p className="client-review-text">
-                            <q> {review.clientReview} </q>
+                            <p> {review.clientReview} </p>
                         </p>
                         <div className="client-details">
                             <p className="client-image"><img alt="clientimages" src={review.clientImage}/></p>

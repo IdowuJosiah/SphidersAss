@@ -4,7 +4,7 @@ import {ImBlogger2} from "react-icons/im"
 
 const AffiliationsComponent = () =>{
     return(
-        <section>
+        <section className="affiliate-section">
             <div className="page-width ">
                 <div className="af-header">
                     <p>
@@ -14,16 +14,16 @@ const AffiliationsComponent = () =>{
                 <div className="af-logos">
                     <ul>
                         <li>
-                            <span><FaConfluence className="confluence"/></span><span>Confluence</span>
+                            <span><FaConfluence className="confluence"/></span ><span className="af-name">Confluence</span>
                         </li>
                         <li>
-                            <span><ImBlogger2 className="blogger"/></span><span>Blogger</span>
+                            <span><ImBlogger2 className="blogger"/></span><span className="af-name">Blogger</span>
                         </li>
                         <li>
-                            <span><img src="utorrent-icon.svg"/></span><span>Utorrent</span>
+                            <span><img src="utorrent-icon.svg"/></span><span className="af-name">Utorrent</span>
                         </li>
                         <li>
-                            <span><FaBloggerB className="blogger"/></span><span>Zeeply</span>
+                            <span><FaBloggerB className="blogger"/></span ><span className="af-name">Zeeply</span>
                         </li>
                     </ul>
                 </div>
