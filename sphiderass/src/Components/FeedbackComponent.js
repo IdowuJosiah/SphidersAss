@@ -1,7 +1,7 @@
 import React from "react";
 import {useState} from "react";
 
-const ParentsReview = () => {
+const FeedbackComponent = () => {
     const [slideIndex, setSlideIndex] = useState(0)
 
 
@@ -62,6 +62,13 @@ const ParentsReview = () => {
     }
     return(
         <div className="client-review">
+            <div className="white-ball">
+
+            </div>
+            <div className="black-ball-outline">
+
+            </div>
+            <div className="white-ball-bottom"></div>
             <div className="client-review-header">
                 <h2>
                     Client Feedback
@@ -108,4 +115,4 @@ const ParentsReview = () => {
         </div>
     )
 }
-export default ParentsReview
+export default FeedbackComponent

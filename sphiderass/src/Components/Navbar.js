@@ -40,7 +40,7 @@ const Navbar = () =>{
                 </div>
                 <div className="nav-buttons">
                     <p>
-                        <BsSearch/>
+                        <BsSearch className="search-icon"/>
                     </p>
                     <p>
                         <button>

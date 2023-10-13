@@ -77,7 +77,9 @@
     font-size: 15px;
     border: none;
 }
-
+.search-icon{
+    font-size: 20px;
+}
 
 
 /*
@@ -293,15 +295,224 @@
 }
 
 
+
 /*
         client styles
 */
+
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+}
+.service-description{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sd-text p{
+    max-width: 85%;
+    line-height: 30px;
+}
+.sd-button button{
+    background: #fd5025;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transform: translateX(-180px);
+
+}
+.sd-button-active button{
+    background: #fd5025;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transform: translateX(0);
+    transition-duration: 3000ms;
+
+}
+.sd-button button:hover{
+    scale: 1.1;
+    transition: ease-in-out;
+}
+.service-banner{
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sb-base{
+    width: 13rem;
+    height: 15rem;
+    top: 10px;
+    right: 0;
+    background: #74ff74;
+    position: absolute;
+}
+.sb-image{
+    width: 15rem;
+    height: 20rem;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    transform: translateX(180px);
+}
+.sb-image-active{
+    width: 15rem;
+    height: 20rem;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    transform: translateX(0);
+    transition-duration: 500ms;
+}
+.sb-image-active img{
+    width: 100%;
+    height: 100%;
+}
+.sb-image img{
+    width: 100%;
+    height: 100%;
+}
+.sb-base-left{
+    width: 13rem;
+    height: 15rem;
+    top: 10px;
+    left: 0;
+    background: #f4bd50;
+    position: absolute;
+}
+.sb-image-left{
+    width: 15rem;
+    height: 20rem;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    transform: translateX(-180px);
+    transition-duration: 500ms;
+}
+.sb-image-left-active{
+    width: 15rem;
+    height: 20rem;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    transform: translateX(0);
+    transition-duration: 500ms;
+}
+
+.sb-image-left img{
+    width: 100%;
+    height: 100%;
+}
+.sb-image-left-active img{
+    width: 100%;
+    height: 100%;
+}
+.sd-button-left-active button{
+    background: #fd5025;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transform: translateX(-180px);
+    transition-duration: 500ms;
+
+}
+.sd-button-left{
+    transform: translateX(360px);
+}
+.services-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.svf-section{
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+.svf{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.svf-image{
+    width: 60%;
+    height: 60%;
+}
+.svf-image img{
+    width: 100%;
+    height: 100%;
+}
+.svf-text{
+    max-width: 90%;
+}
+.see-more{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.see-more p{
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 2px solid #74ff74;
+}
+
+
+
+
+/*
+        client styles
+*/
+
+
+
 
 .client-review{
     position: relative;
     display: flex;
     background: #f8cf3d;
     flex-direction: column;
+    overflow: hidden;
+}
+.white-ball{
+    width: 10rem;
+    height: 10rem;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: -5rem;
+}
+.black-ball-outline{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 150px;
+    right: -5rem;
+}
+.white-ball-bottom{
+    width: 10rem;
+    height: 10rem;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5rem;
+    right: 80px;
 }
 .client-review-header{
     width: 100%;
@@ -316,8 +527,8 @@
     justify-content: center;
     padding: 3rem;
     overflow: hidden;
+    margin-bottom: 5rem;
 }
-
 
 .slider-container{
     width: 60%;
@@ -406,6 +617,7 @@
     position: absolute;
     left: 45%;
     bottom:2rem;
+    margin-top: 5rem;
 }
 .dot{
     width: 1.3rem;
@@ -421,4 +633,230 @@
     border: none;
     cursor: pointer;
     transition-duration: 300ms;
+}
+
+
+
+
+/*
+        FAQ styles
+*/
+.faq-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.faq-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faqcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    overflow: hidden;
+    position: relative;
+}
+.faq-active{
+    align-items: center;
+    transition-duration: 300ms;
+    z-index: 5;
+    width: 60%;
+    border-radius: 5px;
+    height: 40vh;
+    display: flex;justify-content: center;
+    flex-direction: column;
+}
+
+.faq-slide{
+    position: absolute;
+    width: 54%;
+    height: 40vh;
+    border-radius: 5px;
+}
+.question{
+    text-align: center;
+
+}
+.answer{
+    display: flex;justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    text-align: center;
+    width: 80%;
+}.faq-slide:nth-child(1){
+    right: 6rem;
+ }
+.faq-slide:nth-child(2){
+    right: 9rem;
+}
+.faq-slide:nth-child(3){
+    right: 12rem;
+}
+
+
+/*
+        contact styles
+*/
+
+
+
+.contact-form-section{
+    background: #58a942;
+}
+.contact-form-container{
+    display: flex;
+
+}
+.cf-text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15%;
+}
+.cf-form{
+    width: 60%;
+    background: #fbe5d2;
+    padding: 20px;
+    border-radius: 5px;
+}
+.cf-form form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cf-form form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    outline: none;
+}
+#message{
+    height: 85px;
+}
+.cf-form form button{
+    height: 45px;
+    background: #013600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+
+/*
+        footer styles
+*/
+
+.footer-nav{
+    display: flex;
+}
+.footer-logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img{
+    width: 60%;
+}
+.footer-link-comp{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-links-sect{
+    width: 30%;
+
+}
+.footer-links-sect h2{
+    font-size: 20px;
+}
+.footer-link-list ul{
+    padding: 0;
+}
+.footer-link-list li{
+    font-size: 14px;
+    list-style: none;
+    color: #003700;
+}
+.footer-address-comp{
+    width: 25%;
+}
+.footer-address div h2{
+    font-size: 20px;
+}
+.footer-address div p{
+    font-size: 14px;
+}
+.footer-link-list li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -16px;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+.footer-link-list li:hover{
+    color: #003700;
+    cursor: pointer;
+}
+.footer-link-list li:hover::after{
+    color: #030303;
+    transform: scaleX(1);
+}
+@media screen and (min-width :380px) and (max-width : 500px) {
+    .page-width{
+        width: calc(100% - 1rem);
+        padding: 10px 10px;
+        margin: 0 auto;
+    }
+    .banner-section{
+        height: 40vh;
+    }
+    .nav-placement{
+        padding: 5px;
+    }
+    .navbar{
+        height: 50px;
+    }
+    .nav-con{
+        width: 100%;
+    }
+    .logo img{
+        height: 1rem;
+    }
+    .nav-list-con ul{
+        padding: 2px;
+    }
+    .nav-list-con li{
+        width: 2.5rem;
+        font-size: 10px;
+    }
+    .nav-buttons p button{
+        padding: 7px 10px;
+        font-size: 10px;
+        color: white;
+    }
+    .search-icon{
+        font-size: 12px ;
+    }
+    .banner-text p button{
+        
+    }
+}
+@media screen and (min-width :550px) and (max-width : 750px) {
 }
