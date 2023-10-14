@@ -1098,7 +1098,7 @@
         font-size: 11px;
     }
     .faq-slide{
-        height: 20vh;
+        height: 25vh;
     }
     .faq-active {
         align-items: center;
@@ -1106,13 +1106,16 @@
         z-index: 5;
         width: 60%;
         border-radius: 5px;
-        height: 20vh;
+        height: 25vh;
     }
     .question h4{
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .answer{
+        width: 100%;
     }
     .answer p{
-        font-size: 6px;
+        font-size: 8px;
     }
     .faq-slide:nth-child(1){
         right: 1rem;

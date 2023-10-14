@@ -47,7 +47,7 @@ const FaqComponent = () =>{
                             <div className="question"><h4>{review.question}</h4>  </div>
                         </div>
                         <p className="answer">
-                            <q> {review.clientReview} </q>
+                            <p> {review.clientReview} </p>
                         </p>
                     </div>
                 })
