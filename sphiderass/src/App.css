@@ -859,7 +859,7 @@
         margin: 0 auto;
     }
     .banner-section{
-        height: 30vh;
+        height: 32vh;
     }
     .nav-placement{
         padding: 10px 35px ;
@@ -883,9 +883,10 @@
         font-size: 8px;
     }
     .nav-buttons p button{
-        padding: 5px 7px;
-        font-size: 8px;
+        padding: 5px 2px;
+        font-size: 7px;
         color: white;
+        width: 3.5rem;
     }
     .search-icon{
         font-size: 10px ;
