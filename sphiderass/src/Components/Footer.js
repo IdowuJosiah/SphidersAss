@@ -52,10 +52,6 @@ const Footer = () => {
             Title: "LOCATION",
             Address: "3-5 Faith In Christ Street Off Demurin, Ile-eja Ketu, Lagos, Nigeria."
         },
-        {
-            Title: "OTHER LOCATION",
-            Address: "Office 5 Alade Complex University Of Abuja Abuja, Nigeria."
-        }
     ]
     return(
         <section>
