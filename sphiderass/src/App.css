@@ -569,6 +569,7 @@
 .client-details{
     margin-left: auto;
     padding-right: 10px;
+    padding-bottom: 1.7rem;
 }
 .client-name{
     margin-left: auto;
@@ -1067,7 +1068,7 @@
         height: 20vh;
     }
     .slider-container{
-        border-bottom-left-radius: 7rem;
+        border-bottom-left-radius: 5rem;
         border-top-right-radius: 7rem;
     }
     .slider-container p{
@@ -1084,6 +1085,7 @@
         font-size: 7px;
         line-height: 10px;
         margin-bottom: 0;
+        max-width: 90%;
     }
     .client-image{
         height: 17px;
