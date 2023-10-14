@@ -42,7 +42,7 @@ const Navbar = () =>{
                     <p>
                         <BsSearch className="search-icon"/>
                     </p>
-                    <p>
+                    <p >
                         <button>
                             Work with us
                         </button>
