@@ -1117,6 +1117,7 @@
         padding-top: 1.5rem;
     }
     .client-review-text p{
+        padding-top: 10px;
         font-size: 7px;
         line-height: 10px;
         margin-bottom: 0;
