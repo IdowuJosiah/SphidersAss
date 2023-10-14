@@ -1154,6 +1154,9 @@
     .footer-link-list li{
         font-size: 8px;
     }
+    .footer-address-comp{
+        padding-left: 4px;
+    }
     .footer-address div h2{
         font-size: 10px;
     }
