@@ -1134,6 +1134,7 @@
     }
     .client-name h4{
         margin: 2px;
+        font-size: 8px;
     }
     .learn{
         display: flex;
