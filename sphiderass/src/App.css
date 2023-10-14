@@ -632,7 +632,7 @@
 }
 .dot-active{
     width: 2rem;
-    background: rgb(255, 255, 255);
+    background: rgb(234, 234, 234);
     border: none;
     cursor: pointer;
     transition-duration: 300ms;
@@ -645,6 +645,7 @@
         FAQ styles
 */
 .faq-section{
+    background: #fdfcfb;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -658,11 +659,16 @@
 .faqcontainer{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3rem;
-    overflow: hidden;
     position: relative;
+}
+.faq-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .faq-active{
     align-items: center;
@@ -673,6 +679,7 @@
     height: 40vh;
     display: flex;justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .faq-slide{
@@ -680,6 +687,7 @@
     width: 54%;
     height: 40vh;
     border-radius: 5px;
+    display: none;
 }
 .question{
     text-align: center;
@@ -691,6 +699,28 @@
     font-size: 10px;
     text-align: center;
     width: 80%;
+}
+.faq-container-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 10px;
+}
+.dot{
+    width: 1.3rem;
+    height: .5rem;
+    background: #0e0404;
+    border-radius: 5px;
+    margin-right: .5rem;
+    border: 1px solid;
+}
+.dot-active{
+    width: 2rem;
+    background: rgb(234, 234, 234);
+    border: none;
+    cursor: pointer;
+    transition-duration: 300ms;
 }
 .faq-slide:nth-child(1){
     right: 6rem;
@@ -1073,6 +1103,9 @@
     }
     .slider-container p{
         margin-bottom: 0;
+    }
+    .faq-container-dots{
+        margin-top: 2rem;
     }
     .container-dots{
         margin-top: 0;

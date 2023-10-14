@@ -37,22 +37,35 @@ const FaqComponent = () =>{
                 </h2>
             </div>
             <div className="faqcontainer">
-                {reviews.map((review, index)=>{
-                    return <div
-                        onClick={() => dotClick(index)}
-                        style={{background:review.bg_colour}}
-                        className={slideIndex === index  ? "faq-active" : "faq-slide"}
-                        key={index}>
-                        <div className="">
-                            <div className="question"><h4>{review.question}</h4>  </div>
+                <div className="faq-c">
+                    {reviews.map((review, index)=>{
+                        return <div
+                            onClick={() => dotClick(index)}
+                            style={{background:review.bg_colour}}
+                            className={slideIndex === index  ? "faq-active" :"faq-slide"}
+                            key={index}>
+                            <div className="">
+                                <div className="question"><h4>{review.question}</h4>  </div>
+                            </div>
+                            <p className="answer">
+                                <p> {review.clientReview} </p>
+                            </p>
                         </div>
-                        <p className="answer">
-                            <p> {review.clientReview} </p>
-                        </p>
-                    </div>
-                })
-                }
+                    })
+                    }
+                </div>
+                <div
+                    className="faq-container-dots">
+                    {Array.from({length:3}).map((item, index)=>(
+
+                        <div onClick={() => dotClick(index)}
+                             className={slideIndex === index  ? "dot dot-active": "dot"}>
+                        </div>
+                    ))
+                    }
+                </div>
             </div>
+
         </section>
     )
 }
