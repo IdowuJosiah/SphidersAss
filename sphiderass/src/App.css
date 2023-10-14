@@ -938,12 +938,12 @@
         line-height: 20px;
     }
     .sb-base{
-        width: 7rem;
-        height: 8.5rem;
+        width: 6rem;
+        height: 7.5rem;
     }
     .sb-base-left{
-        width: 7rem;
-        height: 8.5rem;
+        width: 6rem;
+        height: 7.5rem;
     }
     .sb-image{
         width: 8rem;
@@ -951,7 +951,9 @@
     }
     .sb-image-active{
         width: 8rem;
-        height: 10rem;
+        height: 9.5rem;
+        top: 30px;
+        right: 40px;
     }
     .sb-image-left{
         width: 8rem;
@@ -959,7 +961,9 @@
     }
     .sb-image-left-active{
         width: 8rem;
-        height: 10rem;
+        height: 9.5rem;
+        top: 30px;
+        left: 40px;
     }
     .sd-button-active button{
         padding: 9px 14px;
