@@ -855,7 +855,7 @@
     color: #030303;
     transform: scaleX(1);
 }
-@media screen and (min-width :350px) and (max-width : 600px) {
+@media screen and (min-width :350px) and (max-width : 800px) {
     .page-width{
         width: calc(100% - 3rem);
         padding: 10px 10px;
