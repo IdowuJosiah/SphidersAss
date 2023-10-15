@@ -306,7 +306,6 @@
 .services{
     display: flex;
     justify-content: space-between;
-    height: 60vh;
     overflow: hidden;
 }
 .service-description{
