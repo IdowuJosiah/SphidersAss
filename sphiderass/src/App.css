@@ -1272,6 +1272,11 @@
         color: white;
         width: 3.5rem;
     }
+    .nvp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .search-icon{
         font-size: 10px ;
     }
