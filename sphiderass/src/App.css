@@ -855,7 +855,7 @@
     color: #030303;
     transform: scaleX(1);
 }
-@media screen and (min-width :350px) and (max-width : 800px) {
+@media screen and (min-width :350px) and (max-width : 600px) {
     .page-width{
         width: calc(100% - 3rem);
         padding: 10px 10px;
@@ -1195,22 +1195,23 @@
         padding: 0px;
     }
     .cf-form form{
-        padding: 15px;
+        padding: 13px;
     }
     .cf-form form input {
-        height: 20px;
+        height: 16px;
         padding: 6px;
     }
     .cf-form form input::placeholder{
-        font-size: 9px;
+        font-size: 8px;
         padding-left: 5px;
     }
     .cf-form form button{
-        height: 35px;
+        height: 30px;
         font-size: 9px;
+        letter-spacing: 3px;
     }
     #message{
-        height: 50px;
+        height: 40px;
     }
     .footer-links-sect h2{
         font-size: 10px;
@@ -1231,5 +1232,372 @@
         font-size: 8px;
     }
 }
-@media screen and (min-width :550px) and (max-width : 750px) {
+@media screen and (min-width :600px) and (max-width : 850px) {
+    .page-width{
+        width: calc(100% - 5rem);
+        padding: 10px 10px;
+        margin: 0 auto;
+    }
+    .banner-section{
+        height: 50vh;
+    }
+    .nav-placement{
+        padding: 10px 50px ;
+    }
+    .logo img{
+        height: 1rem;
+    }
+    .nav-list-con{
+        height: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .nav-list-con ul{
+        padding: 2px;
+    }
+    .nav-list-con li{
+        width: 2.5rem;
+        display: flex;
+        justify-content: center;align-items: center;
+        font-size: 8px;
+    }
+    .nav-buttons p button{
+        padding: 5px 2px;
+        font-size: 7px;
+        color: white;
+        width: 3.5rem;
+    }
+    .search-icon{
+        font-size: 10px ;
+    }
+    .banner-text{
+        gap: 20px;
+    }
+    .banner-text p{
+        padding: 0;
+        margin: 0;
+    }
+    .banner-text p button{
+        width: 100px;
+        font-size: 12px;
+        height: 30px;
+    }
+    .banner-text p button p{
+        height: 1px;
+        width: 1px;
+    }
+    .banner-head-text{
+        font-size: 15px;
+    }
+    .banner-subhead-text{
+        font-size: 10px;
+        text-align: center;
+    }
+    .nav-buttons{
+        height: 35px;
+    }
+    .af-header{
+        padding: 15px;
+    }
+    .af-header p{
+        font-size: 13px;
+    }
+    .af-logos ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .af-logos ul li{
+        padding: 15px;
+    }
+    .af-logos ul li span svg{
+        font-size: 25px;
+    }
+    .af-logos ul li span img{
+        height: 25px;
+        width: 25px;
+    }
+    .af-name{
+        font-size: 13px;
+    }
+    .intro-comp div{
+        padding: 0;
+    }
+    .intro-comp div p{
+        font-size: 14px;
+    }
+    .intro-image{
+        height: 40%;
+    }
+    .intro-comp div img{
+        width: 40%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .services{
+        height: 35vh;
+    }
+    .services p{
+        margin: 0;
+    }
+    .sd-text h2{
+        font-size: 12px;
+    }
+    .sd-text p{
+        font-size: 10px;
+        line-height: 22px;
+    }
+    .service-banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sb-base{
+        width: 6.5rem;
+        height: 7.5rem;
+    }
+    .sb-base-left{
+        width: 6rem;
+        height: 7.5rem;
+    }
+    .sb-image{
+        width: 8.5rem;
+        height: 10.5rem;
+    }
+    .sb-image-active{
+        width: 8rem;
+        height: 9.5rem;
+        top: 30px;
+        right: 40px;
+    }
+    .sb-image-left{
+        width: 8rem;
+        height: 10rem;
+    }
+    .sb-image-left-active{
+        width: 8rem;
+        height: 9.5rem;
+        top: 30px;
+        left: 40px;
+    }
+    .sd-button-active button{
+        padding: 9px 14px;
+        font-size: 8px;
+        margin-top: .5rem;
+        transform: translateX(0);
+    }
+    .sd-button{
+        transform: translateX(180px);
+    }
+    .sd-button-left-active button{
+        margin-top: .5rem;
+        padding: 9px 14px;
+        font-size: 8px;
+        transform: translateX(0);
+    }
+    .svf-section{
+        height: 40vh ;
+    }
+    .svf-text{
+        font-size: 11px;
+    }
+    .portfolio-cover-section{
+        height: 50vh;
+    }
+    .see-more{
+        height: 15vh;
+    }
+    .see-more p{
+        font-size: 18px;
+         margin: 1em;
+    }
+    .pc-head{
+        padding: 1px;
+    }
+    .pc-head{
+        font-size: 15px;
+    }
+    .pc-content{
+        height: 30vh;
+    }
+    .pc-text{
+        width: 50%;
+    }
+    .pct-head{
+        font-size: 10px;
+    }
+    .pc-link{
+        font-size: 15px;
+    }
+    .pc-images p:nth-child(1){
+        left: 0;
+        width: 55%;
+        height: 9rem;
+    }
+    .pc-images p:nth-child(2){
+        left: 20px;
+        width: 55%;
+        top: -120px;
+        height: 9rem;
+
+    }
+    .pc-images p:nth-child(3){
+        left: 70px;
+        width: 55%;
+        top: -240px;
+        height: 9rem;
+    }
+    .white-ball{
+        width: 9rem;
+        height: 9rem;
+    }
+    .black-ball-outline{
+        width: 9rem;
+        height: 9rem;
+    }
+    .white-ball-bottom{
+        width: 9rem;
+        height: 9rem;
+    }
+    .client-review-header h2{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .client-review-header p{
+        font-size: 11px;
+    }
+    .client-review-container{
+        padding: 1.3rem;
+        margin-bottom: 4rem;
+        height: 20vh;
+    }
+    .slider-container{
+        border-bottom-left-radius: 5rem;
+        border-top-right-radius: 7rem;
+    }
+    .slider-container p{
+        margin-bottom: 0;
+    }
+    .faq-container-dots{
+        margin-top: 2rem;
+    }
+    .container-dots{
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+    .client-review-text{
+        padding-top: 1.5rem;
+    }
+    .client-review-text p{
+        padding-top: 10px;
+        font-size: 7px;
+        line-height: 10px;
+        margin-bottom: 0;
+        max-width: 90%;
+    }
+    .client-image{
+        height: 17px;
+        width: 17px;
+        margin-left: auto;
+        padding-right: 20px;
+    }
+    .client-image{
+        margin-top: 5px;
+    }
+    .client-image img{
+        width: 1em;
+    }
+    .client-name{
+        font-size: 10px;
+    }
+    .client-name h4{
+        margin: 2px;
+        font-size: 8px;
+    }
+    .learn{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        font-size: 11px;
+    }
+    .faqcontainer{
+        padding: 0;
+    }
+    .faq-header{
+        font-size: 11px;
+    }
+    .faq-slide{
+        height: 25vh;
+    }
+    .faq-active {
+        align-items: center;
+        transition-duration: 300ms;
+        z-index: 5;
+        width: 60%;
+        border-radius: 5px;
+        height: 25vh;
+    }
+    .question h4{
+        font-size: 10px;
+    }
+    .answer{
+        width: 90%;
+    }
+    .answer p{
+        font-size: 8px;
+    }
+    .faq-slide:nth-child(1){
+        right: 1rem;
+    }
+    .faq-slide:nth-child(2){
+        right: 3rem;
+    }
+    .faq-slide:nth-child(3){
+        right: 4rem;
+    }
+    .cf-text p{
+        font-size: 10px;
+        color: white;
+    }
+    .cf-form{
+        padding: 0px;
+    }
+    .cf-form form{
+        padding: 13px;
+    }
+    .cf-form form input {
+        height: 16px;
+        padding: 6px;
+    }
+    .cf-form form input::placeholder{
+        font-size: 8px;
+        padding-left: 5px;
+    }
+    .cf-form form button{
+        height: 30px;
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+    #message{
+        height: 40px;
+    }
+    .footer-links-sect h2{
+        font-size: 10px;
+    }
+    .footer-link-list ul{
+        margin: 2px;
+    }
+    .footer-link-list li{
+        font-size: 8px;
+    }
+    .footer-address-comp{
+        padding-left: 4px;
+    }
+    .footer-address div h2{
+        font-size: 10px;
+    }
+    .footer-address div p{
+        font-size: 8px;
+    }
+
 }
