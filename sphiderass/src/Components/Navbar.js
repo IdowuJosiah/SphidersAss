@@ -39,7 +39,7 @@ const Navbar = () =>{
                     })}
                 </div>
                 <div className="nav-buttons">
-                    <p>
+                    <p className="nvs">
                         <BsSearch className="search-icon"/>
                     </p>
                     <p className="nvp">
