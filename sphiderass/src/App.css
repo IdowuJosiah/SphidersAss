@@ -402,8 +402,8 @@
     transition-duration: 500ms;
 }
 .sb-image-left-active{
-    width: 50%;
-    height: 80%;
+    width: 15rem;
+    height: 20rem;
     position: absolute;
     top: 40px;
     left: 60px;
