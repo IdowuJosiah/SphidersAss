@@ -1232,7 +1232,7 @@
         font-size: 8px;
     }
 }
-@media screen and (min-width :600px) and (max-width : 850px) {
+@media screen and (min-width :600px) and (max-width : 950px) {
     .page-width{
         width: calc(100% - 5rem);
         padding: 10px 10px;
