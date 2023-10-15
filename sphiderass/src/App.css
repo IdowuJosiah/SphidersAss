@@ -754,10 +754,13 @@
     flex-direction: column;
     justify-content: center;
 }
+.cf-text p{
+    color: white;
+}
 .cf-form{
-    width: 60%;
+    width: 45%;
     background: #fbe5d2;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
 }
 .cf-form form{
@@ -1132,6 +1135,9 @@
     }
     .client-image{
         margin-top: 5px;
+    }
+    .client-image img{
+        width: 1em;
     }
     .client-name{
         font-size: 10px;
