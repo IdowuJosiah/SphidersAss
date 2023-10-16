@@ -1058,7 +1058,7 @@
         height: 30vh;
     }
     .pc-text{
-        width: 50%;
+        width: 48%;
     }
     .pct-head{
         font-size: 9px;
@@ -1076,17 +1076,14 @@
         height: 9rem;
     }
     .pc-images p:nth-child(2){
-        left: 20px;
         width: 55%;
-        top: -120px;
         height: 9rem;
-
+        left: -50px;
     }
     .pc-images p:nth-child(3){
-        left: 70px;
         width: 55%;
-        top: -240px;
         height: 9rem;
+        left: -100px;
     }
     .white-ball{
         width: 8rem;
