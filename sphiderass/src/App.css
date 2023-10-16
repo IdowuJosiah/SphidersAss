@@ -203,7 +203,8 @@
 */
 
 .intro-comp-section{
-    background: rgb(255 235 201);
+    background: rgb(255 235 201);    overflow: hidden;
+
 }
 .intro-comp div {
     padding: 20px;
