@@ -243,7 +243,7 @@
 .pc-content{
     width: 100%;
     display: flex;
-    height: 68vh;
+    max-height: 50vh;
     justify-content: space-between;
 }
 .pc-text{
@@ -254,13 +254,13 @@
 }
 .pc-images{
     width: 60%;
-    position: relative;
+    display: flex;
 }
 .pc-images p:nth-child(1){
     width: 45%;
     height: 15rem;
     position: relative;
-    top: 10px;
+    top: -20px;
     left: 100px;
     z-index: 3;
 }
@@ -268,16 +268,16 @@
     width: 45%;
     height: 15rem;
     position: relative;
-    top: -180px;
-    left: 150px;
+    top: 10px;
+    right: 80px;
     z-index: 2;
 }
 .pc-images p:nth-child(3){
     width: 45%;
     height: 15rem;
     position: relative;
-    top: -360px;
-    left: 200px;
+    top: 30px;
+    right: 220px;
     z-index: 1;
 }
 .pc-images p img{
@@ -694,12 +694,13 @@
 }
 .question{
     text-align: center;
+    padding: 10px;
 
 }
 .answer{
     display: flex;justify-content: center;
     align-items: center;
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
     width: 80%;
 }
