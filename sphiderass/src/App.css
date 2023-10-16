@@ -678,9 +678,9 @@
     align-items: center;
     transition-duration: 300ms;
     z-index: 5;
-    width: 60%;
+    width: 50%;
+    padding-bottom: 30px;
     border-radius: 5px;
-    height: 40vh;
     display: flex;justify-content: center;
     flex-direction: column;
     position: relative;
@@ -689,7 +689,6 @@
 .faq-slide{
     position: absolute;
     width: 54%;
-    height: 40vh;
     border-radius: 5px;
     display: none;
 }
@@ -708,7 +707,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     gap: 10px;
 }
 .dot{
@@ -748,7 +747,7 @@
 }
 .contact-form-container{
     display: flex;
-
+    justify-content: space-around;
 }
 .cf-text{
     width: 40%;
