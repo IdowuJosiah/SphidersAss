@@ -269,7 +269,7 @@
     height: 15rem;
     position: relative;
     top: 10px;
-    right: 80px;
+    left: -80px;
     z-index: 2;
 }
 .pc-images p:nth-child(3){
@@ -277,7 +277,7 @@
     height: 15rem;
     position: relative;
     top: 30px;
-    right: 220px;
+    left: -250px;
     z-index: 1;
 }
 .pc-images p img{
