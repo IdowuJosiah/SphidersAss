@@ -1077,18 +1077,18 @@
     }
     .pc-images p:nth-child(1){
         left: 0;
-        width: 75%;
-        height: 9rem;
+        width: 95%;
+        height: 8rem;
         top: 0;
     }
     .pc-images p:nth-child(2){
-        width: 75%;
-        height: 9rem;
+        width: 95%;
+        height: 8rem;
         left: -30px;
     }
     .pc-images p:nth-child(3){
-        width: 75%;
-        height: 9rem;
+        width: 95%;
+        height: 8rem;
         left: -60px;
     }
     .white-ball{
