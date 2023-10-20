@@ -71,7 +71,7 @@ const Services = () =>{
                                 BLOCKCHAIN DEVELOPMENT
                             </h2>
                             <p>
-                                in the rapidly evolving landscape of blockchain
+                                In the rapidly evolving landscape of blockchain
                                 technology,sphiderass stands as a beacon of
                                 expertise and innovation.
                             </p>
@@ -107,7 +107,7 @@ const Services = () =>{
                                 DASHBOARD ANALYTICS
                             </h2>
                             <p>
-                                in the rapidly evolving landscape of blockchain
+                                In the rapidly evolving landscape of blockchain
                                 technology,sphiderass stands as a beacon of
                                 expertise and innovation.
                             </p>
@@ -126,7 +126,7 @@ const Services = () =>{
                                 E-LEARNING & INTERNSHIP
                             </h2>
                             <p>
-                                in the realm of education and professional
+                                In the realm of education and professional
                                 development, sphiderass offers a comprehensive
                                 i suite of e-learning solutions.
                             </p>
@@ -161,7 +161,7 @@ const Services = () =>{
                                 AR & VR SOLUTIONS
                             </h2>
                             <p>
-                                at sphiderass, we believe in understanding organisations and their visions
+                                At sphiderass, we believe in understanding organisations and their visions
                                 . our ar/vr solutions are tailor made to help our clients breath lives into
                                 their dreams and present their ideas to the world
                             </p>
