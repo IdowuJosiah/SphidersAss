@@ -122,7 +122,8 @@ const Servicestwo = () =>{
                         </p>
                     </div>
                 </section>
-                <section
+                {/*
+                    <section
                     ref={ref3}
                     className="services">
                     <div className="service-description">
@@ -177,6 +178,8 @@ const Servicestwo = () =>{
                         </p>
                     </div>
                 </section>
+                */}
+
             </div>
         </section>
     )

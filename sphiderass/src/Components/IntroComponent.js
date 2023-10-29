@@ -4,14 +4,12 @@ import React  from "react";
 const IntroComponent = () =>{
     return(
         <section className="intro-comp-section">
-            <div className=" intro-comp">
+            <div className=" intro-comp"
+                 style={{backgroundImage: `url(unsplash_OWGRgrZF1DM.png)`}}>
                 <div>
                     <p>
-                        Here's Whats Possible With SphiderAss
+                        Here's Whats Possible With Sphiderass
                     </p>
-                </div>
-                <div className="intro-image">
-                    <img src="nutYQw3KyYEGDooPKgNbyenTN4.webp" />
                 </div>
             </div>
         </section>

@@ -9,6 +9,7 @@ import ContactForm from "../Components/ContactForm";
 import Footer from "../Components/Footer";
 import Services from "../Components/Services";
 import Servicestwo from "../Components/Servicetwo";
+import BlogComponent from "../Components/BlogComponent";
 
 const IndexPage = () => {
     return(
@@ -20,7 +21,8 @@ const IndexPage = () => {
             <PortfolioCover/>
             <FeedbackComponent/>
             <Servicestwo/>
-            <FaqComponent/>
+            {/* <FaqComponent/> */}
+            <BlogComponent/>
             <ContactForm/>
             <Footer/>
         </div>

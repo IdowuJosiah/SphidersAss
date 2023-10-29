@@ -117,6 +117,7 @@ const Services = () =>{
                         </p>
                     </div>
                 </section>
+                {/*
                 <section
                     ref={ref3}
                     className="services">
@@ -171,6 +172,7 @@ const Services = () =>{
                         </p>
                     </div>
                 </section>
+                */}
                 <section className="services-footer">
                     <div className="svf-section">
                         <div className="svf" >

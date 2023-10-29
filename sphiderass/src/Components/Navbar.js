@@ -1,7 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom"
 import "../App.css"
-import {BsSearch} from "react-icons/bs"
+import {BsSearch, BsArrowUpRight} from "react-icons/bs"
+import {RiSearchLine,} from "react-icons/ri"
 const Navbar = () =>{
     const navLink = [
         {
@@ -25,7 +26,7 @@ const Navbar = () =>{
         <section className="navbar">
             <div className="nav-con">
                 <div className="logo">
-                    <img src="logo.png" alt="sphiderasslogo"/>
+                    <img src="Frame170.png" alt="sphiderasslogo"/>
                 </div>
                 <div className="nav-list-con">
                     {navLink.map((link, index)=>{
@@ -40,11 +41,11 @@ const Navbar = () =>{
                 </div>
                 <div className="nav-buttons">
                     <p className="nvs">
-                        <BsSearch className="search-icon"/>
+                        <RiSearchLine className="search-icon"/>
                     </p>
                     <p className="nvp">
                         <button>
-                            Work with us
+                            <span>Work with us</span><span className="nvb-arrow"><BsArrowUpRight/></span>
                         </button>
                     </p>
                 </div>
