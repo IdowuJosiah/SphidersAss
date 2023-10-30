@@ -151,6 +151,7 @@
 .banner-head-text{
     font-weight: 500;
     font-size: 45px;
+    text-align: center;
     letter-spacing: 3px;
 }
 .banner-subhead-text{
@@ -555,7 +556,7 @@
 
 }
 .sd-button-left{
-    transform: translateX(360px);
+    transform: translateX(320px);
 }
 .services-footer{
     margin-top: 0rem;
