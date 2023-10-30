@@ -1805,17 +1805,17 @@ input[type="file"]{
         line-height: 15px;
     }
     .footer-links-sect h2{
-        font-size: 12px;
+        font-size: 11px;
     }
     .footer-links-sect h3{
-        font-size: 12px;
+        font-size: 10px;
     }
     .footer-socials button{
         padding: 5px 0;
         margin: 3px;
     }
     .footer-link-list li{
-        font-size: 8px;
+        font-size: 6px;
     }
     .footer-address-comp{
         margin-left: 9px;
