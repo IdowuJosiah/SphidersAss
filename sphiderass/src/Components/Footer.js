@@ -186,16 +186,16 @@ const Footer = () => {
                         <div className="footer-socials">
 
                                 <button>
-                                        <span className="social-icons"><FaFacebookF/></span> <span>Facebook</span>
+                                        <span className="social-icons"><FaFacebookF/></span> <span className="ff">Facebook</span>
                                 </button>
                                 <button className="linkedin">
-                                        <span className="social-icons"><FaLinkedin/></span> <span>LinkedIn</span>
+                                        <span className="social-icons"><FaLinkedin/></span> <span className="ff" >LinkedIn</span>
                                 </button>
                                 <button>
-                                        <span className="social-icons"><FaTwitter/></span> <span>Twitter</span>
+                                        <span className="social-icons"><FaTwitter/></span> <span className="ff">Twitter</span>
                                 </button>
                                 <button>
-                                        <span className="social-icons"><FaInstagram/></span> <span>Instagram </span>
+                                        <span className="social-icons"><FaInstagram/></span> <span className="ff">Instagram </span>
                                 </button>
 
 

@@ -1829,6 +1829,9 @@ input[type="file"]{
     .social-icons{
         font-size: 10px;
     }
+    .ff{
+        font-size: 8px;
+    }
 }
 @media screen and (min-width :600px) and (max-width : 950px) {
     .page-width{
