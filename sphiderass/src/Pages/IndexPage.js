@@ -25,6 +25,8 @@ const IndexPage = () => {
             {/* <FaqComponent/> */}
             <BlogComponent/>
             <ContactForm/>
+            <SkewdLIne/>
+            <Footer/>
         </div>
     )
 

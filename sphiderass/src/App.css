@@ -1761,7 +1761,11 @@ input[type="file"]{
         font-size: 8px;
         padding: 3px 5px;
     }
-
+    .dropdown-items{
+        padding: 3px;
+        margin-top: 5px;
+        font-size: 8px;
+    }
     #message{
         height: 40px;
     }
