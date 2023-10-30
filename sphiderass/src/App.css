@@ -1039,6 +1039,15 @@ height: 80vh;
     flex-direction: row-reverse;
     justify-content: space-around;
 }
+.form-header{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;padding: 5px;
+}
+.form-header h1{
+    margin: 0;
+}
 .form-name{
     display: flex;
     justify-content: space-between;
@@ -1063,6 +1072,17 @@ height: 80vh;
 }
 input[type="file"]{
     padding: 10px;
+    display: none;
+}
+.label-file{
+    border: 1px solid #404040;
+    border-radius: 5px;
+    padding: 15px 10px;
+    display: block;
+    width: 95.5%;
+    font-size: 13px;
+    color: #404040;
+    cursor: pointer;
 }
 .form-service{
     display: flex;
@@ -1081,10 +1101,10 @@ input[type="file"]{
     color: white;
 }
 .cf-form{
-    width: 45%;
+    width: 40%;
     background: #ffffff;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 .cf-form form{
     padding: 20px;

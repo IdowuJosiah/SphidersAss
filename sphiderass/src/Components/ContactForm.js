@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import axios, {Axios} from "axios";
 import InputDropdown from "./InputDropdown";
+import {AiOutlineCloudUpload} from 'react-icons/ai'
+import {AiOutlineArrowRight} from "react-icons/ai"
+
 
 const ContactForm = () =>{
     const [selected, setSelected] = useState("Services")
@@ -53,7 +56,9 @@ const ContactForm = () =>{
                 <div className="cf-form">
                     <form onSubmit={(e)=>submit(e)}>
                         <div className="form-header">
-                            Request A Quote
+                            <h1>
+                                Request A Quote
+                            </h1>
                         </div>
                         <div className="form-name">
                             <input onChange={(e)=>handle(e)} value={data.full_name} id="full_name" placeholder="Full Name" type="text"/>
@@ -65,12 +70,12 @@ const ContactForm = () =>{
                         </div>
                         <div>
                             <input onChange={(e)=>handle(e)} value={data.file} id="file" placeholder="Attach File" type="file"/>
-                            <label htmlFor="file">
-lkm
+                            <label className="label-file" htmlFor="file">
+                                Attach A File   <span><AiOutlineCloudUpload/></span>
                             </label>
                         </div>
                         <input onChange={(e)=>handle(e)} value={data.message}  id='message' placeholder="Message" type="text"/>
-                        <button>Submit</button>
+                        <button><span>Request a quote</span> <span></span></button>
                     </form>
                 </div>
             </div>
