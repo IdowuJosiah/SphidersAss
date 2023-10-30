@@ -1329,6 +1329,9 @@ input[type="file"]{
         padding: 10px 10px;
         margin: 0 auto;
     }
+    .navbar{
+        height: 80px;
+    }
     .logo img{
         height: .6rem;
     }
@@ -1363,6 +1366,9 @@ input[type="file"]{
     }
     .banner-text{
         gap: 15px;
+    }
+    .banner-trust p{
+        font-size: 8px;
     }
     .banner-text p{
         padding: 0;
