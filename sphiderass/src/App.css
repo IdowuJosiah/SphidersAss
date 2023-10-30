@@ -157,7 +157,7 @@
     font-size: 20px;
     font-weight: 200;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
 }
 .banner-button{
     display: flex;
@@ -202,7 +202,7 @@
     align-items: center;
 }
 .af-logos ul{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -235,7 +235,6 @@
 */
 
 .intro-comp-section{
-height: 80vh;
 }
 .intro-comp{
     width: 100%;
@@ -261,6 +260,7 @@ height: 80vh;
     letter-spacing: 1px;
     color: white;
     font-weight: 600;
+    padding: 200px 0;
 }
 .intro-image{
     padding: 0;
@@ -431,8 +431,7 @@ height: 80vh;
 .services{
     display: flex;
     justify-content: space-between;
-    height: 90vh;
-    padding: 50px 0;
+    padding: 120px 0;
 }
 .service-description{
     width: 48%;
@@ -440,6 +439,7 @@ height: 80vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
 }
 .sd-text p{
     max-width: 85%;
@@ -477,7 +477,7 @@ height: 80vh;
 
 .sb-base{
     width: 60%;
-    height: 50%;
+    height: 100%;
     top: 10px;
     right: 0;
     background: #74ff74;
@@ -485,7 +485,7 @@ height: 80vh;
 }
 .sb-image{
     width: 85%;
-    height: 85%;
+    height: 150%;
     position: absolute;
     top: 40px;
     right: 60px;
@@ -493,7 +493,7 @@ height: 80vh;
 }
 .sb-image-active{
     width: 85%;
-    height: 85%;
+    height: 150%;
     transform: translateX(0);
     transition-duration: 500ms;
     position: absolute;
@@ -510,15 +510,15 @@ height: 80vh;
 }
 .sb-base-left{
     width: 60%;
-    height: 50%;
-    bottom: 0;
+    height: 100%;
+    bottom: -250px;
     right: 0;
     background: #f4bd50;
     position: absolute;
 }
 .sb-image-left{
     width: 85%;
-    height: 85%;
+    height: 150%;
     position: absolute;
     top: 0;
     left: 0;
@@ -527,7 +527,7 @@ height: 80vh;
 }
 .sb-image-left-active{
     width: 85%;
-    height: 85%;
+    height: 140%;
     position: absolute;
     top: 0;
     left: 0;
@@ -558,6 +558,7 @@ height: 80vh;
     transform: translateX(360px);
 }
 .services-footer{
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1327,15 +1328,6 @@ input[type="file"]{
         padding: 10px 10px;
         margin: 0 auto;
     }
-    .banner-section{
-        height: 32vh;
-    }
-    .nav-placement{
-        padding: 10px 20px ;
-    }
-    .nav-con{
-        width: 65%;
-    }
     .logo img{
         height: .6rem;
     }
@@ -1369,16 +1361,15 @@ input[type="file"]{
         align-items: center;
     }
     .banner-text{
-        gap: 10px;
+        gap: 15px;
     }
     .banner-text p{
         padding: 0;
         margin: 0;
     }
     .banner-text p button{
-        width: 100px;
-        font-size: 10px;
-        height: 30px;
+        width: 80px;
+        height: 20px;
     }
     .banner-text p button p{
         height: 1px;
@@ -1386,13 +1377,27 @@ input[type="file"]{
     }
     .banner-head-text{
         font-size: 12px;
+        letter-spacing: .5px;
     }
     .banner-subhead-text{
         font-size: 8px;
         text-align: center;
     }
+    .bn-two{
+        margin-bottom: .5rem;
+    }
+    .bn-one{
+        margin-bottom: .5rem;
+    }
+    .bn-one span{
+        font-size: 8px;
+    }
+    .bn-two span{
+        font-size: 8px;
+    }
     .nav-buttons{
         height: 35px;
+        gap: 5px;
     }
     .affiliate-section{
     }
@@ -1427,6 +1432,8 @@ input[type="file"]{
     }
     .intro-comp div p{
         font-size: 12px;
+        padding: 100px 0;
+        letter-spacing: .3px;
     }
 .intro-image{
     height: 50%;
@@ -1437,7 +1444,7 @@ input[type="file"]{
         margin-bottom: 0;
     }
     .services{
-        height: 35vh;
+        padding: 10px 10px;
     }
     .services p{
         margin: 0;
@@ -1469,7 +1476,7 @@ input[type="file"]{
     .sb-image-active{
         width: 8rem;
         height: 9.5rem;
-        top: 30px;
+        top: 60px;
         right: 40px;
     }
     .sb-image-left{
@@ -1479,8 +1486,8 @@ input[type="file"]{
     .sb-image-left-active{
         width: 8rem;
         height: 9.5rem;
-        top: 30px;
-        left: 40px;
+        top: 20px;
+        left: 0px;
     }
     .sd-button-active button{
         padding: 7px 12px;

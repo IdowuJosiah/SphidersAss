@@ -19,14 +19,6 @@ const IndexPage = () => {
             <AffiliationsComponent/>
             <IntroComponent/>
             <Services/>
-            <PortfolioCover/>
-            <FeedbackComponent/>
-            <Servicestwo/>
-            {/* <FaqComponent/> */}
-            <BlogComponent/>
-            <ContactForm/>
-            <SkewdLIne/>
-            <Footer/>
         </div>
     )
 

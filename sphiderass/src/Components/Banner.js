@@ -22,8 +22,11 @@ const Banner =() => {
                             <span> Learn More</span>
                         </button>
                     </p>
-                    <div>
-                        <
+                    <div className="banner-trust">
+                        <p>Trusted by 1000+ Business </p>
+                        <div>
+
+                        </div>
                     </div>
                 </div>
             </div>
