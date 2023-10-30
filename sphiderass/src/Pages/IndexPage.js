@@ -10,6 +10,7 @@ import Footer from "../Components/Footer";
 import Services from "../Components/Services";
 import Servicestwo from "../Components/Servicetwo";
 import BlogComponent from "../Components/BlogComponent";
+import SkewdLIne from "../Components/SkewdLIne";
 
 const IndexPage = () => {
     return(
@@ -24,6 +25,7 @@ const IndexPage = () => {
             {/* <FaqComponent/> */}
             <BlogComponent/>
             <ContactForm/>
+            <SkewdLIne/>
             <Footer/>
         </div>
     )

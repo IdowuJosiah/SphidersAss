@@ -669,7 +669,6 @@ height: 80vh;
     border-top-right-radius: 10rem;
 }
 .slider-container p{
-    margin-bottom: 1rem;
     line-height: 20px;
 }
 
@@ -679,6 +678,10 @@ height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+}
+.client-image p{
+    margin: 0;
 }
 .client-image img{
     width: 3em;
@@ -696,13 +699,20 @@ height: 80vh;
 .client-details{
     margin-left: auto;
     padding-right: 10px;
-    padding-bottom: 1.7rem;
+    padding-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .client-name{
-    margin-left: auto;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 10px;
+    text-align: center;
+}
+.client-name h5, h4{
+    margin: 5px;
 }
 /*
 .buttonslider{
@@ -1079,7 +1089,6 @@ input[type="file"]{
     border-radius: 5px;
     padding: 15px 10px;
     display: block;
-    width: 95.5%;
     font-size: 13px;
     color: #404040;
     cursor: pointer;
@@ -1092,13 +1101,54 @@ input[type="file"]{
     width: 43%;
 }
 .cf-text{
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.cf-text p{
+.cf-text h1{
     color: white;
+    font-size: 35px;
+    margin: .5rem;
+}
+.cf-text h2{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    margin: .5rem;
+}
+.contact-form-info-buttons{
+    display: flex;
+}
+.contact-form-info-buttons h1 button{
+    background: white;
+    padding: 15px 25px;
+    letter-spacing: .5px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #0B63E5;
+    cursor: pointer;
+    display: flex;
+    border: none;
+
+}
+.cfib{
+    font-size: 20px;
+    display: flex;justify-content: center;
+    align-items: center;
+}
+.contact-form-info-buttons h2 button{
+    background: #002300;
+    color: white;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.contact-form-info-buttons h2 button:hover{
+    color: #E1B023;
+    transition: ease-in-out .3s;
 }
 .cf-form{
     width: 40%;
@@ -1125,33 +1175,75 @@ input[type="file"]{
 }
 .cf-form form button{
     height: 45px;
-    background: #013600;
+    background: #BD7500;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
+    padding: 25px 0;
+}
+.form-arrow{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/*
+        skewed styles
+*/
+.skewd{
+    background: #ffffff;
+    position: relative;
+    perspective: 4000px;
+    height: 4rem;
+    z-index: 3;
+}
+.skewd::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left:0;
+    background: #ffffff;
+    transform:skewY(2deg);
+    z-index: -1;
+    transform-origin: left bottom;
+
 }
 
 
 /*
         footer styles
 */
-
+.footer{
+    background: #002300;
+    padding-top: 5rem;
+}
 .footer-nav{
     display: flex;
 }
 .footer-logo{
-    width: 30%;
+    width: 40%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .footer-logo img{
-    width: 60%;
+    width: 70%;
+}
+.footer-logo-text{
+    font-size: 13px;
+    color: white;
+    line-height: 25px;
 }
 .footer-link-comp{
-    width: 70%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
 }
@@ -1161,6 +1253,11 @@ input[type="file"]{
 }
 .footer-links-sect h2{
     font-size: 20px;
+    color: white;
+}
+.footer-links-sect h3{
+    color: white;
+    font-size: 18px;
 }
 .footer-link-list ul{
     padding: 0;
@@ -1168,7 +1265,7 @@ input[type="file"]{
 .footer-link-list li{
     font-size: 14px;
     list-style: none;
-    color: #003700;
+    color: #ffffff;
 }
 .footer-address-comp{
     width: 25%;
@@ -1197,6 +1294,32 @@ input[type="file"]{
 .footer-link-list li:hover::after{
     color: #030303;
     transform: scaleX(1);
+}
+.footer-socials{
+    display: flex;
+    flex-direction: column;
+}
+.footer-socials button{
+    padding: 10px 5px;
+    color: white;
+    background: #003800;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.footer-socials button span{
+    padding: 5px;
+}
+.social-icons{
+    font-size: 20px;
+}
+.linkedin{
+    background: #0E76A8;
 }
 @media screen and (min-width :350px) and (max-width : 600px) {
     .page-width{

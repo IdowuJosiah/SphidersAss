@@ -7,18 +7,21 @@ const FeedbackComponent = () => {
 
     const reviews=[
         {
-            clientImage: "./aiony-haust-3TLl_97HNJo-unsplash.jpg",
-            clientReview:"Honeyrock Academy has exceeded my expectations in every way. From the nurturing environment to the dedicated staff, my child's educational journey here has been nothing short of exceptional. The emphasis on fostering a love for learning and promoting individual growth is truly commendable. The warm and welcoming.",
-            clientName:" Mrs Pail Sodipo"
+            clientImage: "IMG_6200.JPG",
+            clientReview:"SphiderAss Web and I have developed an excellent relationship despite our geographical differences. SphiderAss Web has done excellent work helping my company create custom software through many complicated revisions. My company is constantly evolving and I have full faith in SphiderAss Web to take us where we need to go.",
+            clientName:" Mr Femi",
+            clientTitle: "CEO, Libretto Furniture",
         },
         {
-            clientImage: "./albert-dera-ILip77SbmOE-unsplash.jpg",
-            clientReview:"I am so grateful to have found Honeyrock Academy for my child's early education. The personalized attention each student receives is truly remarkable. The teachers' genuine care for their students' success is evident in every interaction. The well-rounded curriculum, encompassing academics, arts, and character development",
-            clientName:"Mr James Ibitoye"
+            clientImage: "Olamide.jpg",
+            clientReview:"I would say SphiderAss Web has the best web development team. My both complex projects were developed to my satisfaction and the final outcome of the project was what I had initially in mind when staring these projects. They advise/suggest you wherever necessary during the development process which is really great. I would not hesitate recommend SphiderAss Web.",
+            clientName:"Mrs Olamide",
+            clientTitle: "Co-Founder, Phaseworks consults"
+
         },
         {
             clientImage: "./alyona-grishina-JQGxnrGOkEI-unsplash.jpg",
-            clientReview:"Honeyrock Academy has set the bar high when it comes to creating a supportive and enriching learning environment. The teachers' dedication to igniting curiosity and fostering critical thinking skills has made a significant impact on my child's educational journey. The school's commitment to maintaining a strong partnership",
+            clientReview:"",
             clientName:" Mr Samuel Ejiofor"
         },
         /*
@@ -89,6 +92,7 @@ const FeedbackComponent = () => {
                         <div className="client-details">
                             <p className="client-image"><img alt="clientimages" src={review.clientImage}/></p>
                             <div className="client-name"><h4>{review.clientName}</h4>  </div>
+                            <div className="client-name"><h5>{review.clientTitle}</h5></div>
                         </div>
 
 

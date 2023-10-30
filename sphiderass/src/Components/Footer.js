@@ -1,8 +1,8 @@
 import React from "react";
+import {FaFacebookF, FaLinkedin, FaTwitter, FaInstagram} from "react-icons/fa"
 const Footer = () => {
     const Links= [
-        {
-            Header: "USE CASES",
+          /*}    Header: "USE CASES",
             Links:[
                 {
                     LinkTitle: "AngularJS Development"
@@ -45,6 +45,77 @@ const Footer = () => {
                     LinkTitle: "Web Development"
                 },
             ]
+        */
+        {
+        Header: "Quick Links",
+        Portfolio: "- Portfolio",
+        Links:[
+        {
+            LinkTitle: "About"
+
+        },
+        {
+            LinkTitle: "Services"
+
+        },
+            {
+                LinkTitle: "Pricing PLans"
+
+            },
+            {
+                LinkTitle: "Contact"
+
+            }]
+        },
+        {
+            Header: "SERVICES",
+            Links:[
+                {
+                    LinkTitle: "UI/UX Design"
+
+                },
+                {
+                    LinkTitle: "Branding"
+
+                },
+                {
+                    LinkTitle: "Illustration"
+
+                },
+                {
+                    LinkTitle: "Design Concept"
+
+                },
+                {
+                    LinkTitle: "App Design"
+
+                },
+
+            ]
+        },
+        {
+            Header: "PRODUCT",
+            Links:[
+                {
+                    LinkTitle: "Figma"
+
+                },
+                {
+                    LinkTitle: "Adobe"
+
+                },
+                {
+                    LinkTitle: "Dribble"
+
+                },
+                {
+                    LinkTitle: "Behance"
+
+                },{
+                    LinkTitle: "Thermoforest"
+
+                },
+            ]
         },
     ]
     const AddressDetails =[
@@ -54,15 +125,20 @@ const Footer = () => {
         },
     ]
     return(
-        <section>
+        <section className="footer">
 
             <div className="page-width">
-                <div className="agreement">
-
-                </div>
                 <div className="footer-nav">
                     <div className="footer-logo">
-                        <img src="logo.png"/>
+                        <p>
+                            <img src="logofooter.png"/>
+                        </p>
+
+                        <p className="footer-logo-text">
+                            We build readymade websites, mobile
+                            applications, and elaborate online
+                            business services.
+                        </p>
                     </div>
                     <div className="footer-link-comp">
                         {Links.map((link, index)=>{
@@ -71,6 +147,9 @@ const Footer = () => {
                                     <h2>
                                         {link.Header}
                                     </h2>
+                                    <h3>
+                                         {link.Portfolio}
+                                    </h3>
                                     <div className="footer-link-list">
                                         {link.Links.map((subLink, index) => {
                                             return(
@@ -88,20 +167,39 @@ const Footer = () => {
                         })}
                     </div>
                     <div className="footer-address-comp">
-                        {AddressDetails.map((Ads, index)=>{
-                            return(
-                                <div className="footer-address">
-                                    <div>
-                                        <h2>
-                                            {Ads.Title}
-                                        </h2>
-                                        <p>
-                                            {Ads.Address}
-                                        </p>
-                                    </div>
-                                </div>
-                            )
-                        })}
+                        <div>
+                            {/*{AddressDetails.map((Ads, index)=>{*/}
+                            {/*    return(*/}
+                            {/*        <div className="footer-address">*/}
+                            {/*            <div>*/}
+                            {/*                <h2>*/}
+                            {/*                    {Ads.Title}*/}
+                            {/*                </h2>*/}
+                            {/*                <p>*/}
+                            {/*                    {Ads.Address}*/}
+                            {/*                </p>*/}
+                            {/*            </div>*/}
+                            {/*        </div>*/}
+                            {/*    )*/}
+                            {/*})}*/}
+                        </div>
+                        <div className="footer-socials">
+
+                                <button>
+                                        <span className="social-icons"><FaFacebookF/></span> <span>Facebook</span>
+                                </button>
+                                <button className="linkedin">
+                                        <span className="social-icons"><FaLinkedin/></span> <span>LinkedIn</span>
+                                </button>
+                                <button>
+                                        <span className="social-icons"><FaTwitter/></span> <span>Twitter</span>
+                                </button>
+                                <button>
+                                        <span className="social-icons"><FaInstagram/></span> <span>Instagram </span>
+                                </button>
+
+
+                        </div>
                     </div>
                 </div>
 

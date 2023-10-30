@@ -46,12 +46,24 @@ const ContactForm = () =>{
         <section className="contact-form-section" style={{backgroundImage:`url(BG.png)`}}>
             <div className="page-width contact-form-container">
                 <div className="cf-text">
-                    <p>
-                        WANT TO WORK WITH/
-                    </p>
-                    <p>
-                        HIRE US:
-                    </p>
+                    <h1>
+                       Lets transform that idea into a digital experience
+                    </h1>
+                    <h2>
+                        To create a dynamic and personalized website that caters to individual customer satisfaction,
+                    </h2>
+                    <div className="contact-form-info-buttons">
+                        <h1>
+                            <button>
+                                <span>Lets Work Together</span> <span className="cfib"><AiOutlineArrowRight/></span>
+                            </button>
+                        </h1>
+                        <h2>
+                            <button>
+                                Our Services
+                            </button>
+                        </h2>
+                    </div>
                 </div>
                 <div className="cf-form">
                     <form onSubmit={(e)=>submit(e)}>
@@ -75,7 +87,7 @@ const ContactForm = () =>{
                             </label>
                         </div>
                         <input onChange={(e)=>handle(e)} value={data.message}  id='message' placeholder="Message" type="text"/>
-                        <button><span>Request a quote</span> <span></span></button>
+                        <button><span>Request a quote</span> <span className="form-arrow"><AiOutlineArrowRight/></span></button>
                     </form>
                 </div>
             </div>

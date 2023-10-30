@@ -22,7 +22,9 @@ const Banner =() => {
                             <span> Learn More</span>
                         </button>
                     </p>
-
+                    <div>
+                        <
+                    </div>
                 </div>
             </div>
         </section>

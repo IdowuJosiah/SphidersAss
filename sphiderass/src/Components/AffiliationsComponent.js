@@ -6,11 +6,11 @@ const AffiliationsComponent = () =>{
     return(
         <section className="affiliate-section">
             <div className="page-width ">
-                <div className="af-header">
-                    <p>
-                        Trusted by Leading Companies around the World
-                    </p>
-                </div>
+                {/*<div className="af-header">*/}
+                {/*    <p>*/}
+                {/*        Trusted by Leading Companies around the World*/}
+                {/*    </p>*/}
+                {/*</div>*/}
                 <div className="af-logos">
                     <ul>
                         <li>
