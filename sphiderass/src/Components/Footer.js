@@ -47,7 +47,7 @@ const Footer = () => {
             ]
         */
         {
-        Header: "Quick Links",
+        Header: "QUICK LINKS",
         Portfolio: "- Portfolio",
         Links:[
         {
