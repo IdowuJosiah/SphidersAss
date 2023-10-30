@@ -40,9 +40,9 @@ const Navbar = () =>{
                     })}
                 </div>
                 <div className="nav-buttons">
-                    <p className="nvs">
-                        <RiSearchLine className="search-icon"/>
-                    </p>
+                    {/*<p className="nvs">*/}
+                    {/*    <RiSearchLine className="search-icon"/>*/}
+                    {/*</p>*/}
                     <p className="nvp">
                         <button>
                             <span>Work with us</span><span className="nvb-arrow"><BsArrowUpRight/></span>
