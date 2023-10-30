@@ -431,7 +431,7 @@
 .services{
     display: flex;
     justify-content: space-between;
-    padding: 120px 0;
+    padding: 100px 0;
 }
 .service-description{
     width: 48%;
@@ -439,7 +439,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 .sd-text p{
     max-width: 85%;
@@ -476,24 +476,24 @@
 }
 
 .sb-base{
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: 70%;
     top: 10px;
     right: 0;
     background: #74ff74;
     margin-left: auto;
 }
 .sb-image{
-    width: 85%;
-    height: 150%;
+    width: 75%;
+    height: 100%;
     position: absolute;
     top: 40px;
     right: 60px;
     transform: translateX(180px);
 }
 .sb-image-active{
-    width: 85%;
-    height: 150%;
+    width: 75%;
+    height: 100%;
     transform: translateX(0);
     transition-duration: 500ms;
     position: absolute;
@@ -509,16 +509,16 @@
     height: 100%;
 }
 .sb-base-left{
-    width: 60%;
-    height: 100%;
-    bottom: -250px;
+    width: 50%;
+    height: 70%;
+    bottom: -100px;
     right: 0;
     background: #f4bd50;
     position: absolute;
 }
 .sb-image-left{
-    width: 85%;
-    height: 150%;
+    width: 75%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -526,8 +526,8 @@
     transition-duration: 500ms;
 }
 .sb-image-left-active{
-    width: 85%;
-    height: 140%;
+    width: 75%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -558,7 +558,7 @@
     transform: translateX(360px);
 }
 .services-footer{
-    margin-top: 10rem;
+    margin-top: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
