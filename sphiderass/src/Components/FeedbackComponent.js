@@ -21,7 +21,7 @@ const FeedbackComponent = () => {
         },
         {
             clientImage: "./alyona-grishina-JQGxnrGOkEI-unsplash.jpg",
-            clientReview:"",
+            clientReview:"SphiderAss Web's web development team is exceptional. They turned my vision into reality, and their valuable advice made all the difference. I highly recommend them for their dedication and top-notch results.",
             clientName:" Mr Samuel Ejiofor"
         },
         /*

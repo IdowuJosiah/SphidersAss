@@ -1658,12 +1658,13 @@ input[type="file"]{
     }
 
     .blog-header h1{
-        font-size: 35px;
-        margin: 15px;
+        font-size: 30px;
+        margin: 10px;
     }
     .blog-header h3{
-        font-size: 15px;
-        margin: 10px;
+        font-size: 12px;
+        margin: 5px;
+        max-width: 75%;
     }
     .blog-post{
         flex-direction: column;
