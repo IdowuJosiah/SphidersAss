@@ -1469,6 +1469,8 @@ input[type="file"]{
     .sb-base-left{
         width: 6rem;
         height: 7.5rem;
+        bottom: 40px;
+        right: 10px;
     }
     .sb-image{
         width: 8rem;
@@ -1477,7 +1479,7 @@ input[type="file"]{
     .sb-image-active{
         width: 8rem;
         height: 9.5rem;
-        top: 60px;
+        top: 90px;
         right: 40px;
     }
     .sb-image-left{
@@ -1526,8 +1528,23 @@ input[type="file"]{
     .pc-head{
         font-size: 15px;
     }
-    .pc-content{
-        height: 30vh;
+    .pc-bar div{
+        padding: 0 5px;
+    }
+    .pc-bar div p{
+        padding: 5px;
+        margin: 10px;
+        font-size: 8px;
+    }
+    .pc-laptop{
+        padding: 10px 100px;
+    }
+    .pc-bar div ul{
+        gap: 10px;
+        padding-left: 0;
+    }
+    .pc-bar div ul li{
+        font-size: 8px;
     }
     .pc-text{
         width: 48%;
@@ -1609,7 +1626,9 @@ input[type="file"]{
     .client-image{
         height: 17px;
         width: 17px;
-        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding-right: 20px;
     }
     .client-image{
@@ -1630,6 +1649,40 @@ input[type="file"]{
         justify-content:center;
         align-items:center;
         font-size: 11px;
+    }
+
+    .blog-header h1{
+        font-size: 35px;
+        margin: 15px;
+    }
+    .blog-header h3{
+        font-size: 15px;
+        margin: 10px;
+    }
+    .blog-post{
+        flex-direction: column;
+    }
+    .blog-post-image{
+        width: 100%;
+    }
+    .blog-details{
+        width: 100%;
+        padding: 0;
+    }
+    .blg-det{
+        font-size: 10px;
+    }
+    .blog-topic{
+        font-size: 15px;
+    }
+    .blog-content{
+        font-size: 12px;
+    }
+    .blog-footer-button button{
+        font-size: 12px;
+    }
+    .bfd-name{
+        font-size: 12px;
     }
     .faqcontainer{
         padding: 0;
@@ -1666,34 +1719,73 @@ input[type="file"]{
     .faq-slide:nth-child(3){
         right: 4rem;
     }
-    .cf-text p{
+
+    .form-header h1{
+        font-size: 12px;
+    }
+    .cf-text h1{
+        font-size: 15px;
+        margin: .4rem;
+    }
+    .cf-text h2{
         font-size: 10px;
-        color: white;
+        margin: .4rem;
     }
     .cf-form{
         padding: 0px;
+        width: 50%;
+        border-radius: 15px;
     }
     .cf-form form{
         padding: 13px;
     }
     .cf-form form input {
-        height: 16px;
-        padding: 6px;
+        height: 8px;
+        padding: 3px;
     }
     .cf-form form input::placeholder{
-        font-size: 8px;
+        font-size: 6px;
         padding-left: 5px;
     }
-    .cf-form form button{
-        height: 30px;
-        font-size: 9px;
-        letter-spacing: 3px;
+    .label-file{
+        padding: 12px 8px;
+        font-size: 8px;
     }
+    .cf-form form button{
+        height: 20px;
+        font-size: 8px;
+        letter-spacing: 1px;
+        padding: 15px;
+    }
+    .dropdown-btn{
+        font-size: 8px;
+        padding: 3px 5px;
+    }
+
     #message{
         height: 40px;
     }
+    .contact-form-info-buttons h1 button{
+        padding: 5px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6px;
+        border-radius: 5px;
+    }
+    .cfib{
+        font-size: 10px;
+    }
+    .contact-form-info-buttons h2 button{
+        padding: 5px 5px;
+        font-size: 6px;
+        border-radius: 5px;
+    }
+
     .footer-links-sect h2{
         font-size: 10px;
+        margin: .2rem;
+
     }
     .footer-link-list ul{
         margin: 2px;

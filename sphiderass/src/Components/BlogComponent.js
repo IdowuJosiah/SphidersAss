@@ -24,13 +24,13 @@ const BlogComponent = () => {
                     <div className="blog-details">
                         <p className="blog-details-header">
                             <p>
-                                <span className="blog-icons"><BiCalendarWeek/></span><span>20 Oct 2023,</span>
+                                <span className="blog-icons"><BiCalendarWeek/></span><span className="blg-det">20 Oct 2023,</span>
                             </p>
                             <p>
-                                <span className="blog-icons"><TiThumbsUp/></span><span>2,233 <span className="blog-light">Like</span></span>
+                                <span className="blog-icons"><TiThumbsUp/></span><span className="blg-det">2,233 <span className="blog-light">Like</span></span>
                             </p>
                             <p>
-                                <span className="blog-icons"><FaRegCommentDots/></span><span>200 <span className="blog-light">comments</span></span>
+                                <span className="blog-icons"><FaRegCommentDots/></span><span className="blg-det">200 <span className="blog-light">comments</span></span>
                             </p>
                         </p>
                         <p className="blog-topic">
@@ -74,13 +74,13 @@ const BlogComponent = () => {
                     <div className="blog-details">
                         <p className="blog-details-header">
                             <p>
-                                <span className="blog-icons"><BiCalendarWeek/></span><span>15 Oct 2023,</span>
+                                <span className="blog-icons"><BiCalendarWeek/></span><span className="blg-det">15 Oct 2023,</span>
                             </p>
                             <p>
-                                <span className="blog-icons"><TiThumbsUp/></span><span>2,200 <span className="blog-light">Like</span></span>
+                                <span className="blog-icons"><TiThumbsUp/></span><span className="blg-det">2,200 <span className="blog-light">Like</span></span>
                             </p>
                             <p>
-                                <span className="blog-icons"><FaRegCommentDots/></span><span>28 <span className="blog-light">comments</span></span>
+                                <span className="blog-icons"><FaRegCommentDots/></span><span className="blg-det">28 <span className="blog-light">comments</span></span>
                             </p>
                         </p>
                         <p className="blog-topic">

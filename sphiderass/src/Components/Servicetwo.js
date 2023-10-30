@@ -9,7 +9,7 @@ const Servicestwo = () =>{
     const [sect_three, setSect_three] = useState(false)
     const [sect_four,setSect_four] = useState(false)
 
-    const isInView = useInView(ref, )
+    const isInView = useInView(ref, {once:true})
 
     useEffect(() =>{
 
@@ -22,7 +22,7 @@ const Servicestwo = () =>{
     },[isInView]);
 
     const ref2 = useRef(null)
-    const isInView2 = useInView(ref2, )
+    const isInView2 = useInView(ref2,{once:true} )
 
     useEffect(() =>{
         if (isInView2){
@@ -35,7 +35,7 @@ const Servicestwo = () =>{
 
 
     const ref3 = useRef(null)
-    const isInView3 = useInView(ref3, )
+    const isInView3 = useInView(ref3,{once:true} )
 
     useEffect(() =>{
         if (isInView3){
@@ -48,7 +48,7 @@ const Servicestwo = () =>{
 
 
     const ref4 = useRef(null)
-    const isInView4 = useInView(ref4 )
+    const isInView4 = useInView(ref4, {once:true})
 
     useEffect(() =>{
         if (isInView4){
