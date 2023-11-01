@@ -3,6 +3,7 @@ import axios, {Axios} from "axios";
 import InputDropdown from "./InputDropdown";
 import {AiOutlineCloudUpload} from 'react-icons/ai'
 import {AiOutlineArrowRight} from "react-icons/ai"
+import {Link} from "react-router-dom";
 
 
 const ContactForm = () =>{
@@ -42,6 +43,7 @@ const ContactForm = () =>{
                 console.log(res.data)
             })
     }
+    // onSubmit={(e)=>submit(e)}
     return(
         <section className="contact-form-section" style={{backgroundImage:`url(BG.png)`}}>
             <div className="page-width contact-form-container">
@@ -54,19 +56,24 @@ const ContactForm = () =>{
                     </h2>
                     <div className="contact-form-info-buttons">
                         <h1>
-                            <button>
-                                <span>Lets Work Together</span> <span className="cfib"><AiOutlineArrowRight/></span>
-                            </button>
+                            <Link to="count-down-page">
+                                <button>
+                                    Lets Work Together <span className="cfib"><AiOutlineArrowRight/></span>
+                                </button>
+                            </Link>
+
                         </h1>
                         <h2>
-                            <button>
-                                Our Services
-                            </button>
+                            <Link to="count-down-page">
+                                <button>
+                                  Our Services
+                                 </button>
+                            </Link>
                         </h2>
                     </div>
                 </div>
                 <div className="cf-form">
-                    <form onSubmit={(e)=>submit(e)}>
+                    <form>
                         <div className="form-header">
                             <h1>
                                 Request A Quote

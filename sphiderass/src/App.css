@@ -1323,7 +1323,67 @@ input[type="file"]{
 .linkedin{
     background: #0E76A8;
 }
+
+
+/*
+        countdown page styles
+*/
+.timer-container{
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat ;
+    align-items: center;
+    background-image: url('under-928246_1920.jpg');
+}
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.timer-header{
+    margin: 20px 0;
+    font-size: 45px;
+    font-weight: 700;
+    color: #a16303;
+}
+
+.timer div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b9b7b7;
+    padding: 30px 15px;
+    border-radius: 3px;
+}
+.timer div small{
+    text-align: center;
+    font-size: 20px;
+    color: #b9b7b7;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width:1px ;
+}
+.timer div span{
+    text-align: center;
+}
+.timer-con p{
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+    color: #b9b7b7;
+    font-weight: 700;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width:1px ;
+}
+
 @media screen and (min-width :350px) and (max-width : 600px) {
+    .timer-header{
+        font-size: 30px;
+        text-align: center;
+    }
     .page-width{
         width: calc(100% - 2rem);
         padding: 10px 10px;

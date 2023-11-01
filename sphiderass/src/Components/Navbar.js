@@ -11,15 +11,15 @@ const Navbar = () =>{
         },
         {
             title: "Services",
-            path: "/",
+            path: "/count-down-page",
         },
         {
             title: "Blog",
-            path: "/",
+            path: "/count-down-page",
         },
         {
             title: "About",
-            path: "/",
+            path: "/count-down-page",
         },
     ]
     return(

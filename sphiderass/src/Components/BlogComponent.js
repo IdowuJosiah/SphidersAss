@@ -3,6 +3,7 @@ import {TiThumbsUp} from 'react-icons/ti'
 import {FaRegCommentDots} from 'react-icons/fa'
 import {BiCalendarWeek} from 'react-icons/bi'
 import {AiOutlineArrowRight} from "react-icons/ai"
+import {Link} from "react-router-dom"
 const BlogComponent = () => {
     return(
         <section>
@@ -46,7 +47,7 @@ const BlogComponent = () => {
                         <footer className="blog-footer">
                             <div className="blog-footer-button">
                                 <button>
-                                    <span>Read More</span>  <span className="blog-icon"><AiOutlineArrowRight/></span>
+                                 <Link to="/count-down-page" ><span>Read More</span> </Link>    <span className="blog-icon"><AiOutlineArrowRight/></span>
                                 </button>
                             </div>
                             <div className="blog-footer-line">
@@ -95,7 +96,7 @@ const BlogComponent = () => {
                         <footer className="blog-footer">
                             <div className="blog-footer-button">
                                 <button>
-                                    <span>Read More</span>  <span className="blog-icon"><AiOutlineArrowRight/></span>
+                                    <Link to="/count-down-page" ><span>Read More</span> <span className="blog-icon"><AiOutlineArrowRight/></span></Link>
                                 </button>
                             </div>
                             <div className="blog-footer-line">

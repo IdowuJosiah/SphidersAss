@@ -1,5 +1,6 @@
 import React from "react";
 import {FaFacebookF, FaLinkedin, FaTwitter, FaInstagram} from "react-icons/fa"
+import {Link} from "react-router-dom"
 const Footer = () => {
     const Links= [
           /*}    Header: "USE CASES",
@@ -51,19 +52,23 @@ const Footer = () => {
         Portfolio: "- Portfolio",
         Links:[
         {
-            LinkTitle: "About"
+            LinkTitle: "About",
+            linkTo:"/count-down-page"
 
         },
         {
-            LinkTitle: "Services"
+            LinkTitle: "Services",
+            linkTo:"/count-down-page"
 
         },
             {
-                LinkTitle: "Pricing PLans"
+                LinkTitle: "Pricing PLans",
+                linkTo:"/count-down-page"
 
             },
             {
-                LinkTitle: "Contact"
+                LinkTitle: "Contact",
+                linkTo:"/count-down-page"
 
             }]
         },
@@ -71,23 +76,28 @@ const Footer = () => {
             Header: "SERVICES",
             Links:[
                 {
-                    LinkTitle: "UI/UX Design"
+                    LinkTitle: "UI/UX Design",
+                    linkTo:"/count-down-page"
 
                 },
                 {
-                    LinkTitle: "Branding"
+                    LinkTitle: "Branding",
+                    linkTo:"/count-down-page"
 
                 },
                 {
-                    LinkTitle: "Illustration"
+                    LinkTitle: "Illustration",
+                    linkTo:"/count-down-page"
 
                 },
                 {
-                    LinkTitle: "Design Concept"
+                    LinkTitle: "Design Concept",
+                    linkTo:"/count-down-page"
 
                 },
                 {
-                    LinkTitle: "App Design"
+                    LinkTitle: "App Design",
+                    linkTo:"/count-down-page"
 
                 },
 
@@ -97,22 +107,27 @@ const Footer = () => {
             Header: "PRODUCT",
             Links:[
                 {
-                    LinkTitle: "Figma"
+                    LinkTitle: "Figma",
+                    linkTo:"/count-down-page"
 
                 },
                 {
-                    LinkTitle: "Adobe"
+                    LinkTitle: "Adobe",
+                    linkTo:"/count-down-page"
 
                 },
                 {
-                    LinkTitle: "Dribble"
+                    LinkTitle: "Dribble",
+                    linkTo:"/count-down-page"
 
                 },
                 {
-                    LinkTitle: "Behance"
+                    LinkTitle: "Behance",
+                    linkTo:"/count-down-page"
 
                 },{
-                    LinkTitle: "Thermoforest"
+                    LinkTitle: "Thermoforest",
+                    linkTo:"/count-down-page"
 
                 },
             ]
@@ -153,12 +168,13 @@ const Footer = () => {
                                     <div className="footer-link-list">
                                         {link.Links.map((subLink, index) => {
                                             return(
-                                                <ul>
+                                                <Link to={subLink.linkTo}><ul>
                                                     <li>
                                                         {subLink.LinkTitle}
                                                     </li>
 
-                                                </ul>
+                                                </ul></Link>
+
                                             )
                                         })}
                                     </div>
@@ -191,12 +207,16 @@ const Footer = () => {
                                 <button className="linkedin">
                                         <span className="social-icons"><FaLinkedin/></span> <span className="ff" >LinkedIn</span>
                                 </button>
+
                                 <button>
                                         <span className="social-icons"><FaTwitter/></span> <span className="ff">Twitter</span>
                                 </button>
+                            <a href="https://instagram.com/sphiderassweb?igshid=OGQ5ZDc2ODk2ZA==">
                                 <button>
-                                        <span className="social-icons"><FaInstagram/></span> <span className="ff">Instagram </span>
+                                    <span className="social-icons"><FaInstagram/></span> <span className="ff">Instagram </span>
                                 </button>
+                            </a>
+
 
 
                         </div>
