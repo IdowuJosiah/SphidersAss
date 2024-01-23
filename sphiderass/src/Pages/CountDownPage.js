@@ -10,7 +10,7 @@ const CountDownPage = ()  => {
     let interval = useRef()
 
     const startTimer = () => {
-        const countDownDate = new Date("November 30 2023 00:00:00").getTime()
+        const countDownDate = new Date("February 29 2024 00:00:00").getTime()
 
         interval = setInterval(() => {
 

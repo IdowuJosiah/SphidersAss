@@ -1,9 +1,9 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 import "../App.scss"
 import {BsSearch, BsArrowUpRight} from "react-icons/bs"
 import {RiSearchLine,} from "react-icons/ri"
-const Navbar = () =>{
+const LightNavbar = () =>{
     const navLink = [
         {
             title: "Home",
@@ -24,7 +24,7 @@ const Navbar = () =>{
     ]
     return(
         <section className="navbar">
-            <div className="nav-con">
+            <div className="light-nav-con">
                 <div className="logo">
                     <img src="Frame170.png" alt="sphiderasslogo"/>
                 </div>
@@ -33,7 +33,13 @@ const Navbar = () =>{
                         return(
                             <ul>
                                 <li>
-                                    <Link className="nav-list" to={link.path}>{link.title}</Link>
+                                    <NavLink
+                                        exact
+                                        className="light-nav-list"
+                                        activeClassName="active-link"
+                                        to={link.path}>{link.title}
+
+                                    </NavLink>
                                 </li>
                             </ul>
                         )
@@ -54,4 +60,4 @@ const Navbar = () =>{
         </section>
     )
 }
-export default Navbar
+export default LightNavbar
