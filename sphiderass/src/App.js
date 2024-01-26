@@ -6,6 +6,7 @@ import AboutPage from "./Pages/AboutPage";
 import ContactUsPage from "./Pages/ContactUsPage";
 import ErrorPage from "./Pages/ErrorPage";
 import BlogPages from "./Pages/BlogPages";
+import CoursesPage from './Pages/CoursesPage';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route element={<ContactUsPage/>} path="/contact-us"/>
         <Route element={<ErrorPage/>} path="page-not-found"/>
         <Route element={<BlogPages/>} path="blogs"/>
+        <Route element={<CoursesPage/>} path="courses"/>
     </Routes>
   );
 }
