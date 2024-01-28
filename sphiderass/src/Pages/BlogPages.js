@@ -76,7 +76,7 @@ const BlogPages = () => {
                                    <h5>
                                        {previewDetails.blogHeader}
                                    </h5>
-                                   <p>
+                                   <p className="bpb-preview-text">
                                        {previewDetails.blogPreviewText}
                                    </p>
                                    <a href={previewDetails.blogLink}>
