@@ -4,6 +4,7 @@ import InputDropdown from "./InputDropdown";
 import {AiOutlineCloudUpload} from 'react-icons/ai'
 import {AiOutlineArrowRight} from "react-icons/ai"
 import {Link} from "react-router-dom";
+import "../CSS/IndexpageCss/ContactForm.scss"
 
 
 const ContactForm = () =>{
@@ -47,31 +48,6 @@ const ContactForm = () =>{
     return(
         <section className="contact-form-section" style={{backgroundImage:`url(BG.png)`}}>
             <div className="page-width contact-form-container">
-                <div className="cf-text">
-                    <h1>
-                       Lets transform that idea into a digital experience
-                    </h1>
-                    <h2>
-                        To create a dynamic and personalized website that caters to individual customer satisfaction,
-                    </h2>
-                    <div className="contact-form-info-buttons">
-                        <h1>
-                            <Link to="count-down-page">
-                                <button>
-                                    Lets Work Together <span className="cfib"><AiOutlineArrowRight/></span>
-                                </button>
-                            </Link>
-
-                        </h1>
-                        <h2>
-                            <Link to="count-down-page">
-                                <button>
-                                  Our Services
-                                 </button>
-                            </Link>
-                        </h2>
-                    </div>
-                </div>
                 <div className="cf-form">
                     <form>
                         <div className="form-header">
@@ -93,10 +69,38 @@ const ContactForm = () =>{
                                 Attach A File   <span><AiOutlineCloudUpload/></span>
                             </label>
                         </div>
-                        <input onChange={(e)=>handle(e)} value={data.message}  id='message' placeholder="Message" type="text"/>
-                        <button><span>Request a quote</span> <span className="form-arrow"><AiOutlineArrowRight/></span></button>
+                            <input onChange={(e)=>handle(e)} value={data.message}  id='message' placeholder="Message" type="text"/>
+                            <button><span>Request a quote</span> <span className="form-arrow"><AiOutlineArrowRight/></span></button>
+
+
                     </form>
                 </div>
+                <div className="cf-text">
+                    <h1>
+                       Lets transform that idea into a digital experience
+                    </h1>
+                    <h2>
+                        To create a dynamic and personalized website that caters to individual customer satisfaction,
+                    </h2>
+                    <div className="contact-form-info-buttons">
+                        <h1>
+                            <Link className="dumbell" to="count-down-page">
+                                <button>
+                                    Lets Work Together <span className="cfib"><AiOutlineArrowRight/></span>
+                                </button>
+                            </Link>
+
+                        </h1>
+                        <h2>
+                            <Link to="count-down-page">
+                                <button>
+                                  Our Services
+                                 </button>
+                            </Link>
+                        </h2>
+                    </div>
+                </div>
+
             </div>
         </section>
     )

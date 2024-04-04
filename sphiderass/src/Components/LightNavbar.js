@@ -11,15 +11,23 @@ const LightNavbar = () =>{
         },
         {
             title: "Services",
-            path: "/count-down-page",
+            path: "/courses",
         },
         {
             title: "Blog",
-            path: "/count-down-page",
+            path: "/blogs",
         },
         {
             title: "About",
             path: "/about",
+        },
+        {
+            title: "Portfolio",
+            path: "/portfolio",
+        },
+        {
+            title: "Contact Us",
+            path: "/contact-us",
         },
     ]
     return(
@@ -33,13 +41,7 @@ const LightNavbar = () =>{
                         return(
                             <ul>
                                 <li>
-                                    <NavLink
-                                        exact
-                                        className="light-nav-list"
-                                        activeClassName="active-link"
-                                        to={link.path}>{link.title}
-
-                                    </NavLink>
+                                    <Link className="nav-list" to={link.path}>{link.title}</Link>
                                 </li>
                             </ul>
                         )
@@ -51,7 +53,7 @@ const LightNavbar = () =>{
                     {/*</p>*/}
                     <p className="nvp">
                         <button>
-                            <span>Contact Us</span><span className="nvb-arrow"><BsArrowUpRight/></span>
+                            <span>Work With Us</span><span className="nvb-arrow"><BsArrowUpRight/></span>
                         </button>
                     </p>
                 </div>

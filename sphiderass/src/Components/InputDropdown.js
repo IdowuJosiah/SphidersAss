@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-
+import "../CSS/IndexpageCss/inputdropdown.scss"
 
 function InputDropdown({selected, setSelected} ) {
     const  [isActive , setIsActive] = useState(false)

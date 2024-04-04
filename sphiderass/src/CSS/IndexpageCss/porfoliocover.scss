@@ -1,0 +1,82 @@
+/*
+        PortfolioCover styles
+*/
+
+.portfolio-cover{
+  background-color: var(--background-light-mode)
+}
+.portfolio-cover-section{
+  background-color: var(--background-light-mode);
+}
+.pc-head{
+  padding: 10px;
+  font-size: 35px;
+  font-family: Helvetica;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #BD7500;
+}
+
+.pc-bar{
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+.pc-bar div{
+  display: flex;
+  padding: 0 30px;
+  background: #E1B023;
+  border-radius: 15px;
+  align-items: center;
+}
+.pc-bar div p {
+  padding: 15px;
+  background: #003800;
+  border-radius: 15px;
+  color:#E1B023 ;
+}
+.pc-bar div ul{
+  display: flex;
+  gap:70px;
+}
+.pc-bar div ul li{
+  list-style: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #002300;
+}
+.pc-laptop{
+  padding: 20px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pc-laptop p img{
+  width: 100%;
+  height: 100%;
+}
+.pc-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.pc-footer-text{
+  font-size: 18px;
+  text-align: center;
+}
+.vn{
+  position: relative;
+}
+.pc-ball {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  background: rgb(191 191 191);
+}

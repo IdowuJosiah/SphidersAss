@@ -1,5 +1,6 @@
 import React, {useRef, useEffect, useState} from "react";
 import {motion, useInView, useAnimation, useIsPresent} from "framer-motion"
+import "../CSS/IndexpageCss/indexpageservicetwo.scss"
 
 
 const Servicestwo = () =>{
@@ -60,12 +61,13 @@ const Servicestwo = () =>{
     },[isInView4]);
     return(
         <section
+            className="index-page-services-two-section"
         >
-            <div className="page-width">
-                <div className="learn">
-                    <p>
+            <div className="page-width ">
+                <div className="learn index-page-services-two-section-header">
+                    <h1>
                         LEARN WITH SPHIDERASS
-                    </p>
+                    </h1>
                 </div>
                 <section
                     ref={ref}

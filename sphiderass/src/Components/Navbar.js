@@ -11,15 +11,23 @@ const Navbar = () =>{
         },
         {
             title: "Services",
-            path: "/count-down-page",
+            path: "/courses",
         },
         {
             title: "Blog",
-            path: "/count-down-page",
+            path: "/blog",
         },
         {
             title: "About",
             path: "/about",
+        },
+        {
+            title: "Portfolio",
+            path: "/portfolio",
+        },
+        {
+            title: "Contact Us",
+            path: "/contact-us",
         },
     ]
     return(
@@ -45,7 +53,7 @@ const Navbar = () =>{
                     {/*</p>*/}
                     <p className="nvp">
                         <button>
-                            <span>Contact Us</span><span className="nvb-arrow"><BsArrowUpRight/></span>
+                            <span>Work With Us</span><span className="nvb-arrow"><BsArrowUpRight/></span>
                         </button>
                     </p>
                 </div>

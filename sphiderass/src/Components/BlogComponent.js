@@ -4,9 +4,10 @@ import {FaRegCommentDots} from 'react-icons/fa'
 import {BiCalendarWeek} from 'react-icons/bi'
 import {AiOutlineArrowRight} from "react-icons/ai"
 import {Link} from "react-router-dom"
+import "../CSS/IndexpageCss/blogcomponent.scss"
 const BlogComponent = () => {
     return(
-        <section>
+        <section className="index-page-blog-component">
             <div className="blog-header page-width">
                 <h1>
                     See Our Blog
@@ -15,11 +16,11 @@ const BlogComponent = () => {
                     Stay current with all the latest trends, software, industry expectation and more
                 </h3>
             </div>
-            <div className="page-width">
+            <div className="page-width index-page-blog-component-div">
                 <section className="blog-post">
                     <div className="blog-post-image">
                         <p>
-                            <img src="kanchanara-rhm7H8X5J98-unsplash.jpg"/>
+                            <img src="nicolas-arnold-e_xLO2vmiQI-unsplash.jpg"/>
                         </p>
                     </div>
                     <div className="blog-details">
@@ -47,7 +48,7 @@ const BlogComponent = () => {
                         <footer className="blog-footer">
                             <div className="blog-footer-button">
                                 <button>
-                                 <Link to="/count-down-page" ><span>Read More</span> </Link>    <span className="blog-icon"><AiOutlineArrowRight/></span>
+                                 <Link className="index-page-blog-component-blog-read-more-button" to="/count-down-page" ><span>Read More</span> </Link>    <span className="blog-icon"><AiOutlineArrowRight/></span>
                                 </button>
                             </div>
                             <div className="blog-footer-line">

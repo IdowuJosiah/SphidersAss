@@ -11,6 +11,8 @@ import Services from "../Components/Services";
 import Servicestwo from "../Components/Servicetwo";
 import BlogComponent from "../Components/BlogComponent";
 import SkewdLIne from "../Components/SkewdLIne";
+import MeetTheteam from "../Components/MeetTheteam";
+import IndexPageNewsletter from "../Components/IndexPageNewsletter";
 
 const IndexPage = () => {
     return(
@@ -24,8 +26,9 @@ const IndexPage = () => {
             <Servicestwo/>
             {/* <FaqComponent/> */}
             <BlogComponent/>
+            <MeetTheteam/>
             <ContactForm/>
-            <SkewdLIne/>
+            <IndexPageNewsletter/>
             <Footer/>
         </div>
     )

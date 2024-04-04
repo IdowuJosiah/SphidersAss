@@ -1,7 +1,6 @@
 import React, {useRef, useEffect, useState} from "react";
 import {motion, useInView, useAnimation, useIsPresent} from "framer-motion"
-
-
+import "../CSS/IndexpageCss/indexpageservices.scss"
 const Services = () =>{
     const ref = useRef(null)
     const [sect_one, setSect_one]  = useState(false)
@@ -59,8 +58,7 @@ const Services = () =>{
         }
     },[isInView4]);
      return(
-         <section
-                >
+         <section className="index-page-services-section">
             <div className="page-width">
                 <section
                     ref={ref}
@@ -194,11 +192,11 @@ const Services = () =>{
                             </p>
                         </div>
                     </div>
-                    <div className="see-more">
-                        <p>
-                            See More
-                        </p>
-                    </div>
+                    {/*<div className="see-more">*/}
+                    {/*    <p>*/}
+                    {/*        See More*/}
+                    {/*    </p>*/}
+                    {/*</div>*/}
                 </section>
             </div>
          </section>

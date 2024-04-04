@@ -1,5 +1,6 @@
 import React from "react";
 import {useState} from "react";
+import "../CSS/IndexpageCss/FeedbackComponent.scss"
 
 const FeedbackComponent = () => {
     const [slideIndex, setSlideIndex] = useState(0)
@@ -65,55 +66,31 @@ const FeedbackComponent = () => {
     }
     return(
         <div className="client-review">
-            <div className="white-ball">
 
-            </div>
-            <div className="black-ball-outline">
-
-            </div>
             <div className="white-ball-bottom"></div>
             <div className="client-review-header">
                 <h2>
-                    Client Feedback
+                    Testiomnial
                 </h2>
-                <p>
-                    Please read what our clients have to say
-                </p>
             </div>
             <div className="client-review-container">
                 {reviews.map((review, index)=>{
                     return <div
-                        className={slideIndex === index  ? "slide-active slider-container" : "client-review-slide"}
+                        className={ "slider-container" }
                         key={index}>
-
-                        <p className="client-review-text">
-                            <p> {review.clientReview} </p>
-                        </p>
                         <div className="client-details">
                             <p className="client-image"><img alt="clientimages" src={review.clientImage}/></p>
                             <div className="client-name"><h4>{review.clientName}</h4>  </div>
                             <div className="client-name"><h5>{review.clientTitle}</h5></div>
                         </div>
+                        <p className="client-review-text">
+                            <p> {review.clientReview} </p>
+                        </p>
+
 
 
                     </div>
                 })
-                }
-            </div>
-            {/*<div*/}
-            {/*    className="buttonslider">*/}
-            {/*    <ButtonSlider moveSlide={prevSlide} direction={"prev"}/>*/}
-            {/*    <ButtonSlider moveSlide={nextSlide} direction={"next"}/>*/}
-            {/*</div>*/}
-
-            <div
-                className="container-dots">
-                {Array.from({length:3}).map((item, index)=>(
-                    <div onClick={() => dotClick(index)}
-                         className={slideIndex === index  ? "dot dot-active": "dot"}>
-                    </div>
-                ))
-
                 }
             </div>
         </div>
