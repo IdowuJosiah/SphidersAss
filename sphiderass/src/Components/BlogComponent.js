@@ -17,6 +17,7 @@ const BlogComponent = () => {
                 </h3>
             </div>
             <div className="page-width index-page-blog-component-div">
+                
                 <section className="blog-post">
                     <div className="blog-post-image">
                         <p>
@@ -35,6 +36,7 @@ const BlogComponent = () => {
                                 <span className="blog-icons"><FaRegCommentDots/></span><span className="blg-det">200 <span className="blog-light">comments</span></span>
                             </p>
                         </p>
+
                         <p className="blog-topic">
                             Bitcoin's Meteoric Rise: Unraveling the Current Surge in Cryptocurrency Markets
                         </p>
@@ -67,6 +69,8 @@ const BlogComponent = () => {
                         </footer>
                     </div>
                 </section>
+
+
                 <section className="blog-post">
                     <div className="blog-post-image">
                         <p>

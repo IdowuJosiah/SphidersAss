@@ -1,11 +1,19 @@
-.index-page-services-two-section{
+.index-page-services-two-section {
   background-color: var(--background-light-mode);
 }
-.index-page-services-two-section-header{
+.index-page-services-two-section-header {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: graffit;
   font-size: 30px;
   letter-spacing: 3px;
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .index-page-services-two-section-header {
+    font-size: 20px; /* Decrease font size on smaller screens */
+    letter-spacing: 2px; /* Decrease letter spacing on smaller screens */
+    padding: 0px 60px;
+  }
 }

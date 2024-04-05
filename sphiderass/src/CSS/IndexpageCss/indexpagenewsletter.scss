@@ -1,75 +1,118 @@
-.index-page-news-letter{
+.index-page-news-letter {
   background-size: var(--background-light-mode);
 }
-.index-page-news-letter-con{
+.index-page-news-letter-con {
   display: flex;
   justify-content: space-between;
 }
-.index-page-news-details{
+.index-page-news-details {
   padding: 30px 0;
   width: 50%;
-  .index-page-news-details-header{
-    h1{
+  .index-page-news-details-header {
+    h1 {
       font-size: 35px;
       letter-spacing: 2px;
     }
   }
-  .index-page-news-details-frist-paragraph{
+  .index-page-news-details-frist-paragraph {
     font-size: 15px;
     letter-spacing: 1.2px;
   }
 }
-.index-page-news-input-div{
+.index-page-news-input-div {
   width: 70%;
   position: relative;
-  .index-page-news-input{
-
-    input{
+  .index-page-news-input {
+    input {
       width: 100%;
       padding: 25px 20px;
       border-radius: 20px;
-      background: #DADADA;
+      background: #dadada;
       border: none;
       font-size: 11px;
       letter-spacing: 1.2px;
-
     }
   }
-  .index-page-news-subscribe-button{
+  .index-page-news-subscribe-button {
     position: absolute;
     top: 0;
     right: -5px;
-    button{
+    button {
       padding: 9px 15px;
       background: #191919;
       color: #ffffff;
       border: none;
       border-radius: 5px;
-
     }
-    button:hover{
+    button:hover {
       cursor: pointer;
-      color: #E1B023;
-      transition: ease-in-out .3s;
+      color: #e1b023;
+      transition: ease-in-out 0.3s;
     }
   }
 }
-.index-page-news-terms-and-privacy-div{
+.index-page-news-terms-and-privacy-div {
   padding-top: 15px;
   font-size: 15px;
-  .index-page-news-terms-span{
-    color: #609FFA;
-
+  .index-page-news-terms-span {
+    color: #609ffa;
   }
 }
 
-
-
-.index-page-news-letter-image{
+.index-page-news-letter-image {
   width: 40%;
   height: 450px;
-  img{
+  img {
     height: 100%;
     margin-left: 100px;
   }
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .index-page-news-details-header h1 {
+    font-size: 1rem;
+    margin-left: 55px;
+  }
+  .index-page-news-letter-con {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .index-page-news-details {
+    width: 100%;
+  }
+
+  .index-page-news-details p {
+    margin-left: 50px;
+  }
+  .index-page-news-input-div {
+    width: 60%;
+  }
+
+  .index-page-news-terms-and-privacy-div {
+    font-size: 12px;
+  }
+  .index-page-news-subscribe-button {
+    button {
+      padding: 8px 45px;
+      font-size: 12px;
+    }
+  }
+
+  .index-page-news-terms-and-privacy-div {
+    font-size: 16px;
+  }
+  .index-page-news-input-div {
+    width: 250px;
+    margin-top: 2rem;
+  }
+  .index-page-news-subscribe-button button {
+    margin-left: 50px;
+  }
+
+  .index-page-news-letter-image img{
+    height: 300px;
+    width: 300px;
+  }
+ 
 }

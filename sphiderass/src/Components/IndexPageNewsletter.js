@@ -1,10 +1,10 @@
-import newsletterdummy from  "../images/newslaterdummy.png"
+import newsletterdummy from "../images/newslaterdummy.png"
 import "../CSS/IndexpageCss/indexpagenewsletter.scss"
 
 
 
 const IndexPageNewsletter = () => {
-    return(
+    return (
         <section className="index-page-news-letter">
             <div className="page-width index-page-news-letter-con ">
                 <div className="index-page-news-details">
@@ -22,7 +22,7 @@ const IndexPageNewsletter = () => {
                     <div className="index-page-news-input-div">
                         <p className="index-page-news-input">
                             <input
-                                    placeholder="Write Your Email"/>
+                                placeholder="Write Your Email" />
                         </p>
                         <p className="index-page-news-subscribe-button">
                             <button>
@@ -35,7 +35,7 @@ const IndexPageNewsletter = () => {
                     </div>
                 </div>
                 <div className="index-page-news-letter-image">
-                    <img src={newsletterdummy}/>
+                    <img src={newsletterdummy} />
                 </div>
             </div>
         </section>

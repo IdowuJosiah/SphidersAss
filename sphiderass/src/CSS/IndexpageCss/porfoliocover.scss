@@ -2,32 +2,32 @@
         PortfolioCover styles
 */
 
-.portfolio-cover{
-  background-color: var(--background-light-mode)
-}
-.portfolio-cover-section{
+.portfolio-cover {
   background-color: var(--background-light-mode);
 }
-.pc-head{
+.portfolio-cover-section {
+  background-color: var(--background-light-mode);
+}
+.pc-head {
   padding: 10px;
   font-size: 35px;
   font-family: Helvetica;
   font-weight: 600;
   text-align: center;
   letter-spacing: 1px;
-  color: #BD7500;
+  color: #bd7500;
 }
 
-.pc-bar{
+.pc-bar {
   display: flex;
   padding: 10px 0;
   justify-content: center;
   align-items: center;
 }
-.pc-bar div{
+.pc-bar div {
   display: flex;
   padding: 0 30px;
-  background: #E1B023;
+  background: #e1b023;
   border-radius: 15px;
   align-items: center;
 }
@@ -35,39 +35,39 @@
   padding: 15px;
   background: #003800;
   border-radius: 15px;
-  color:#E1B023 ;
+  color: #e1b023;
 }
-.pc-bar div ul{
+.pc-bar div ul {
   display: flex;
-  gap:70px;
+  gap: 70px;
 }
-.pc-bar div ul li{
+.pc-bar div ul li {
   list-style: none;
   font-size: 15px;
   font-weight: 500;
   color: #002300;
 }
-.pc-laptop{
+.pc-laptop {
   padding: 20px 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.pc-laptop p img{
+.pc-laptop p img {
   width: 100%;
   height: 100%;
 }
-.pc-footer{
+.pc-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
 }
-.pc-footer-text{
+.pc-footer-text {
   font-size: 18px;
   text-align: center;
 }
-.vn{
+.vn {
   position: relative;
 }
 .pc-ball {
@@ -79,4 +79,36 @@
   top: -5px;
   left: -10px;
   background: rgb(191 191 191);
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .pc-bar div {
+    padding: 0 5px; /* Further reduce padding on smaller screens */
+    margin: 2px; /* Reduce margin between items */
+    overflow: hidden;
+   
+  }
+  .pc-head {
+    margin-top: 50px;
+  }
+
+  .pc-bar div p {
+    font-size: 12px; /* Decrease font size on smaller screens */
+  }
+
+  .pc-bar div ul {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    gap: 1rem; /* Add gap between grid items */
+  }
+  
+  
+  .pc-bar div ul li {
+    font-size: 10px; /* Decrease font size on smaller screens */
+    
+  }
+
+  .pc-laptop {
+    padding: 10px; /* Add padding for better spacing on smaller screens */
+  }
 }

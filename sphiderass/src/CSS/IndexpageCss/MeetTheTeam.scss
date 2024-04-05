@@ -1,39 +1,73 @@
-.Index-page-Team-Section{
+.Index-page-Team-Section {
   background-color: var(--background-light-mode);
-padding: 30px 0;
+  padding: 30px 0;
 }
-.Index-page-Team-Section-div{
+.Index-page-Team-Section-div {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  .Index-page-Team-Section-header{
+  .Index-page-Team-Section-header {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "DM Sans";
     font-size: 35px;
     padding: 15px;
-    h1{
+    h1 {
       margin: 0;
     }
   }
-  .Index-page-Team-Section-team-profile-con{
+  .Index-page-Team-Section-team-profile-con {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
-    .Index-Page-Team-profile-box{
+    .Index-Page-Team-profile-box {
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0px 18px 40px 0px rgba(0, 0, 0, 0.10);
-      .Index-Page-Team-profile-box-details{
+      box-shadow: 0px 18px 40px 0px rgba(0, 0, 0, 0.1);
+      .Index-Page-Team-profile-box-details {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p{
+        p {
           margin: 10px;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .Index-page-Team-Section-div .Index-page-Team-Section-team-profile-con {
+    flex-direction: column;
+  }
+  .Index-Page-Team-profile-box {
+    gap: 4rem;
+  }
+  .Index-Page-Team-profile-box .Index-Page-Team-profile-box-image {
+    margin-left: 10px;
+  }
+  .Index-Page-Team-profile-box .Index-Page-Team-profile-box-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .Index-page-Team-Section-header h1 {
+    font-size: 25px;
+  }
+
+  .Index-page-Team-Section-div .Index-page-Team-Section-header {
+    font-size: 25px;
+  }
+
+  .Index-page-Team-Section-div .Index-Page-Team-profile-box {
+    padding: 10px;
+  }
+
+  .Index-page-Team-Section-div .Index-Page-Team-profile-box-details {
+    p {
+      margin: 5px;
     }
   }
 }

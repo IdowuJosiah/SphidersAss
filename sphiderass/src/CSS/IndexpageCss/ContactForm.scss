@@ -1,11 +1,8 @@
-
 /*
         contact styles
 */
 
-
-
-.contact-form-section{
+.contact-form-section {
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -13,49 +10,47 @@
   justify-content: center;
   align-items: center;
 }
-.contact-form-container{
+.contact-form-container {
   display: flex;
   justify-content: space-between;
 }
-.form-header{
+.form-header {
   font-size: 16px;
   display: flex;
   align-items: center;
-  justify-content: center;padding: 5px;
+  justify-content: center;
+  padding: 5px;
 }
-.form-header h1{
+.form-header h1 {
   margin: 0;
   font-weight: 400;
-
 }
-.form-name{
+.form-name {
   display: flex;
   justify-content: space-between;
-
 }
-#full_name{
+#full_name {
   width: 43%;
-  border: 1px solid #E6E8EC;
+  border: 1px solid #e6e8ec;
 }
-#business_mail{
+#business_mail {
   width: 43%;
-  border: 1px solid #E6E8EC;
-
+  border: 1px solid #e6e8ec;
 }
-#price{
+#price {
   width: 43%;
-  border: 1px solid  #E6E8EC;
+  border: 1px solid #e6e8ec;
 }
-#file{
-  border: 1px solid #E6E8EC;
+#file {
+  border: 1px solid #e6e8ec;
   width: 95.5%;
 }
-input[type="file"]{
+input[type="file"] {
   padding: 10px;
   display: none;
 }
-.label-file{
-  border: 1px solid #E6E8EC;
+.label-file {
+  border: 1px solid #e6e8ec;
   border-radius: 5px;
   padding: 15px 10px;
   display: block;
@@ -63,51 +58,51 @@ input[type="file"]{
   color: #404040;
   cursor: pointer;
 }
-.form-service{
+.form-service {
   display: flex;
   justify-content: space-between;
 }
-#service{
+#service {
   width: 43%;
 }
-.cf-text{
+.cf-text {
   width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.cf-text h1{
+.cf-text h1 {
   color: white;
   font-size: 35px;
-  margin: .5rem;
+  margin: 0.5rem;
 }
-.cf-text h2{
+.cf-text h2 {
   font-size: 20px;
   font-weight: 300;
   color: white;
-  margin: .5rem;
+  margin: 0.5rem;
 }
-.contact-form-info-buttons{
+.contact-form-info-buttons {
   display: flex;
 }
-.contact-form-info-buttons h1 button{
+.contact-form-info-buttons h1 button {
   background: white;
   padding: 15px 25px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-size: 15px;
   border-radius: 10px;
-  color: #0B63E5;
+  color: #0b63e5;
   cursor: pointer;
   display: flex;
   border: none;
-
 }
-.cfib{
+.cfib {
   font-size: 20px;
-  display: flex;justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.contact-form-info-buttons h2 button{
+.contact-form-info-buttons h2 button {
   background: #002300;
   color: white;
   font-size: 15px;
@@ -116,36 +111,36 @@ input[type="file"]{
   border: none;
   cursor: pointer;
 }
-.contact-form-info-buttons h2 button:hover{
-  color: #E1B023;
-  transition: ease-in-out .3s;
+.contact-form-info-buttons h2 button:hover {
+  color: #e1b023;
+  transition: ease-in-out 0.3s;
 }
-.cf-form{
+.cf-form {
   width: 47%;
   background: #ffffff;
   padding: 10px;
   border-radius: 15px;
 }
-.cf-form form{
+.cf-form form {
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.cf-form form input{
+.cf-form form input {
   padding: 10px;
   border-radius: 5px;
   border: none;
   height: 30px;
   outline: none;
 }
-#message{
+#message {
   height: 85px;
-  border: 1px solid #E6E8EC;
+  border: 1px solid #e6e8ec;
 }
-.cf-form form button{
+.cf-form form button {
   height: 45px;
-  background: #FBBC04;
+  background: #fbbc04;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -156,11 +151,43 @@ input[type="file"]{
   font-size: 15px;
   padding: 25px 0;
 }
-.form-arrow{
+.form-arrow {
   margin-top: 5px;
   margin-left: 10px;
   font-size: 20px;
 }
-.dumbell{
+.dumbell {
   text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .page-width{
+    flex-direction: column;
+    margin-top: 150px;   
+  }
+  .contact-form-container{
+    flex-direction: column-reverse;
+  }
+  .contact-form-container {
+    height: 550px;
+  }
+  .cf-text{
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .cf-text h1 {
+    font-size: 2rem;
+   
+  }
+  .cf-text h2 {
+    font-size: 1.4rem;
+  }
+  .cf-form{
+    width: 85%;
+  }
+  .contact-form-section {
+    height: 1200px;
+  }
 }

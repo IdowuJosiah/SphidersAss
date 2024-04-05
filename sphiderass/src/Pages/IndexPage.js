@@ -15,24 +15,24 @@ import MeetTheteam from "../Components/MeetTheteam";
 import IndexPageNewsletter from "../Components/IndexPageNewsletter";
 
 const IndexPage = () => {
-    return(
+    return (
         <div>
-            <Banner/>
-            <AffiliationsComponent/>
-            <IntroComponent/>
-            <Services/>
-            <PortfolioCover/>
-            <FeedbackComponent/>
-            <Servicestwo/>
+            <Banner />
+            <AffiliationsComponent />
+            <IntroComponent />
+            <Services />
+            <PortfolioCover />
+            <FeedbackComponent />
+            <Servicestwo />
             {/* <FaqComponent/> */}
-            <BlogComponent/>
-            <MeetTheteam/>
-            <ContactForm/>
-            <IndexPageNewsletter/>
-            <Footer/>
+            <BlogComponent />
+            <MeetTheteam />
+            <ContactForm />
+            <IndexPageNewsletter />
+            <Footer />
         </div>
     )
 
 
 }
- export default IndexPage
+export default IndexPage

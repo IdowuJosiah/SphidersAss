@@ -86,9 +86,6 @@ const FeedbackComponent = () => {
                         <p className="client-review-text">
                             <p> {review.clientReview} </p>
                         </p>
-
-
-
                     </div>
                 })
                 }

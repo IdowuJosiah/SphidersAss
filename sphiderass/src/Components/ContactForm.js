@@ -75,6 +75,7 @@ const ContactForm = () =>{
 
                     </form>
                 </div>
+                
                 <div className="cf-text">
                     <h1>
                        Lets transform that idea into a digital experience

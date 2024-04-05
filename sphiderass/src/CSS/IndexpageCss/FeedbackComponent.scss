@@ -1,12 +1,7 @@
-
 /*
         client styles
 */
-
-
-
-
-.client-review{
+.client-review {
   position: relative;
   display: flex;
   background-color: var(--background-light-mode);
@@ -14,14 +9,14 @@
   overflow: hidden;
 }
 
-.client-review-header{
+.client-review-header {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.client-review-container{
+.client-review-container {
   display: flex;
   justify-content: center;
   padding: 3rem;
@@ -29,46 +24,46 @@
   margin-bottom: 5rem;
 }
 
-.slider-container{
+.slider-container {
   width: 33%;
   display: flex;
   flex-direction: column;
   height: 45vh;
-  background: #FFFDEA;
+  background: #fffdea;
   border-radius: 10px;
-  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
   padding-top: 25px;
   padding-left: 25px;
 }
-.slider-container p{
+.slider-container p {
   line-height: 20px;
   margin: 0;
 }
 
-.client-image{
+.client-image {
   width: 7em;
   height: 3em;
   display: flex;
   align-items: center;
   margin: 0;
 }
-.client-image p{
+.client-image p {
   margin: 0;
 }
-.client-image img{
+.client-image img {
   width: 3em;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
-.client-review-text{
+.client-review-text {
   margin: 0;
   width: 85%;
-  font-size: .8rem;
-  animation: slide ease-in-out .4s;
+  font-size: 0.8rem;
+  animation: slide ease-in-out 0.4s;
   color: rgba(0, 0, 0, 0.85);
 }
-.client-details{
+.client-details {
   width: 100%;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -76,42 +71,73 @@
   flex-direction: column;
   justify-content: center;
 }
-.client-name{
-  font-family: 'Poppins', sans-serif;
+.client-name {
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 10px;
 }
-.client-name h5, h4{
+.client-name h5,
+h4 {
   margin: 5px;
 }
 
-.client-review-slide{
+.client-review-slide {
   display: none;
   width: 0;
 }
 
-.container-dots{
+.container-dots {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   left: 45%;
-  bottom:2rem;
+  bottom: 2rem;
   margin-top: 5rem;
   gap: 10px;
 }
-.dot{
+.dot {
   width: 1.3rem;
-  height: .5rem;
+  height: 0.5rem;
   background: #0e0404;
   border-radius: 5px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   border: 1px solid;
 }
-.dot-active{
+.dot-active {
   width: 2rem;
   background: rgb(234, 234, 234);
   border: none;
   cursor: pointer;
   transition-duration: 300ms;
+}
+
+@media screen and (max-width: 768px) {
+  .client-review-container {
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    margin-top: 5rem;
+  }
+  .slider-container {
+    width: 80%;
+    margin-bottom: 2rem;
+    height: auto;
+  }
+  .client-image {
+    width: 5em;
+    height: 2.5em;
+  }
+  .client-image img {
+    width: 2.5em;
+    height: 2.5em;
+  }
+  .client-review-text {
+    font-size: 1.2rem;
+  }
+  .container-dots {
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+  }
 }

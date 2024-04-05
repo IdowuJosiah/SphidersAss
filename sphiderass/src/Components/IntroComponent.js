@@ -1,8 +1,8 @@
-import React  from "react";
+import React from "react";
 
 
-const IntroComponent = () =>{
-    return(
+const IntroComponent = () => {
+    return (
         <section className="intro-comp-section">
             <div className=" intro-comp">
                 <div>
