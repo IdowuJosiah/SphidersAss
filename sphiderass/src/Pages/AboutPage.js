@@ -5,15 +5,15 @@ import LightFooter from "../Components/LightFooter";
 import "../CSS/AboutPage/Aboutpage.scss"
 import "../CSS/ArticleCss/Articlecss.scss"
 import image from "../images/executive-picture.png"
-import personalizedlearning from"../images/personalized-learning.svg"
+import personalizedlearning from "../images/personalized-learning.svg"
 import trustedtools from "../images/trusted-tools.svg"
-import trustedcontent from"../images/trusted-content.svg"
+import trustedcontent from "../images/trusted-content.svg"
 
-const AboutPage =() => {
-    return(
+const AboutPage = () => {
+    return (
         <div>
             <section className="article-section-navbar">
-                <LightNavbar/>
+                <LightNavbar />
             </section>
             <header className="about-page-header">
                 <div className="about-page-header-div">
@@ -52,67 +52,67 @@ const AboutPage =() => {
             {/*    </div>*/}
             {/*</section>*/}
             <section className="about-page-meet-the-team-section">
-                    <div className="about-page-meet-the-team-section-div">
-                        <div className="about-page-meet-the-team-section-header">
-                            <h1>
-                                Meet the Team
-                            </h1>
+                <div className="about-page-meet-the-team-section-div">
+                    <div className="about-page-meet-the-team-section-header">
+                        <h1>
+                            Meet the Team
+                        </h1>
+                    </div>
+                    <div className="about-page-meet-the-team-section-images">
+                        <div className="about-page-meet-the-team-section-executive-images-section">
+                            <div className="about-page-meet-the-team-section-executive-images">
+                                <img src={image} />
+                            </div>
+                            <div className="about-page-meet-the-team-section-executive-images-positions">
+                                <h2>
+                                    Jesse Ali
+                                </h2>
+                                <p>
+                                    CHief Executive Officer
+                                </p>
+                            </div>
+                        </div  >
+                        <div className="about-page-meet-the-team-section-executive-images-section">
+                            <div className="about-page-meet-the-team-section-executive-images">
+                                <img src={image} />
+                            </div>
+                            <div className="about-page-meet-the-team-section-executive-images-positions">
+                                <h2>
+                                    Jesse Ali
+                                </h2>
+                                <p>
+                                    CHief Executive Officer
+                                </p>
+                            </div>
                         </div>
-                        <div className="about-page-meet-the-team-section-images">
-                            <div className="about-page-meet-the-team-section-executive-images-section">
-                                <div className="about-page-meet-the-team-section-executive-images">
-                                    <img src={image}/>
-                                </div>
-                                <div className="about-page-meet-the-team-section-executive-images-positions">
-                                    <h2>
-                                        Jesse Ali
-                                    </h2>
-                                    <p>
-                                        CHief Executive Officer
-                                    </p>
-                                </div>
-                            </div  >
-                            <div className="about-page-meet-the-team-section-executive-images-section">
-                                <div className="about-page-meet-the-team-section-executive-images">
-                                    <img src={image}/>
-                                </div>
-                                <div className="about-page-meet-the-team-section-executive-images-positions">
-                                    <h2>
-                                        Jesse Ali
-                                    </h2>
-                                    <p>
-                                        CHief Executive Officer
-                                    </p>
-                                </div>
+                        <div className="about-page-meet-the-team-section-executive-images-section">
+                            <div className="about-page-meet-the-team-section-executive-images">
+                                <img src={image} />
                             </div>
-                            <div className="about-page-meet-the-team-section-executive-images-section">
-                                <div className="about-page-meet-the-team-section-executive-images">
-                                    <img src={image}/>
-                                </div>
-                                <div className="about-page-meet-the-team-section-executive-images-positions">
-                                    <h2>
-                                        Jesse Ali
-                                    </h2>
-                                    <p>
-                                        CHief Executive Officer
-                                    </p>
-                                </div>
+                            <div className="about-page-meet-the-team-section-executive-images-positions">
+                                <h2>
+                                    Jesse Ali
+                                </h2>
+                                <p>
+                                    CHief Executive Officer
+                                </p>
                             </div>
-                            <div className="about-page-meet-the-team-section-executive-images-section">
-                                <div className="about-page-meet-the-team-section-executive-images">
-                                    <img src={image}/>
-                                </div>
-                                <div className="about-page-meet-the-team-section-executive-images-positions">
-                                    <h2>
-                                        Jesse Ali
-                                    </h2>
-                                    <p>
-                                        CHief Executive Officer
-                                    </p>
-                                </div>
+                        </div>
+                        <div className="about-page-meet-the-team-section-executive-images-section">
+                            <div className="about-page-meet-the-team-section-executive-images">
+                                <img src={image} />
+                            </div>
+                            <div className="about-page-meet-the-team-section-executive-images-positions">
+                                <h2>
+                                    Jesse Ali
+                                </h2>
+                                <p>
+                                    CHief Executive Officer
+                                </p>
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
             <section className="about-page-work-with-us-section">
                 <div className="about-page-work-with-us-section-div">
@@ -124,7 +124,7 @@ const AboutPage =() => {
                     <div className="about-page-work-with-us-section-details">
                         <div className="about-page-work-with-us-section-details-div">
                             <div className="about-page-work-with-us-section-details-icon">
-                                <img src={personalizedlearning}/>
+                                <img src={personalizedlearning} />
                             </div>
                             <div className="about-page-work-with-us-section-details-div-text">
                                 <h4>
@@ -139,7 +139,7 @@ const AboutPage =() => {
                         </div>
                         <div className="about-page-work-with-us-section-details-div">
                             <div className="about-page-work-with-us-section-details-icon">
-                                <img src={trustedcontent}/>
+                                <img src={trustedcontent} />
                             </div>
                             <div className="about-page-work-with-us-section-details-div-text">
                                 <h4>
@@ -156,7 +156,7 @@ const AboutPage =() => {
                         </div>
                         <div className="about-page-work-with-us-section-details-div">
                             <div className="about-page-work-with-us-section-details-icon">
-                                <img src={trustedtools}/>
+                                <img src={trustedtools} />
                             </div>
                             <div className="about-page-work-with-us-section-details-div-text">
                                 <h4>
@@ -185,12 +185,12 @@ const AboutPage =() => {
                         </p>
                     </header>
                     <main>
-                        <AffiliationsComponent/>
+                        <AffiliationsComponent />
                     </main>
                 </div>
             </section>
             <section>
-                <LightFooter/>
+                <LightFooter />
             </section>
         </div>
     )

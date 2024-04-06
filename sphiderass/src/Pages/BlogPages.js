@@ -5,13 +5,13 @@ import Navbar from "../Components/Navbar";
 import "../CSS/BlogPageCss/Blogpage.scss"
 
 const BlogPages = () => {
-    const BlogPreviewDetails= [
+    const BlogPreviewDetails = [
         {
             date: "12th January 2024",
             blogHeader: "Stay current with all the latest trends, software, industry expectation and more.",
-            blogPreviewText:"Ensuring our online presence is protected is important in the electronic age we live in today since digital connections are essentialto our daily lives. The following looks at some basic safety tips for operating on the internet",
-            blogLink : "/sphiderass-article-i",
-            blogImage:"/bunfd.png",
+            blogPreviewText: "Ensuring our online presence is protected is important in the electronic age we live in today since digital connections are essentialto our daily lives. The following looks at some basic safety tips for operating on the internet",
+            blogLink: "/sphiderass-article-i",
+            blogImage: "/bunfd.png",
         },
         {
             date: " 11th January 2024",
@@ -49,11 +49,11 @@ const BlogPages = () => {
             blogImage: "/techblog-three.jpeg",
         },
     ]
-    return(
+    return (
 
         <section>
             <section className="blog-navbar">
-                <LightNavbar/>
+                <LightNavbar />
             </section>
 
             <section className="blog-page-header">
@@ -67,34 +67,34 @@ const BlogPages = () => {
                 </div>
             </section>
             <section className="blog-page-blogs">
-               <div className="bpb-box">
-                   {BlogPreviewDetails.map((previewDetails,index) =>{
-                       return(
-                           <div className="bpb-box-div">
-                               <p className="bpb-box-preview-image">
-                                   <img className="blog-page-blogs-image" src={previewDetails.blogImage}/>
-                               </p>
-                               <div>
-                                   <p className="bpb-time-stamp">
-                                       {previewDetails.date}
-                                   </p>
-                                   <h5>
-                                       {previewDetails.blogHeader}
-                                   </h5>
-                                   <p className="bpb-preview-text">
-                                       {previewDetails.blogPreviewText}
-                                   </p>
-                                   <a href={previewDetails.blogLink}>
+                <div className="bpb-box">
+                    {BlogPreviewDetails.map((previewDetails, index) => {
+                        return (
+                            <div className="bpb-box-div">
+                                <p className="bpb-box-preview-image">
+                                    <img className="blog-page-blogs-image" src={previewDetails.blogImage} />
+                                </p>
+                                <div>
+                                    <p className="bpb-time-stamp">
+                                        {previewDetails.date}
+                                    </p>
+                                    <h5>
+                                        {previewDetails.blogHeader}
+                                    </h5>
+                                    <p className="bpb-preview-text">
+                                        {previewDetails.blogPreviewText}
+                                    </p>
+                                    <a href={previewDetails.blogLink}>
                                         read more
-                                   </a>
-                               </div>
+                                    </a>
+                                </div>
 
-                           </div>
-                       )
-                   })}
-               </div>
+                            </div>
+                        )
+                    })}
+                </div>
             </section>
-            <LightFooter/>
+            <LightFooter />
         </section>
     )
 }
