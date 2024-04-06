@@ -1,6 +1,6 @@
 import LightNavbar from "../Components/LightNavbar";
 import profile from "../images/blogprofileimage.svg";
-import articleImage from "../images/bunfd.png";
+import articleImage from "../images/techblog-five.jpeg";
 import "../CSS/ArticleCss/Articlecss.scss"
 
 
@@ -17,14 +17,12 @@ const ArticleThreePage = () => {
                         <div className="individual-article-opened-header-box">
                             <div className="individual-article-opened-header-category-text">
                                 <p>
-                                    Tech
+                                    Web Development
                                 </p>
                             </div>
                             <div className="individual-article-opened-header-topic-text">
                                 <h1>
-                                    Starting a web development career as a beginner
-                                    can be thrilling and challenging as well.  Here
-                                    is a guide to support you in knowing the foundations:
+                                    A Beginners Guide to Web Development
                                 </h1>
                                 <p>
                                     12th January 2024
@@ -59,6 +57,13 @@ const ArticleThreePage = () => {
                             </div>
                         </section>
                         <section className="main-article-first-and-second-paragraph">
+                            <div className="main-article-first-paragraph">
+                                <p>
+                                    Starting a web development career as a beginner
+                                    can be thrilling and challenging as well.  Here
+                                    is a guide to support you in knowing the foundations:
+                                </p>
+                            </div>
                             <div className="main-article-first-paragraph">
                                 <h1>
                                     1.⁠ ⁠KNOW THE BASICS

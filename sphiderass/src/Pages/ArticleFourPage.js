@@ -1,6 +1,6 @@
 import LightNavbar from "../Components/LightNavbar";
 import profile from "../images/blogprofileimage.svg";
-import articleImage from "../images/bunfd.png";
+import articleImage from "../images/techblog-one.jpeg";
 import "../CSS/ArticleCss/Articlecss.scss"
 
 

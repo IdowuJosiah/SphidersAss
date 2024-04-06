@@ -1,7 +1,8 @@
 import LightNavbar from "../Components/LightNavbar";
 import profile from "../images/blogprofileimage.svg";
 import articleImage from "../images/bunfd.png";
-import "../CSS/ArticleCss/Articlecss.scss"
+import "../CSS/ArticleCss/Articlecss.scss";
+import blogImage from "../images/techblog-four.jpeg";
 
 
 
@@ -17,15 +18,15 @@ const ArticleTwoPage = () => {
                         <div className="individual-article-opened-header-box">
                             <div className="individual-article-opened-header-category-text">
                                 <p>
-                                    Tech
+                                    Business
                                 </p>
                             </div>
                             <div className="individual-article-opened-header-topic-text">
                                 <h1>
-                                    STAY CURRENT WITH ALL THE LATEST TRENDS, SOFTWARE, INDUSTRY EXPECTATION AND MORE.
+                                    Tech Trends Shaping the Future of Business.
                                 </h1>
                                 <p>
-                                    12th January 2024
+                                    12 JANUARY 2024
                                 </p>
                             </div>
                             <div className="individual-article-opened-header-writer-details">
@@ -53,7 +54,7 @@ const ArticleTwoPage = () => {
                                 </p>
                             </div>
                             <div className="main-article-text-header-image">
-                                <img src={articleImage} alt="articleimage"/>
+                                <img src={blogImage} alt="articleimage"/>
                             </div>
                         </section>
                         <section className="main-article-first-and-second-paragraph">

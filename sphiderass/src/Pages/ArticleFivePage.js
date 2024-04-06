@@ -1,6 +1,6 @@
 import LightNavbar from "../Components/LightNavbar";
 import profile from "../images/blogprofileimage.svg";
-import articleImage from "../images/bunfd.png";
+import articleImage from "../images/techblog-three.jpeg";
 import "../CSS/ArticleCss/Articlecss.scss"
 
 
@@ -16,15 +16,15 @@ const ArticleFivePage = () => {
                         <div className="individual-article-opened-header-box">
                             <div className="individual-article-opened-header-category-text">
                                 <p>
-                                    Tech
+                                    Cyber-security
                                 </p>
                             </div>
                             <div className="individual-article-opened-header-topic-text">
                                 <h1>
-                                    STAY CURRENT WITH ALL THE LATEST TRENDS, SOFTWARE, INDUSTRY EXPECTATION AND MORE.
+                                    Introduction to Cybersecurity: Safeguarding Your Digital Environment
                                 </h1>
                                 <p>
-                                    12th January 2024
+                                    16 FEBRUARY 2024
                                 </p>
                             </div>
                             <div className="individual-article-opened-header-writer-details">
