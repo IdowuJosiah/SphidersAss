@@ -1,14 +1,21 @@
 import React from "react";
 import Navbar from "./Navbar";
 import mouse from "../images/Mouse.png"
-const Banner =() => {
-    return(
-        <section className="banner-section" >
-            <div  className="banner-image">
+import { useTheme  } from '../Context/ThemeContext'
+
+
+
+const Banner = () => {
+
+   const { theme } = useTheme()
+
+    return (
+        <section className={`banner-section ${theme === 'light' ? 'ligght' : 'dark'}`}>
+            <div className="banner-image">
                 <div className="nav-placement">
-                    <Navbar/>
+                    <Navbar />
                 </div>
-                <div className="index-page-banner-container">
+                <div className={`index-page-banner-container${theme}`}>
                     <div className="banner-text">
                         <p className="banner-head-text">
                             Transform Your Idea Into Digital <span className="index-page-banner-experience-span">Experiences.</span>

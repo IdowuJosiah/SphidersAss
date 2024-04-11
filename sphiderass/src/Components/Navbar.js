@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useState } from "react";
 import { Link } from "react-router-dom"
 import "../App.scss"
 import { BsSearch, BsArrowUpRight } from "react-icons/bs"
 import { RiSearchLine, } from "react-icons/ri"
+import { LuSunMoon } from "react-icons/lu";
+import { LuMoonStar } from "react-icons/lu";
+import { useTheme } from '../Context/ThemeContext'
+
+
 const Navbar = () => {
     const navLink = [
         {
@@ -30,8 +35,13 @@ const Navbar = () => {
             path: "/contact-us",
         },
     ]
+
+    const { theme, toggleTheme } = useTheme()
+   
+    
+    
     return (
-        <section className="navbar">
+        <section className={`navbar ${theme}`}>
             <div className="nav-con">
                 <div className="logo">
                     <img src="Frame170.png" alt="sphiderasslogo" />
@@ -48,9 +58,9 @@ const Navbar = () => {
                     })}
                 </div>
                 <div className="nav-buttons">
-                    {/*<p className="nvs">*/}
-                    {/*    <RiSearchLine className="search-icon"/>*/}
-                    {/*</p>*/}
+                    <div onClick={toggleTheme}>
+                       {theme === 'light' ? <LuSunMoon /> : <LuMoonStar />}
+                    </div>
                     <p className="nvp">
                         <button>
                             <span>Work With Us</span><span className="nvb-arrow"><BsArrowUpRight /></span>

@@ -1,7 +1,9 @@
+/* App.scss */
 @font-face {
   font-family: "graffit";
   src: url("Font/grifterbold.otf") format("truetype");
 }
+
 @font-face {
   font-family: "Raino sans";
   src: url("Font/Raino sans.otf") format("truetype");
@@ -13,6 +15,77 @@
   --light-mode-white-text: #ffffff; /* Yellow */
   --dark-mode-dark-text: #000000;
 }
+
+.banner-section {
+  padding: 20px;
+  color: #333;
+}
+
+.banner-section.light {
+  background-color: #f6f6f6;
+  color: var(--background-light-mode);
+}
+
+.banner-section.dark {
+  background: var(--blog-light-background);
+  color: #fff;
+}
+
+.index-page-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.index-page-banner-container.dark {
+  color: #000;
+}
+
+.index-page-banner-container.light {
+  color: #fff;
+}
+
+.index-page-banner-container img {
+  margin-top: 20px;
+  width: 40px;
+  height: auto;
+}
+
+.banner-text {
+  margin-top: 20px;
+}
+
+.banner-head-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner-subhead-text {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.banner-button {
+  margin-top: 20px;
+}
+
+.index-page-banner-mouse-icon {
+  width: 30px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
 
 .page-width {
   width: calc(100% - 8rem);
@@ -31,6 +104,7 @@
 }
 .light-navbar {
 }
+
 .nav-con {
   display: flex;
   background: #fafafa;
@@ -40,6 +114,7 @@
   padding: 5px 10px;
   box-shadow: 0px 18px 40px 0px rgba(255, 254, 254, 0.1);
 }
+
 .light-nav-con {
   box-shadow: 0px 18px 40px 0px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -49,6 +124,7 @@
   border-radius: 40px;
   padding: 5px 10px;
 }
+
 .logo {
   display: flex;
   justify-content: center;
@@ -56,24 +132,29 @@
   padding: 15px;
   margin-right: 30px;
 }
+
 .logo img {
   width: 100%;
   height: 20px;
 }
+
 .nav-list-con {
   display: flex;
   list-style: none;
   justify-content: center;
   gap: 40px;
 }
+
 .nav-list {
   text-decoration: none;
   color: #000000;
   font-weight: 300;
 }
+
 .nav-list-con ul {
   padding: 3px;
 }
+
 .nav-list-con li {
   position: relative;
   cursor: pointer;
@@ -82,6 +163,7 @@
   font-size: 17px;
   font-family: "Instrument Sans", sans-serif;
 }
+
 .nav-list-con li::after {
   content: "";
   position: absolute;
@@ -93,10 +175,12 @@
   transform: scaleX(0);
   transition: transform 200ms ease-in-out;
 }
+
 .nav-list-con li:hover::after {
   color: #404040;
   transform: scaleX(1);
 }
+
 .nav-buttons {
   display: flex;
   justify-content: center;
@@ -104,9 +188,11 @@
   gap: 15px;
   margin-left: 70px;
 }
+
 .nvp {
   margin: 0.5rem;
 }
+
 .nav-buttons p button {
   background: #003700;
   cursor: pointer;
@@ -121,30 +207,36 @@
   align-items: center;
   gap: 5px;
 }
+
 .search-icon {
   font-size: 28px;
   cursor: pointer;
   font-weight: 700;
   color: #bb7401;
 }
+
 .nvb-arrow {
   text-align: center;
 }
 .banner-section {
   position: relative;
 }
+
 .banner-image {
   width: 100%;
   height: 100%;
   background-color: var(--background-light-mode);
   transition-duration: 1000ms;
 }
+
 .nav-placement {
   padding: 10px;
 }
+
 .index-page-banner-container {
   padding: 70px 30px;
 }
+
 .banner-text {
   width: 100%;
   display: flex;
@@ -153,6 +245,7 @@
   flex-direction: column;
   gap: 0;
 }
+
 .banner-text p button {
   width: 140px;
   height: 50px;
@@ -169,6 +262,7 @@
   padding: 10px;
   margin: 0;
 }
+
 .banner-head-text {
   font-weight: 500;
   font-size: 45px;
@@ -179,9 +273,11 @@
   font-family: "graffit";
   color: #000000;
 }
+
 .index-page-banner-experience-span {
   color: #e1b023;
 }
+
 .banner-subhead-text {
   font-size: 16px;
   font-weight: 200;
@@ -190,22 +286,27 @@
   margin-bottom: 0rem;
   font-family: "Raino sans";
 }
+
 .banner-button {
   display: flex;
   gap: 20px;
 }
+
 .bn-one {
   background: #002300;
   font-family: "Raino sans";
   color: white;
 }
+
 .bn-one span {
   font-size: 14px;
   font-weight: 700;
 }
+
 .bn-two {
   margin-bottom: 2rem;
 }
+
 .bn-two span {
   font-size: 16px;
   font-weight: 600;
@@ -215,6 +316,7 @@
 .banner-trust {
   padding-top: 20px;
 }
+
 /*
         Affiliation component styles
 */
@@ -688,7 +790,6 @@ light footer styling
   -webkit-text-stroke-width: 1px;
 }
 
-
 /*
 
 
@@ -835,7 +936,6 @@ contact us page styling
 
 
  */
-
 
 .contact-us-page-socials {
   display: flex;
