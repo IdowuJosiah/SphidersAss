@@ -194,7 +194,6 @@ About Page Styling
 }
 
 
-
 .about-page-work-with-us-section {
   display: flex;
   justify-content: center;
@@ -233,7 +232,7 @@ About Page Styling
 @media screen and (max-width: 768px) {
   .individual-article-opened-header-box {
     width: 100%;
-    padding: 0 20px; 
+    padding: 0 20px;
   }
 
   .about-page-header-div h2 {
@@ -242,19 +241,19 @@ About Page Styling
 
   .main-article-text {
     width: 100%;
-    padding: 0 20px; 
+    padding: 0 20px;
   }
 
   .individual-article-opened-header-topic-text {
     h1 {
-      font-size: 20px; 
+      font-size: 20px;
     }
   }
 
   .main-article-text-header {
     .main-article-text-header-h1 {
       p {
-        font-size: 30px; 
+        font-size: 30px;
       }
     }
   }
@@ -290,7 +289,7 @@ About Page Styling
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 10px; 
+    padding: 30px 10px;
     .about-page-work-with-us-section-div {
       display: flex;
       flex-direction: column;
@@ -301,19 +300,19 @@ About Page Styling
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 20px; 
+        padding-bottom: 20px;
       }
       .about-page-work-with-us-section-details {
         display: flex;
-        flex-direction: column; 
-        gap: 10px; 
+        flex-direction: column;
+        gap: 10px;
         .about-page-work-with-us-section-details-div {
           width: 100%;
           .about-page-work-with-us-section-details-icon {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px 140px; 
+            padding: 10px 140px;
           }
           .about-page-work-with-us-section-details-div-text {
             display: flex;
@@ -322,12 +321,22 @@ About Page Styling
             text-align: center;
 
             p {
-              font-size: 12px; 
+              font-size: 12px;
             }
           }
         }
       }
     }
   }
-  
+
+
+  .about-page-meet-the-team-section-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .about-page-meet-the-team-section-executive-images-section {
+      width: 100%;
+    }
+  }
 }

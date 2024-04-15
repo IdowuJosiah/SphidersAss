@@ -91,6 +91,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </section>
+
             <section className="about-page-work-with-us-section">
                 <div className="about-page-work-with-us-section-div">
                     <div className="about-page-work-with-us-section-header">
