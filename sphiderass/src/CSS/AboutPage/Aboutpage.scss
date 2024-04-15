@@ -192,6 +192,9 @@ About Page Styling
     }
   }
 }
+
+
+
 .about-page-work-with-us-section {
   display: flex;
   justify-content: center;
@@ -230,7 +233,7 @@ About Page Styling
 @media screen and (max-width: 768px) {
   .individual-article-opened-header-box {
     width: 100%;
-    padding: 0 20px; /* Adjust padding as needed */
+    padding: 0 20px; 
   }
 
   .about-page-header-div h2 {
@@ -239,19 +242,19 @@ About Page Styling
 
   .main-article-text {
     width: 100%;
-    padding: 0 20px; /* Adjust padding as needed */
+    padding: 0 20px; 
   }
 
   .individual-article-opened-header-topic-text {
     h1 {
-      font-size: 20px; /* Adjust font size as needed */
+      font-size: 20px; 
     }
   }
 
   .main-article-text-header {
     .main-article-text-header-h1 {
       p {
-        font-size: 30px; /* Adjust font size as needed */
+        font-size: 30px; 
       }
     }
   }
@@ -264,7 +267,7 @@ About Page Styling
     flex-direction: column;
   }
 
-  .about-page-work-with-us-section .about-page-work-with-us-section-details{
+  .about-page-work-with-us-section .about-page-work-with-us-section-details {
     gap: 1.3rem;
   }
 
@@ -272,14 +275,59 @@ About Page Styling
     .about-page-work-with-us-section-details
     .about-page-work-with-us-section-details-div
     .about-page-work-with-us-section-details-icon {
-      width: 70px;
-      margin-left: 1rem;
-
+    width: 70px;
+    margin-left: 1rem;
   }
   .about-page-work-with-us-section
-  .about-page-work-with-us-section-details
-  .about-page-work-with-us-section-details-div
-  .about-page-work-with-us-section-details-icon img:last-child(3){
+    .about-page-work-with-us-section-details
+    .about-page-work-with-us-section-details-div
+    .about-page-work-with-us-section-details-icon
+    img:last-child(3) {
     margin-left: 20px;
   }
+
+  .about-page-work-with-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px; 
+    .about-page-work-with-us-section-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .about-page-work-with-us-section-header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px; 
+      }
+      .about-page-work-with-us-section-details {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px; 
+        .about-page-work-with-us-section-details-div {
+          width: 100%;
+          .about-page-work-with-us-section-details-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 140px; 
+          }
+          .about-page-work-with-us-section-details-div-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            p {
+              font-size: 12px; 
+            }
+          }
+        }
+      }
+    }
+  }
+  
 }

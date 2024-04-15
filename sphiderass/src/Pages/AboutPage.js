@@ -28,29 +28,6 @@ const AboutPage = () => {
                     </p>
                 </div>
             </header>
-            {/*<section className="about-page-company-image-section">*/}
-            {/*    <div>*/}
-            {/*        <img src="/companypicture.jpg"/>*/}
-            {/*    </div>*/}
-            {/*/!*</section>*!/*/}
-            {/*<section className="about-page-innovation-section">*/}
-            {/*    <div className="about-page-innovation-section-div">*/}
-            {/*        <div className="about-page-innovation-section-div-left">*/}
-            {/*            <h5>*/}
-            {/*                Sphiderass has  capabilities built for*/}
-            {/*                all stages of innovation*/}
-            {/*            </h5>*/}
-            {/*            <p>*/}
-            {/*                At Sphiderass, we are dedicated to helping*/}
-            {/*                businesses thrive in the ever-evolving*/}
-            {/*                digital landscape.*/}
-            {/*            </p>*/}
-            {/*        </div>*/}
-            {/*        <div className="about-page-innovation-section-div-right">*/}
-            {/*            <img src="/img8.webp" alt=""/>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</section>*/}
             <section className="about-page-meet-the-team-section">
                 <div className="about-page-meet-the-team-section-div">
                     <div className="about-page-meet-the-team-section-header">
