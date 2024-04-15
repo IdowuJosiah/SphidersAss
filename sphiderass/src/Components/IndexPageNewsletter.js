@@ -1,9 +1,13 @@
 import newsletterdummy from "../images/newslaterdummy.png"
 import "../CSS/IndexpageCss/indexpagenewsletter.scss"
+import { useTheme } from "../Context/ThemeContext"
 
 
 
 const IndexPageNewsletter = () => {
+
+    const theme = useTheme()
+    
     return (
         <section className="index-page-news-letter">
             <div className="page-width index-page-news-letter-con ">

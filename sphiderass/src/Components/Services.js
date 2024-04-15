@@ -1,7 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
+import { useTheme } from '../Context/ThemeContext'
 import { motion, useInView, useAnimation, useIsPresent } from "framer-motion"
 import "../CSS/IndexpageCss/indexpageservices.scss"
+
 const Services = () => {
+    const { theme } = useTheme();
+
     const ref = useRef(null)
     const [sect_one, setSect_one] = useState(false)
     const [sect_two, setSect_two] = useState(false)
@@ -58,15 +62,15 @@ const Services = () => {
         }
     }, [isInView4]);
     return (
-        <section className="index-page-services-section">
-            <div className="page-width">
+        <section className={`index-page-services-section ${theme === 'light' ? 'light' : 'dark'}`}>
+            <div className={`page-width ${theme}`}>
 
 
                 <section
                     ref={ref}
                     className="services">
                     <div className="service-description">
-                        <p className="sd-text">
+                        <p className={`sd-text ${theme}`}>
                             <h2>
                                 BLOCKCHAIN DEVELOPMENT
                             </h2>
@@ -104,7 +108,7 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="service-description">
-                        <p className="sd-text">
+                        <p className={`sd-text ${theme}`}>
                             <h2>
                                 DASHBOARD ANALYTICS
                             </h2>
@@ -119,69 +123,13 @@ const Services = () => {
                         </p>
                     </div>
                 </section>
-                {/*
-                <section
-                    ref={ref3}
-                    className="services">
-                    <div className="service-description">
-                        <p className="sd-text">
-                            <h2>
-                                E-LEARNING & INTERNSHIP
-                            </h2>
-                            <p>
-                                In the realm of education and professional
-                                development, sphiderass offers a comprehensive
-                                i suite of e-learning solutions.
-                            </p>
-                        </p>
-                        <p className={sect_three ? "sd-button-active" : "sd-button"}>
-                            <button>Learn More</button>
-                        </p>
-                    </div>
-                    <div className="service-banner">
-                        <div className="sb-base">
-
-                        </div>
-                        <div className={sect_three ? "sb-image-active" : "sb-image"}>
-                            <img src="img3.webp"/>
-                        </div>
-                    </div>
-                </section>
-                <section
-                    ref={ref4}
-                    className="services">
-                    <div className="service-banner">
-                        <div className="sb-base-left">
-
-                        </div>
-                        <div className={sect_four ? "sb-image-left-active" : "sb-image-left"}>
-                            <img src="img4.webp"/>
-                        </div>
-                    </div>
-                    <div className="service-description">
-                        <p className="sd-text">
-                            <h2>
-                                AR & VR SOLUTIONS
-                            </h2>
-                            <p>
-                                At sphiderass, we believe in understanding organisations and their visions
-                                . our ar/vr solutions are tailor made to help our clients breath lives into
-                                their dreams and present their ideas to the world
-                            </p>
-                        </p>
-                        <p className={sect_four ? "sd-button-left-active" : "sd-button-left"}>
-                            <button>Learn More</button>
-                        </p>
-                    </div>
-                </section>
-                */}
-                <section className="services-footer">
+                <section className={`services-footer ${theme}`}>
                     <div className="svf-section">
                         <div className="svf" >
                             <p className="svf-image">
                                 <img src="img5.webp" />
                             </p>
-                            <p className="svf-text">
+                            <p className={`svf-text ${theme}`}>
                                 Increase you online visibility and reach your target with our expert
                                 digital marketing services
                             </p>
@@ -190,17 +138,12 @@ const Services = () => {
                             <p className="svf-image">
                                 <img src="img6.webp" />
                             </p>
-                            <p className="svf-text">
+                            <p className={`svf-text ${theme}`}>
                                 Create virtually stunning designs that captivate your audience,
                                 reach your target audience with unique design
                             </p>
                         </div>
                     </div>
-                    {/*<div className="see-more">*/}
-                    {/*    <p>*/}
-                    {/*        See More*/}
-                    {/*    </p>*/}
-                    {/*</div>*/}
                 </section>
             </div>
         </section>

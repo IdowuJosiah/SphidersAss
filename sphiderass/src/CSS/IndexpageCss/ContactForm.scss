@@ -1,7 +1,9 @@
 /*
         contact styles
 */
-
+.page-width{
+  background: transparent;
+}
 .contact-form-section {
   background-size: cover;
   background-position: center;
@@ -160,31 +162,28 @@ input[type="file"] {
   text-decoration: none;
 }
 
-
-
 @media screen and (min-width: 350px) and (max-width: 600px) {
-  .page-width{
+  .page-width {
     flex-direction: column;
-    margin-top: 150px;   
+    margin-top: 150px;
   }
-  .contact-form-container{
+  .contact-form-container {
     flex-direction: column-reverse;
   }
   .contact-form-container {
     height: 550px;
   }
-  .cf-text{
+  .cf-text {
     width: 100%;
     margin-bottom: 70px;
   }
   .cf-text h1 {
     font-size: 2rem;
-   
   }
   .cf-text h2 {
     font-size: 1.4rem;
   }
-  .cf-form{
+  .cf-form {
     width: 85%;
   }
   .contact-form-section {

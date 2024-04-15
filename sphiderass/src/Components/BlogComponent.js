@@ -1,14 +1,18 @@
-import React, {useState} from "react"
-import {TiThumbsUp} from 'react-icons/ti'
-import {FaRegCommentDots} from 'react-icons/fa'
-import {BiCalendarWeek} from 'react-icons/bi'
-import {AiOutlineArrowRight} from "react-icons/ai"
-import {Link} from "react-router-dom"
+import React, { useState } from "react"
+import { TiThumbsUp } from 'react-icons/ti'
+import { FaRegCommentDots } from 'react-icons/fa'
+import { BiCalendarWeek } from 'react-icons/bi'
+import { AiOutlineArrowRight } from "react-icons/ai"
+import { Link } from "react-router-dom"
+import { useTheme } from "../Context/ThemeContext"
 import "../CSS/IndexpageCss/blogcomponent.scss"
 const BlogComponent = () => {
-    return(
-        <section className="index-page-blog-component">
-            <div className="blog-header page-width">
+
+    const { theme } = useTheme()
+
+    return (
+        <section className={`index-page-blog-component ${theme}`}>
+            <div className={`blog-header page-width ${theme}`}>
                 <h1>
                     See Our Blog
                 </h1>
@@ -16,24 +20,24 @@ const BlogComponent = () => {
                     Stay current with all the latest trends, software, industry expectation and more
                 </h3>
             </div>
-            <div className="page-width index-page-blog-component-div">
-                
+            <div className={`page-width index-page-blog-component-div ${theme}`}>
+
                 <section className="blog-post">
                     <div className="blog-post-image">
                         <p>
-                            <img src="nicolas-arnold-e_xLO2vmiQI-unsplash.jpg"/>
+                            <img src="nicolas-arnold-e_xLO2vmiQI-unsplash.jpg" />
                         </p>
                     </div>
                     <div className="blog-details">
                         <p className="blog-details-header">
                             <p>
-                                <span className="blog-icons"><BiCalendarWeek/></span><span className="blg-det">20 Oct 2023,</span>
+                                <span className="blog-icons"><BiCalendarWeek /></span><span className="blg-det">20 Oct 2023,</span>
                             </p>
                             <p>
-                                <span className="blog-icons"><TiThumbsUp/></span><span className="blg-det">2,233 <span className="blog-light">Like</span></span>
+                                <span className="blog-icons"><TiThumbsUp /></span><span className="blg-det">2,233 <span className="blog-light">Like</span></span>
                             </p>
                             <p>
-                                <span className="blog-icons"><FaRegCommentDots/></span><span className="blg-det">200 <span className="blog-light">comments</span></span>
+                                <span className="blog-icons"><FaRegCommentDots /></span><span className="blg-det">200 <span className="blog-light">comments</span></span>
                             </p>
                         </p>
 
@@ -50,7 +54,7 @@ const BlogComponent = () => {
                         <footer className="blog-footer">
                             <div className="blog-footer-button">
                                 <button>
-                                 <Link className="index-page-blog-component-blog-read-more-button" to="/count-down-page" ><span>Read More</span> </Link>    <span className="blog-icon"><AiOutlineArrowRight/></span>
+                                    <Link className="index-page-blog-component-blog-read-more-button" to="/count-down-page" ><span>Read More</span> </Link>    <span className="blog-icon"><AiOutlineArrowRight /></span>
                                 </button>
                             </div>
                             <div className="blog-footer-line">
@@ -58,7 +62,7 @@ const BlogComponent = () => {
                             </div>
                             <div className="blog-footer-details">
                                 <p className="blog-footer-details-image">
-                                    <img src="photo2.png"/>
+                                    <img src="photo2.png" />
                                 </p>
                                 <p>
                                     <p className="blog-footer-details-name">
@@ -74,19 +78,19 @@ const BlogComponent = () => {
                 <section className="blog-post">
                     <div className="blog-post-image">
                         <p>
-                            <img src="nicolas-arnold-e_xLO2vmiQI-unsplash.jpg"/>
+                            <img src="nicolas-arnold-e_xLO2vmiQI-unsplash.jpg" />
                         </p>
                     </div>
                     <div className="blog-details">
                         <p className="blog-details-header">
                             <p>
-                                <span className="blog-icons"><BiCalendarWeek/></span><span className="blg-det">15 Oct 2023,</span>
+                                <span className="blog-icons"><BiCalendarWeek /></span><span className="blg-det">15 Oct 2023,</span>
                             </p>
                             <p>
-                                <span className="blog-icons"><TiThumbsUp/></span><span className="blg-det">2,200 <span className="blog-light">Like</span></span>
+                                <span className="blog-icons"><TiThumbsUp /></span><span className="blg-det">2,200 <span className="blog-light">Like</span></span>
                             </p>
                             <p>
-                                <span className="blog-icons"><FaRegCommentDots/></span><span className="blg-det">28 <span className="blog-light">comments</span></span>
+                                <span className="blog-icons"><FaRegCommentDots /></span><span className="blg-det">28 <span className="blog-light">comments</span></span>
                             </p>
                         </p>
                         <p className="blog-topic">
@@ -101,7 +105,7 @@ const BlogComponent = () => {
                         <footer className="blog-footer">
                             <div className="blog-footer-button">
                                 <button>
-                                    <Link to="/count-down-page" ><span>Read More</span> <span className="blog-icon"><AiOutlineArrowRight/></span></Link>
+                                    <Link to="/count-down-page" ><span>Read More</span> <span className="blog-icon"><AiOutlineArrowRight /></span></Link>
                                 </button>
                             </div>
                             <div className="blog-footer-line">
@@ -109,7 +113,7 @@ const BlogComponent = () => {
                             </div>
                             <div className="blog-footer-details">
                                 <p className="blog-footer-details-image">
-                                    <img src="photo2.png"/>
+                                    <img src="photo2.png" />
                                 </p>
                                 <p>
                                     <p className="blog-footer-details-name">

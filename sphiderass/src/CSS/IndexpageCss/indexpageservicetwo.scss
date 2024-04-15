@@ -1,5 +1,11 @@
 .index-page-services-two-section {
   background-color: var(--background-light-mode);
+  &.dark {
+    background-color: var(--dark-mode-dark-text) !important;
+  }
+  &.ligth {
+    background-color: var(--background-light-mode);
+  }
 }
 .index-page-services-two-section-header {
   display: flex;
@@ -8,7 +14,24 @@
   font-family: graffit;
   font-size: 30px;
   letter-spacing: 3px;
+  color: var(--dark-mode-dark-text);
+  &.dark {
+    color: var(--background-light-mode);
+  }
+  &.ligth {
+    color: var(--dark-mode-dark-text) !important;
+  }
 }
+.service-description .sd-text {
+  color: var(--dark-mode-dark-text);
+  &.dark {
+    color: var(--background-light-mode);
+  }
+  &.ligth {
+    color: var(--dark-mode-dark-text) !important;
+  }
+}
+
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
   .index-page-services-two-section-header {

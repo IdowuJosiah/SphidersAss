@@ -14,9 +14,12 @@ import SkewdLIne from "../Components/SkewdLIne";
 import MeetTheteam from "../Components/MeetTheteam";
 import IndexPageNewsletter from "../Components/IndexPageNewsletter";
 
+
 const IndexPage = () => {
+
+
     return (
-        <div>
+        <div >
             <Banner />
             <AffiliationsComponent />
             <IntroComponent />

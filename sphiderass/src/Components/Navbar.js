@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom"
 import "../App.scss"
 import { BsSearch, BsArrowUpRight } from "react-icons/bs"
@@ -37,9 +37,9 @@ const Navbar = () => {
     ]
 
     const { theme, toggleTheme } = useTheme()
-   
-    
-    
+
+
+
     return (
         <section className={`navbar ${theme}`}>
             <div className="nav-con">
@@ -59,7 +59,7 @@ const Navbar = () => {
                 </div>
                 <div className="nav-buttons">
                     <div onClick={toggleTheme}>
-                       {theme === 'light' ? <LuSunMoon /> : <LuMoonStar />}
+                        {theme === 'light' ? <LuSunMoon className='sun' /> : <LuMoonStar className="moon" />}
                     </div>
                     <p className="nvp">
                         <button>

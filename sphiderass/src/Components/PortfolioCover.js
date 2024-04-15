@@ -1,9 +1,12 @@
 import React from "react";
 import "../CSS/IndexpageCss/porfoliocover.scss"
+import { useTheme } from '../Context/ThemeContext'
 
-const PortfolioCover = () =>{
-    return(
-        <section className=" portfolio-cover page-wdith">
+const PortfolioCover = () => {
+    const { theme } = useTheme()
+
+    return (
+        <section className={`portfolio-cover page-wdith  ${theme}`}>
 
             <div>
                 <div className="pc-head">
@@ -37,12 +40,12 @@ const PortfolioCover = () =>{
                 </div>
                 <div className="pc-laptop">
                     <p>
-                        <img src="MacBookPro17.png"/>
+                        <img src="MacBookPro17.png" />
                     </p>
                 </div>
                 <div className="pc-footer">
                     <p className="vn">
-                        <span className="pc-ball"></span><span className="pc-footer-text">View All Projects</span><span className="pct-icon"> ></span>
+                        <span className="pc-ball"></span><span className={`pc-footer-text ${theme}`}>View All Projects</span><span className="pct-icon"> ></span>
                     </p>
                 </div>
             </div>
