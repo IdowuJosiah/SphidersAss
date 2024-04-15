@@ -3,17 +3,6 @@
   font-family: "graffit";
   src: url("Font/grifterbold.otf") format("truetype");
 }
-
-// body {
-  // background-color: var(--dark-mode-dark-text) !important;
-// &.dark {
-//   background-color: var(--dark-mode-dark-text) !important;
-// }
-// &.ligth {
-//   background-color: var(--background-light-mode);
-// }
-// }
-
 @font-face {
   font-family: "Raino sans";
   src: url("Font/Raino sans.otf") format("truetype");
@@ -104,7 +93,7 @@
   padding: 20px 20px;
   margin: 0 auto;
   background-color: var(--background-light-mode);
-  
+
   &.dark {
     background-color: var(--dark-mode-dark-text) !important;
   }

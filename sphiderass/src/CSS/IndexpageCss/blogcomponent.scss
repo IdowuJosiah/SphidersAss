@@ -197,33 +197,51 @@
 }
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
+  .blog-post {
+    padding: 10px;
+    border-radius: 32px;
+  }
   .blog-header h1 {
     font-size: 40px;
+  }
+  .blog-post-image p {
+    width: 30%;
+    height: 30%;
   }
 
   .blog-header h3 {
     font-size: 18px;
   }
 
+  .blog-header p {
+    padding-left: 100px;
+  }
   .blog-post-image p img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    padding: 0;
   }
   .blog-details-header {
-    margin-right: 2rem;
+    margin-right: 1.4rem;
   }
-
   .blog-details {
     width: 100%;
+    padding: 15px;
   }
+  
   .blog-icons {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .blog-topic {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-right: 1.4rem;
   }
   .blog-content {
-    margin-right: 2rem;
+    margin-right: 0.9rem;
+  }
+  .blog-footer-button button {
+    width: 100%;
+    font-size: 13px; 
+    padding: 8px 10px; 
   }
 }

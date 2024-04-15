@@ -7,17 +7,17 @@ import { useTheme } from "../Context/ThemeContext"
 const IndexPageNewsletter = () => {
 
     const theme = useTheme()
-    
+
     return (
-        <section className="index-page-news-letter">
+        <section className={`index-page-news-letter ${theme === 'light' ? 'dark' : 'light'}`}>
             <div className="page-width index-page-news-letter-con ">
                 <div className="index-page-news-details">
-                    <div className="index-page-news-details-header">
-                        <h1>
+                    <div className={`index-page-news-details-header ${theme}`}>
+                        <h1 className={`${theme === 'light' ? 'light' : 'dark'}`}>
                             Subscribe to Our Newsletter
                         </h1>
                     </div>
-                    <div className="index-page-news-details-frist-paragraph">
+                    <div className={`index-page-news-details-frist-paragraph ${theme === 'light' ? 'dark' : 'light'}`}>
                         <p>
                             Join our IT community and subscribe to our newsletter
                             for the latest tech insights, trends, and exclusive updates.
@@ -34,7 +34,7 @@ const IndexPageNewsletter = () => {
                             </button>
                         </p>
                     </div>
-                    <div className="index-page-news-terms-and-privacy-div">
+                    <div className={`index-page-news-terms-and-privacy-div ${theme === 'light' ? 'dark' : 'light'}`}>
                         <p>By signing Up, you agree to our <span className="index-page-news-terms-span" >Terms</span> and <span className="index-page-news-terms-span" >Conditions</span></p>
                     </div>
                 </div>

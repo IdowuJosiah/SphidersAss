@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useTheme } from "../Context/ThemeContext";
 import Banner from "../Components/Banner";
 import AffiliationsComponent from "../Components/AffiliationsComponent";
 import IntroComponent from "../Components/IntroComponent";
@@ -17,6 +18,11 @@ import IndexPageNewsletter from "../Components/IndexPageNewsletter";
 
 const IndexPage = () => {
 
+    const { theme } = useTheme()
+
+    useEffect(() => {
+        document.body.style.backgroundColor = theme === 'light' ? '#f6f6f6' : '#000000'
+    }, [theme])
 
     return (
         <div >

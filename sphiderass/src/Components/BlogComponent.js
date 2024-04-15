@@ -103,7 +103,7 @@ const BlogComponent = () => {
                             industries. Get ready to leap into the future of technology!
                         </p>
                         <footer className="blog-footer">
-                            <div className="blog-footer-button">
+                            <div className="`blog-footer-button">
                                 <button>
                                     <Link to="/count-down-page" ><span>Read More</span> <span className="blog-icon"><AiOutlineArrowRight /></span></Link>
                                 </button>
