@@ -7,6 +7,9 @@
   font-family: "Raino sans";
   src: url("Font/Raino sans.otf") format("truetype");
 }
+*,body{
+  overflow-x: hidden;
+}
 
 :root {
   --background-light-mode: #f6f6f6; /* grey */
