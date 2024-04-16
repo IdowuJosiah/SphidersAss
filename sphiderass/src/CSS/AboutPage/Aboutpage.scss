@@ -274,7 +274,7 @@ About Page Styling
     .about-page-work-with-us-section-details
     .about-page-work-with-us-section-details-div
     .about-page-work-with-us-section-details-icon {
-    width: 70px;
+    width: 130px;
     margin-left: 1rem;
   }
   .about-page-work-with-us-section
@@ -337,6 +337,15 @@ About Page Styling
     gap: 20px;
     .about-page-meet-the-team-section-executive-images-section {
       width: 100%;
+    }
+  }
+
+  .about-page-meet-the-team-section-executive-images-section {
+    width: 60%;
+    .about-page-meet-the-team-section-executive-images {
+      width: 80%;
+      height: 70%;
+     
     }
   }
 }
