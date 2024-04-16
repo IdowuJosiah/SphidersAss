@@ -12,8 +12,12 @@
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
   .index-page-services-two-section-header {
-    font-size: 20px; /* Decrease font size on smaller screens */
+    font-size: 15px; /* Decrease font size on smaller screens */
     letter-spacing: 2px; /* Decrease letter spacing on smaller screens */
     padding: 0px 60px;
+    display: flex;justify-content: center; align-items: center;
+    h1{
+      text-align: center;
+    }
   }
 }

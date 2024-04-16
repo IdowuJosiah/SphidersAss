@@ -29,7 +29,7 @@
   background-color : var(--background-light-mode);
 }
 .banner-section {
-  padding: 20px;
+  padding: 0px;
   color: #333;
 }
 
@@ -1022,9 +1022,6 @@ About Page Styling
   flex-direction: column;
   text-align: center;
 }
-.about-page-partners-section-div header {
-  max-width: 35%;
-}
 .about-page-partners-section-div header h3 {
   color: #252b42;
   text-align: center;
@@ -1131,6 +1128,7 @@ Error page styling
 }
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
+
   .timer-header {
     font-size: 30px;
     text-align: center;
@@ -1177,12 +1175,22 @@ Error page styling
     justify-content: center;
     align-items: center;
   }
+
+  .index-page-banner-container{
+    padding: 10px 20px;
+  }
   .banner-text {
     gap: 15px;
   }
   .banner-trust p {
     font-size: 8px;
   }
+  .banner-subhead-text{
+    font-size: 13px;
+    width: 80%;
+
+  }
+
   .banner-text p {
     padding: 0;
     margin: 0;
@@ -1198,10 +1206,6 @@ Error page styling
   .banner-head-text {
     font-size: 12px;
     letter-spacing: 0.5px;
-  }
-  .banner-subhead-text {
-    font-size: 8px;
-    text-align: center;
   }
   .bn-two {
     margin-bottom: 0.5rem;

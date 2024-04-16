@@ -36,31 +36,32 @@ const FeedbackComponent = () => {
         setSlideIndex(index)
     }
     return (
-        <div className={`client-review ${theme}`}>
-
-            <div className="white-ball-bottom"></div>
-            <div className={`client-review-header ${theme}`}>
-                <h2>
-                    Testiomnial
-                </h2>
-            </div>
-            <div className={`client-review-container ${theme}`}>
-                {reviews.map((review, index) => {
-                    return <div
-                        className={`slider-container ${theme}`}
-                        key={index}>
-                        <div className="client-details">
-                            <p className="client-image"><img alt="clientimages" src={review.clientImage} /></p>
-                            <div className="client-name"><h4>{review.clientName}</h4>  </div>
-                            <div className="client-name"><h5>{review.clientTitle}</h5></div>
+        <div className="indexpage-feedback-container">
+            <div className={`client-review ${theme}`}>
+                <div className={`client-review-header ${theme}`}>
+                    <h2>
+                        Testiomnial
+                    </h2>
+                </div>
+                <div className={`client-review-container ${theme}`}>
+                    {reviews.map((review, index) => {
+                        return <div
+                            className={`slider-container ${theme}`}
+                            key={index}>
+                            <div className="client-details">
+                                <p className="client-image"><img alt="clientimages" src={review.clientImage} /></p>
+                                <div className="client-name"><h4>{review.clientName}</h4>  </div>
+                                <div className="client-name"><h5>{review.clientTitle}</h5></div>
+                            </div>
+                            <p className="client-review-text">
+                                <p> {review.clientReview} </p>
+                            </p>
                         </div>
-                        <p className="client-review-text">
-                            <p> {review.clientReview} </p>
-                        </p>
-                    </div>
-                })
-                }
+                    })
+                    }
+                </div>
             </div>
+
         </div>
     )
 }

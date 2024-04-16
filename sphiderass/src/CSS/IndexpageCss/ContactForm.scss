@@ -169,7 +169,7 @@ input[type="file"] {
   .contact-form-section {
     background-size: cover;
     background-position: center;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,6 +177,7 @@ input[type="file"] {
   .contact-form-container {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     flex-direction: column-reverse;
   }
   .form-header {

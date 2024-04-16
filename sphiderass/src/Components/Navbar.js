@@ -14,10 +14,10 @@ const Navbar = () => {
             title: "Home",
             path: "/",
         },
-        {
-            title: "Services",
-            path: "/courses",
-        },
+        // {
+        //     title: "Services",
+        //     path: "/courses",
+        // },
         {
             title: "Blog",
             path: "/blog",
@@ -26,10 +26,10 @@ const Navbar = () => {
             title: "About",
             path: "/about",
         },
-        {
-            title: "Portfolio",
-            path: "/portfolio",
-        },
+        // {
+        //     title: "Portfolio",
+        //     path: "/portfolio",
+        // },
         {
             title: "Contact Us",
             path: "/contact-us",
