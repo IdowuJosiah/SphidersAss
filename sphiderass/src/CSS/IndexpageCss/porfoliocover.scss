@@ -112,3 +112,63 @@
     padding: 10px; /* Add padding for better spacing on smaller screens */
   }
 }
+@media  screen and (min-width: 350px) and (max-width: 600px){
+  .portfolio-cover-section {
+  }
+  .pc-head {
+    padding: 1px;
+  }
+  .pc-head {
+    font-size: 15px;
+  }
+  .pc-bar div {
+    padding: 0 10px;
+    border-radius: 10px;
+  }
+  .pc-bar div p {
+    padding: 5px;
+    margin: 10px;
+    font-size: 8px;
+    border-radius: 5px;
+  }
+  .pc-laptop {
+    padding: 10px 100px;
+  }
+  .pc-bar div ul {
+    gap: 15px;
+    padding-left: 0;
+    display: flex;
+  }
+  .pc-bar div ul li {
+    font-size: 8px;
+  }
+  .pc-text {
+    width: 48%;
+  }
+  .pct-head {
+    font-size: 9px;
+  }
+  .pc-link {
+    font-size: 14px;
+  }
+  .pc-images {
+    width: 50%;
+    overflow: hidden;
+  }
+  .pc-images p:nth-child(1) {
+    left: 0;
+    width: 95%;
+    height: 8rem;
+    top: 0;
+  }
+  .pc-images p:nth-child(2) {
+    width: 95%;
+    height: 8rem;
+    left: -30px;
+  }
+  .pc-images p:nth-child(3) {
+    width: 95%;
+    height: 8rem;
+    left: -60px;
+  }
+}

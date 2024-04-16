@@ -103,35 +103,35 @@ const LightFooter = () => {
 
             ]
         },
-        {
-            Header: "PRODUCT",
-            Links:[
-                {
-                    LinkTitle: "Figma",
-                    linkTo:"/count-down-page"
-
-                },
-                {
-                    LinkTitle: "Adobe",
-                    linkTo:"/count-down-page"
-
-                },
-                {
-                    LinkTitle: "Dribble",
-                    linkTo:"/count-down-page"
-
-                },
-                {
-                    LinkTitle: "Behance",
-                    linkTo:"/count-down-page"
-
-                },{
-                    LinkTitle: "Thermoforest",
-                    linkTo:"/count-down-page"
-
-                },
-            ]
-        },
+        // {
+        //     Header: "PRODUCT",
+        //     Links:[
+        //         {
+        //             LinkTitle: "Figma",
+        //             linkTo:"/count-down-page"
+        //
+        //         },
+        //         {
+        //             LinkTitle: "Adobe",
+        //             linkTo:"/count-down-page"
+        //
+        //         },
+        //         {
+        //             LinkTitle: "Dribble",
+        //             linkTo:"/count-down-page"
+        //
+        //         },
+        //         {
+        //             LinkTitle: "Behance",
+        //             linkTo:"/count-down-page"
+        //
+        //         },{
+        //             LinkTitle: "Thermoforest",
+        //             linkTo:"/count-down-page"
+        //
+        //         },
+        //     ]
+        // },
     ]
     const AddressDetails =[
         {

@@ -1,8 +1,9 @@
-// /* App.scss */
+/* App.scss */
 @font-face {
   font-family: "graffit";
   src: url("Font/grifterbold.otf") format("truetype");
 }
+
 @font-face {
   font-family: "Raino sans";
   src: url("Font/Raino sans.otf") format("truetype");
@@ -12,6 +13,7 @@
   --background-light-mode: #f6f6f6; /* grey */
   --blog-light-background: #3d3d3d; /* Gray */
   --light-mode-white-text: #ffffff; /* Yellow */
+  --light-mode-dark-text: #191919;
   --dark-mode-dark-text: #000000;
   --ark-modes: #e7e7e7;
 }
@@ -23,7 +25,9 @@
 .moon {
   color: var(--dark-mode-dark-text);
 }
-
+.index-page-container{
+  background-color : var(--background-light-mode);
+}
 .banner-section {
   padding: 20px;
   color: #333;
@@ -37,6 +41,15 @@
 .banner-section.dark {
   background: var(--dark-mode-dark-text);
   color: #fff;
+}
+
+.index-page-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .index-page-banner-container.dark {
@@ -68,6 +81,11 @@
 .banner-head-text {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.banner-subhead-text {
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
 .banner-button {
@@ -478,12 +496,6 @@
 
 .intro-comp-section {
   background-color: var(--background-light-mode);
-  &.dark {
-    background-color: var(--dark-mode-dark-text);
-  }
-  &.light {
-    background-color: var(--light-mode-white-text);
-  }
 }
 .intro-comp {
   width: 100%;
@@ -511,12 +523,6 @@
   font-weight: 600;
   font-family: graffit;
   padding: 20px 0;
-  &.dark {
-    color: var(--background-light-mode);
-  }
-  &.light {
-    color: var(--dark-mode-dark-text);
-  }
 }
 .intro-image {
   padding: 0;
@@ -731,7 +737,7 @@ light footer styling
 
 .footer {
   background: #ffffff;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 .footer-nav {
   display: flex;
@@ -1042,146 +1048,7 @@ About Page Styling
 }
 .about-page-partners-section-div main {
 }
-
-/*
-
-
-contact us page styling
-
-
-
- */
-
-.contact-us-page-socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-  .contact-us-page-socials-div {
-    display: flex;
-    gap: 15px;
-
-    .contact-us-social-icons {
-      text-decoration: none;
-
-      .social-icons {
-        font-size: 40px;
-        color: #e1b023;
-      }
-    }
-  }
-}
-.contact-us-page-map-section {
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.contact-us-page-contact-details-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  .contact-us-page-contact-details-section-div {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    div {
-      width: 33%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .contact-us-page-icon-circle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        box-shadow: 2px 2px 2px #e1b023;
-        text-decoration: none;
-        color: #e1b023;
-        font-size: 25px;
-      }
-      h5 {
-        color: #252b42;
-        text-align: center;
-        font-family: "Montserrat";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 500;
-        letter-spacing: 0.2px;
-      }
-    }
-  }
-}
-.contact-us-page-form-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 100px;
-  form {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: 4px 4px 5px rgb(117, 114, 114);
-    padding: 0px 20px;
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-      padding: 30px 10px;
-      width: 100%;
-      h1 {
-        color: #252b42;
-        width: 100%;
-        text-align: center;
-
-        font-family: "Montserrat";
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 36px;
-        letter-spacing: 0.1px;
-      }
-      input {
-        display: flex;
-
-        padding: 20px 20px;
-        margin: 15px 0;
-        align-items: center;
-        align-self: stretch;
-        border-radius: 10px;
-        border: 1px solid #e6e6e6;
-        background: #f5f5f5;
-      }
-      .contact-us-page-form-your-message {
-        height: 147px;
-      }
-      button {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 35px;
-        border-radius: 10px;
-        background: #f3c720;
-        border: none;
-        color: #fff;
-        font-family: "Montserrat";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 28px;
-        letter-spacing: 0.2px;
-      }
-    }
-  }
-}
+topscent
 
 /*
 
@@ -1379,24 +1246,7 @@ Error page styling
   .af-name {
     font-size: 8px;
   }
-  .intro-comp-section {
-  }
-  .intro-comp div {
-    padding: 0;
-  }
-  .intro-comp div p {
-    font-size: 12px;
-    padding: 100px 0;
-    letter-spacing: 0.3px;
-  }
-  .intro-image {
-    height: 50%;
-  }
-  .intro-comp div img {
-    width: 50%;
-    height: 100%;
-    margin-bottom: 0;
-  }
+
   .services {
     padding: 10px 10px;
   }
@@ -1473,61 +1323,7 @@ Error page styling
   .see-more p {
     font-size: 15px;
   }
-  .portfolio-cover-section {
-  }
-  .pc-head {
-    padding: 1px;
-  }
-  .pc-head {
-    font-size: 15px;
-  }
-  .pc-bar div {
-    padding: 0 5px;
-  }
-  .pc-bar div p {
-    padding: 5px;
-    margin: 10px;
-    font-size: 8px;
-  }
-  .pc-laptop {
-    padding: 10px 100px;
-  }
-  .pc-bar div ul {
-    gap: 10px;
-    padding-left: 0;
-  }
-  .pc-bar div ul li {
-    font-size: 8px;
-  }
-  .pc-text {
-    width: 48%;
-  }
-  .pct-head {
-    font-size: 9px;
-  }
-  .pc-link {
-    font-size: 14px;
-  }
-  .pc-images {
-    width: 50%;
-    overflow: hidden;
-  }
-  .pc-images p:nth-child(1) {
-    left: 0;
-    width: 95%;
-    height: 8rem;
-    top: 0;
-  }
-  .pc-images p:nth-child(2) {
-    width: 95%;
-    height: 8rem;
-    left: -30px;
-  }
-  .pc-images p:nth-child(3) {
-    width: 95%;
-    height: 8rem;
-    left: -60px;
-  }
+
   .white-ball {
     width: 8rem;
     height: 8rem;
@@ -1616,12 +1412,7 @@ Error page styling
     margin: 5px;
     max-width: 75%;
   }
-  .blog-post {
-    flex-direction: column;
-  }
-  .blog-post-image {
-    width: 100%;
-  }
+
   .blog-details {
     width: 100%;
     padding: 0;

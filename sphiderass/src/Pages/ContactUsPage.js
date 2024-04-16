@@ -5,6 +5,7 @@ import { FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdPhoneIphone } from "react-icons/md";
 import { IoMailOutline } from "react-icons/io5";
+import "../CSS/ContactPage/ContactPage.scss"
 
 const ContactUsPage = () => {
     return (

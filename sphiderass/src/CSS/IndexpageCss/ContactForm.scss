@@ -165,28 +165,143 @@ input[type="file"] {
 @media screen and (min-width: 350px) and (max-width: 600px) {
   .page-width {
     flex-direction: column;
-    margin-top: 150px;
+  }
+  .contact-form-section {
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .contact-form-container {
+    display: flex;
+    justify-content: space-between;
     flex-direction: column-reverse;
   }
-  .contact-form-container {
-    height: 550px;
+  .form-header {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .form-header h1 {
+    margin: 0;
+    font-weight: 400;
+  }
+  .form-name{
+    flex-direction: column;
+    gap: 5px;
+  }
+  #full_name {
+    width: 95%;
+  }
+  #business_mail {
+    width: 95%;
+  }
+  #price {
+    width: 95%;
+    border: 1px solid #e6e8ec;
+  }
+  #file {
+    border: 1px solid #e6e8ec;
+    width: 95.5%;
+  }
+  input[type="file"] {
+    padding: 8px;
+    display: none;
+  }
+  .label-file {
+    border-radius: 5px;
+    padding: 12px 10px;
+    display: block;
+    font-size: 9px;
+    color: #404040;
+    cursor: pointer;
+  }
+  .form-service {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+  #service {
+    width: 100%;
   }
   .cf-text {
     width: 100%;
-    margin-bottom: 70px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .cf-text h1 {
-    font-size: 2rem;
+    color: white;
+    font-size: 25px;
+    margin: .3rem;
   }
   .cf-text h2 {
-    font-size: 1.4rem;
+    font-size: 13px;
+    margin: 0.3rem;
   }
+  .contact-form-info-buttons {
+    display: flex;
+  }
+  .contact-form-info-buttons h1 button {
+    background: white;
+    padding: 10px 18px;
+    font-size: 10px;
+  }
+  .cfib {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form-info-buttons h2 button {
+    background: #002300;
+    color: white;
+    font-size: 12px;
+    padding: 10px 18px;
+  }
+
   .cf-form {
-    width: 85%;
+    width: 75%;
+    background: #ffffff;
+    padding: 10px;
+    height: 70%;
+    border-radius: 15px;
   }
-  .contact-form-section {
-    height: 1200px;
+  .cf-form form {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .cf-form form input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    outline: none;
+  }
+  #message {
+    height: 55px;
+    border: 1px solid #e6e8ec;
+  }
+  .cf-form form button {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    padding: 15px 0;
+  }
+  .form-arrow {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .dumbell {
+    text-decoration: none;
   }
 }

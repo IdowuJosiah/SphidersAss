@@ -4,6 +4,7 @@
         client styles
 */
 .index-page-services-section{
+  overflow: hidden;
   background-color: var(--background-light-mode);
 
 }
@@ -189,3 +190,86 @@
   border-bottom: 2px solid #74ff74;
 }
 
+@media screen and (min-width: 350px) and (max-width: 600px){
+  .services {
+    padding: 10px 10px;
+  }
+  .services p {
+    margin: 0;
+  }
+  .sd-text h2 {
+    font-size: 11px;
+  }
+  .sd-text p {
+    font-size: 9px;
+    line-height: 20px;
+  }
+  .service-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sb-base {
+    width: 6rem;
+    height: 7.5rem;
+  }
+  .sb-base-left {
+    width: 6rem;
+    height: 7.5rem;
+    bottom: 45px;
+    left: 55px;
+  }
+  .sb-image {
+    width: 8rem;
+    height: 10rem;
+  }
+  .sb-image-active {
+    width: 8rem;
+    height: 9.5rem;
+    top: 90px;
+    right: 40px;
+  }
+  .sb-image-left {
+    width: 8rem;
+    height: 10rem;
+  }
+  .sb-image-left-active {
+    width: 8rem;
+    height: 9.5rem;
+    top: 20px;
+    left: 0px;
+  }
+  .sd-button-active button {
+    padding: 7px 12px;
+    font-size: 7px;
+  }
+  .sd-button {
+    transform: translateX(180px);
+  }
+  .sd-button-left-active button {
+    padding: 7px 12px;
+    font-size: 7px;
+    transform: translateX(0);
+  }
+
+
+  .svf-section {
+    height: 25vh;
+  }
+  .svf-text {
+    font-size: 8px;
+    line-height: 15px;
+  }
+  .svf {
+    width: 50%;
+  }
+  .see-more {
+    height: 8vh;
+  }
+  .see-more p {
+    font-size: 15px;
+  }
+  .services-footer{
+    margin-top: 20px;
+  }
+}

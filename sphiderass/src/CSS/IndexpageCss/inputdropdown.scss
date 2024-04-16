@@ -41,3 +41,14 @@
   transition: ease-in-out .5s;
   cursor: pointer;
 }
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .dropdown{
+    width: 100%;
+    display: block;
+  }
+  .dropdown-btn{
+    width: 94%;
+    padding: 11px;
+    font-size: 9px;
+  }
+}

@@ -1,40 +1,22 @@
 .index-page-news-letter {
-  background-size: var(--background-light-mode) !important;
+  background-size: var(--background-light-mode);
 }
 .index-page-news-letter-con {
   display: flex;
   justify-content: space-between;
 }
-
 .index-page-news-details {
   padding: 30px 0;
   width: 50%;
-
   .index-page-news-details-header {
     h1 {
       font-size: 35px;
       letter-spacing: 2px;
-      color: white !important;
-
-      &.light {
-        color: black !important;
-      }
-      &.dark {
-        color: white !important;
-      }
     }
   }
   .index-page-news-details-frist-paragraph {
     font-size: 15px;
     letter-spacing: 1.2px;
-    color: white !important;
-
-      &.light {
-        color: black !important;
-      }
-      &.dark {
-        color: white !important;
-      }
   }
 }
 .index-page-news-input-div {
@@ -72,14 +54,6 @@
 .index-page-news-terms-and-privacy-div {
   padding-top: 15px;
   font-size: 15px;
-  color: white !important;
-
-  &.light {
-    color: black !important;
-  }
-  &.dark {
-    color: white !important;
-  }
   .index-page-news-terms-span {
     color: #609ffa;
   }
@@ -95,50 +69,69 @@
 }
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
-  .index-page-news-details-header h1 {
-    font-size: 2rem !important;
-    margin-left: 55px;
-  }
+
   .index-page-news-letter-con {
-    flex-direction: column;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
   }
-
   .index-page-news-details {
+    padding: 10px 0;
     width: 100%;
-  }
-
-  .index-page-news-details p {
-    margin-left: 50px;
+    .index-page-news-details-header {
+      h1 {
+        font-size: 20px;
+        letter-spacing: 1.3px;
+      }
+    }
+    .index-page-news-details-frist-paragraph {
+      font-size: 10px;
+      letter-spacing: 1.2px;
+    }
   }
   .index-page-news-input-div {
-    width: 60%;
+    width: 70%;
+    position: relative;
+    .index-page-news-input {
+      input {
+        width: 100%;
+        padding: 15px 10px;
+        border-radius: 10px;
+        background: #dadada;
+        border: none;
+        font-size: 9px;
+        letter-spacing: 1.2px;
+      }
+    }
+    .index-page-news-subscribe-button {
+      position: absolute;
+      top: -7px;
+      right: -5px;
+      button {
+        padding: 7px 12px;
+        background: #191919;
+        color: #ffffff;
+        border: none;
+        border-radius: 2px;
+        font-size: 9px;
+      }
+    }
   }
-
   .index-page-news-terms-and-privacy-div {
-    font-size: 12px;
-  }
-  .index-page-news-subscribe-button {
-    button {
-      padding: 8px 45px;
-      font-size: 12px;
+    padding-top: 5px;
+    font-size: 10px;
+    .index-page-news-terms-span {
+      color: #609ffa;
     }
   }
 
-  .index-page-news-terms-and-privacy-div {
-    font-size: 16px;
-  }
-  .index-page-news-input-div {
-    width: 250px;
-    margin-top: 2rem;
-  }
-  .index-page-news-subscribe-button button {
-    margin-left: 50px;
+  .index-page-news-letter-image {
+    width: 40%;
+    height: 250px;
+    img {
+      height: 100%;
+      margin-left: 100px;
+    }
   }
 
-  .index-page-news-letter-image img {
-    height: 200px;
-    width: 200px;
-    margin-left: 70px;
-  }
 }

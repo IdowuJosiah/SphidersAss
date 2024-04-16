@@ -229,7 +229,7 @@ About Page Styling
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 350px) and (max-width: 600px) {
   .individual-article-opened-header-box {
     width: 100%;
     padding: 0 20px;

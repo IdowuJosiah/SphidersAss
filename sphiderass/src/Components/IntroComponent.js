@@ -1,5 +1,7 @@
 import React from "react";
 import { useTheme } from '../Context/ThemeContext'
+import "../CSS/IndexpageCss/IndexPageIntroComponent.scss"
+
 
 const IntroComponent = () => {
     const { theme } = useTheme();

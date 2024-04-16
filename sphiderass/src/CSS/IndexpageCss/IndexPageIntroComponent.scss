@@ -1,0 +1,64 @@
+/*
+        IntroComponent styles
+*/
+
+.intro-comp-section {
+  background-color: var(--background-light-mode);
+}
+.intro-comp {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: repeat;
+  object-fit: fill;
+  object-position: center;
+  image-rendering: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-comp div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-comp div p {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #191919;
+  font-weight: 600;
+  font-family: graffit;
+  padding: 20px 0;
+}
+.intro-image {
+  padding: 0;
+  width: 50%;
+}
+.intro-image img {
+}
+.intro-comp div img {
+  margin-bottom: -20px;
+}
+@media screen and (min-width: 350px) and (max-width: 600px){
+  .intro-comp-section {
+  }
+  .intro-comp div {
+    padding: 0;
+  }
+  .intro-comp div p {
+    font-size: 12px;
+    padding: 20px 0;
+    letter-spacing: 0.3px;
+  }
+  .intro-image {
+    height: 50%;
+  }
+  .intro-comp div img {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+}
