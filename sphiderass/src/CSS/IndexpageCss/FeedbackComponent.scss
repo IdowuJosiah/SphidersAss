@@ -1,6 +1,9 @@
 /*
         client styles
 */
+.indexpage-feedback-container{
+  overflow: hidden;
+}
 .client-review {
   position: relative;
   display: flex;
@@ -35,6 +38,7 @@
   padding: 3rem;
   gap: 10px;
   margin-bottom: 5rem;
+  overflow: hidden;
 }
 
 .slider-container {

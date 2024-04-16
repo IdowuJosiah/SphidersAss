@@ -175,13 +175,17 @@
 }
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
+  .blog-header{
+    padding: 10px 0;
+  }
   .blog-header h1 {
-    font-size: 40px;
-    margin: 10px;
+    font-size: 30px;
+    margin: 5px;
   }
 
   .blog-header h3 {
     font-size: 15px;
+    letter-spacing: 1px;
     max-width: 80%;
   }
 
@@ -200,6 +204,7 @@
   }
   .blog-post-image {
     width: 100%;
+    padding: 0;
   }
   .blog-details {
     width: 100%;
@@ -214,7 +219,7 @@
   }
   .blg-det{
     color: var(--light-mode-dark-text);
-    font-size: 13px;
+    font-size: 10px;
   }
   .blog-light{
     color: var(--light-mode-dark-text);
