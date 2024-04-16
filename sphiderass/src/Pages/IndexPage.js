@@ -18,10 +18,10 @@ import IndexPageNewsletter from "../Components/IndexPageNewsletter";
 
 const IndexPage = () => {
 
-    const { theme } = useTheme()
+    const { theme } = useTheme();
 
     useEffect(() => {
-        document.body.style.backgroundColor = theme === 'light' ? '#f6f6f6' : '#000000'
+        document.body.style.backgroundColor = theme === 'light' ? '#ffffff' : '#333333'; 
     }, [theme])
 
     return (
