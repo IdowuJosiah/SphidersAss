@@ -19,6 +19,13 @@
     font-family: "DM Sans";
     font-size: 35px;
     padding: 15px;
+    color: black;
+    &.dark {
+      color: white;
+    }
+    &.light {
+      color: black;
+    }
     h1 {
       margin: 0;
     }
@@ -37,15 +44,14 @@
         justify-content: center;
         align-items: center;
         color: black;
-          &.dark{
-            color: white;
-          }
-          &.light{
-            color: black;
-          }
+        &.dark {
+          color: white;
+        }
+        &.light {
+          color: black;
+        }
         p {
           margin: 10px;
-          
         }
       }
     }
