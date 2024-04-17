@@ -4,6 +4,12 @@
 
 .intro-comp-section {
   background-color: var(--background-light-mode);
+  &.dark {
+    background-color: var(--dark-mode-dark-text);
+  }
+  &.light {
+    background-color: var(--light-mode-white-text);
+  }
 }
 .intro-comp {
   width: 100%;
@@ -31,6 +37,12 @@
   font-weight: 600;
   font-family: graffit;
   padding: 20px 0;
+  &.dark {
+    color: #fff;
+  }
+  .light {
+    color: #191919;
+  }
 }
 .intro-image {
   padding: 0;
@@ -41,7 +53,7 @@
 .intro-comp div img {
   margin-bottom: -20px;
 }
-@media screen and (min-width: 350px) and (max-width: 600px){
+@media screen and (min-width: 350px) and (max-width: 600px) {
   .intro-comp-section {
   }
   .intro-comp div {
@@ -60,5 +72,4 @@
     height: 100%;
     margin-bottom: 0;
   }
-
 }

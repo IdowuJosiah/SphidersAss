@@ -25,9 +25,17 @@
 .moon {
   color: var(--dark-mode-dark-text);
 }
-.index-page-container{
-  background-color : var(--background-light-mode);
+
+.index-page-container {
+  background-color: var(--background-light-mode);
+  &.dark {
+    background-color: var(--dark-mode-dark-text);
+  }
+  &.light {
+    background-color: var(--light-mode-white-text);
+  }
 }
+
 .banner-section {
   padding: 0px;
   color: #333;
@@ -102,7 +110,7 @@
   &.dark {
     background-color: var(--dark-mode-dark-text) !important;
   }
-  &.ligth {
+  &.light {
     background-color: var(--background-light-mode);
   }
 }
@@ -115,7 +123,7 @@
   &.dark {
     background-color: var(--dark-mode-dark-text) !important;
   }
-  &.ligth {
+  &.light {
     background-color: var(--background-light-mode);
   }
 }
@@ -124,7 +132,7 @@
   &.dark {
     color: var(--background-light-mode);
   }
-  &.ligth {
+  &.light {
     color: var(--dark-mode-dark-text) !important;
   }
 }
@@ -133,7 +141,7 @@
   &.dark {
     background-color: var(--dark-mode-dark-text) !important;
   }
-  &.ligth {
+  &.light {
     background-color: var(--background-light-mode);
   }
   .svf-text {
@@ -141,7 +149,7 @@
     &.dark {
       color: var(--background-light-mode);
     }
-    &.ligth {
+    &.light {
       color: var(--dark-mode-dark-text) !important;
     }
   }
@@ -152,7 +160,7 @@
   &.dark {
     background-color: var(--dark-mode-dark-text) !important;
   }
-  &.ligth {
+  &.light {
     background-color: var(--background-light-mode);
   }
   .pc-footer-text {
@@ -160,7 +168,7 @@
     &.dark {
       color: var(--background-light-mode);
     }
-    &.ligth {
+    &.light {
       color: var(--dark-mode-dark-text) !important;
     }
   }
@@ -354,13 +362,23 @@
 .banner-subhead-text {
   font-size: 1rem;
   margin-top: 10px;
-  &.dark {
-    color: var(--light-mode-white-text);
-  }
+  color: black;
+}
 
-  &.light {
-    color: var(--dark-mode-dark-text);
-  }
+// dark and light mode from Blogcomponents.jsx files
+.dark .blog-header h1 {
+  color: #fff;
+}
+
+.light .blog-header h1 {
+  color: black;
+}
+.dark .blog-header h3 {
+  color: #fff;
+}
+
+.light .blog-header h3 {
+  color: black;
 }
 
 .banner-subhead-text {
@@ -1128,7 +1146,6 @@ Error page styling
 }
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
-
   .timer-header {
     font-size: 30px;
     text-align: center;
@@ -1176,7 +1193,7 @@ Error page styling
     align-items: center;
   }
 
-  .index-page-banner-container{
+  .index-page-banner-container {
     padding: 10px 20px;
   }
   .banner-text {
@@ -1185,10 +1202,9 @@ Error page styling
   .banner-trust p {
     font-size: 8px;
   }
-  .banner-subhead-text{
+  .banner-subhead-text {
     font-size: 13px;
     width: 80%;
-
   }
 
   .banner-text p {

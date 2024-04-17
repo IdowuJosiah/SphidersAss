@@ -12,11 +12,26 @@
     h1 {
       font-size: 35px;
       letter-spacing: 2px;
+      color: var(--dark-mode-dark-text);
+      &.dark {
+        color: var(--background-light-mode);
+      }
+      &.light {
+        color: var(--dark-mode-dark-text);
+      }
+    
     }
   }
   .index-page-news-details-frist-paragraph {
     font-size: 15px;
     letter-spacing: 1.2px;
+    color: var(--dark-mode-dark-text);
+      &.dark {
+        color: var(--background-light-mode);
+      }
+      &.light {
+        color: var(--dark-mode-dark-text);
+      }
   }
 }
 .index-page-news-input-div {
@@ -54,6 +69,13 @@
 .index-page-news-terms-and-privacy-div {
   padding-top: 15px;
   font-size: 15px;
+  color: var(--dark-mode-dark-text);
+      &.dark {
+        color: var(--background-light-mode);
+      }
+      &.light {
+        color: var(--dark-mode-dark-text);
+      }
   .index-page-news-terms-span {
     color: #609ffa;
   }
@@ -69,7 +91,6 @@
 }
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
-
   .index-page-news-letter-con {
     display: flex;
     flex-direction: column-reverse;
@@ -133,5 +154,4 @@
       margin-left: 100px;
     }
   }
-
 }

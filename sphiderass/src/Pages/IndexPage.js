@@ -25,7 +25,7 @@ const IndexPage = () => {
     }, [theme])
 
     return (
-        <div className="index-page-container">
+        <div className={`index-page-container ${theme}`}>
             <Banner />
             <AffiliationsComponent />
             <IntroComponent />
